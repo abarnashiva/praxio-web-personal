@@ -86,9 +86,9 @@ const Hero: React.FC = () => {
           {phrases.map((phrase, index) => (
             <SwiperSlide key={index}>
               <div
-                className={`w-16 h-1 transition-colors bg-${
-                  active === index ? "red" : "gray"
-                }-400 mb-2`}
+                className={`w-16 h-1 transition-colors ${
+                  active === index ? "bg-red-400" : "bg-gray-400"
+                } mb-2`}
               ></div>
               <h1 className="text-xl">{phrase.label}</h1>
             </SwiperSlide>

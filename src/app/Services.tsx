@@ -2,12 +2,11 @@ import React from "react";
 import Card from "./common/Card";
 function Services() {
   return (
-    <section id="services" className="py-10 h-[50rem] ">
-      <h2 className="text-center text-2xl mb-8">Our Services</h2>
-      <div className="flex gap-3 md:gap-5 justify-center md:justify-evenly flex-wrap px-5 ">
+    <section id="services" className="py-10  ">
+      <h2 className="text-center text-2xl mb-8 ">Our Services</h2>
+      <div className="flex gap-3 md:gap-5  flex-wrap px-7 ">
         <Card
           header={"Software Development"}
-          shortDescription={"Caption or Thumbnail"}
           content={
             "Get room to focus on strategic business growth by cutting on development costs and outplay your rivals."
           }
@@ -15,21 +14,12 @@ function Services() {
 
         <Card
           header={"AI and Machine Learning"}
-          shortDescription={"Caption or Thumbnail"}
           content={
             "Get room to focus on strategic business growth by cutting on development costs and outplay your rivals."
           }
         />
         <Card
           header={"IoT Application Development"}
-          shortDescription={"Caption or Thumbnail"}
-          content={
-            "Get room to focus on strategic business growth by cutting on development costs and outplay your rivals."
-          }
-        />
-        <Card
-          header={"Enterprise Application Development"}
-          shortDescription={"Caption or Thumbnail"}
           content={
             "Get room to focus on strategic business growth by cutting on development costs and outplay your rivals."
           }
