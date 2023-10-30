@@ -9,8 +9,8 @@ interface CardProps {
 export default function Card({ header, shortDescription, content }: CardProps) {
   return (
     <div>
-      <div className="relative card w-[22em]  max-w-4xl min-h-[8rem] p-8 bg-white shadow-md transition-all duration-350 ease-in-out cursor-pointer hover:shadow-lg">
-        <div className="content w-[18em] max-w-4xl">
+      <div className="relative mx-auto card max-w-full md:max-w-[22em]  min-h-[8rem] p-8 bg-white shadow-md transition-all duration-350 ease-in-out cursor-pointer hover:shadow-lg">
+        <div className="content smax-w-[18em]">
           <div className={`group flex items-center transition-all `}>
             <div className="header">{header}</div>
             <div className="icon ">
