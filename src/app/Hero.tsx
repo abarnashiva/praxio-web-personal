@@ -41,7 +41,6 @@ const Hero: React.FC = () => {
   // store swiper instances
   const [firstSwiper, setFirstSwiper] = React.useState<SwiperType>();
   const [secondSwiper, setSecondSwiper] = React.useState<SwiperType>();
-
   const [active, setActive] = React.useState<number>(0);
 
   firstSwiper?.on("slideChange", (swiper) => {
@@ -84,7 +83,12 @@ const Hero: React.FC = () => {
           controller={{ control: firstSwiper }}
         >
           {phrases.map((phrase, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide
+              key={index}
+              onClick={() => {
+                firstSwiper?.slideTo(index);
+              }}
+            >
               <div
                 className={`w-16 h-1 transition-colors ${
                   active === index ? "bg-red-400" : "bg-gray-400"
