@@ -2,7 +2,7 @@ const Arrow: React.FC<{ fill?: string }> = (props) => {
   return (
     <svg
       version="1.1"
-      style={{ fill: props.fill ?? "white" }}
+      style={{ fill: props.fill ? props.fill : "white" }}
       viewBox="0 0 15 20"
       xmlns="http://www.w3.org/2000/svg"
     >
