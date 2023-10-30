@@ -62,13 +62,13 @@ const Hero: React.FC = () => {
       >
         {phrases.map((phrase, index) => (
           <SwiperSlide key={index}>
-            <div className="flex">
-              <div className="flex-1 flex flex-col items-start gap-4 py-24 px-7">
+            <div className="flex flex-wrap">
+              <div className=" flex-1 flex flex-col min-w-[20rem] items-start gap-4 py-24 px-7">
                 <h1 className="text-5xl">{phrase.label}</h1>
                 <p className="">{phrase.description}</p>
                 <Button text="Learn More" />
               </div>
-              <div className="flex-1 flex h-[clamp(500px,_60vw,_700px)] bg-gray-200">
+              <div className=" flex-1 flex min-w-[20rem] h-[clamp(25rem,_60vw,_700px)] bg-gray-200">
                 <p className="m-auto">{phrase.image}</p>
               </div>
             </div>
