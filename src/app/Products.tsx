@@ -5,7 +5,7 @@ function Products() {
   return (
     <section id="products" className="py-10">
       <h2 className="text-center text-2xl mb-8 ">Our Products and Solutions</h2>
-      <div className="flex flex-wrap gap-4  px-7">
+      <div className="flex  gap-4  px-7">
         <Card
           imgSrc={<div className="w-full h-64 bg-neutral-200">image</div>}
           header={"Title of the Above Image"}

@@ -9,7 +9,7 @@ interface CardProps {
 export default function Card({ header, imgSrc, content }: CardProps) {
   return (
     <div>
-      <div className="relative mx-auto card max-w-full md:max-w-[22em] p-5 bg-white shadow-md transition-transform duration-500 ease-linear cursor-pointer hover:shadow-lg">
+      <div className="relative mx-auto card p-5 w-auto bg-white shadow-md transition-transform duration-500 ease-linear cursor-pointer hover:shadow-lg">
         <div>
           <div className={`transition-all`}>
             <div>{imgSrc}</div>
