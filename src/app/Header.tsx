@@ -19,10 +19,10 @@ window.addEventListener('resize', handleResize)
     <header className=" scroll-smooth flex justify-between py-6 px-6 bg-neutral-50 text-neutral-900 shadow-md">
       <img src="/praxio.svg" alt="Image Description" className="w-32" />
       <nav>
-        {innerWidth < 630 && !click && <div className='text-red-600 right-0  w-8 text-center cursor-pointertext-base font-medium rounded'
+        {innerWidth < 630 && !click && <div className='text-red-600 right-0  w-8 text-center cursor-pointer text-2xl font-medium rounded'
           onClick={()=>setClick(true)}>
           {<FaBars/>}</div>}
-      <ul className={`${innerWidth < 630 && click ?`flex fixed p-4 w-40 inset-y-0 right-0 bg-neutral-50 z-50 flex-col h-full overflow-hidden space-y-8 `:
+      <ul className={`${innerWidth < 630 && click ?`flex fixed p-4 w-full inset-y-0 right-0 bg-neutral-50 z-50 flex-col h-auto text-base overflow-hidden space-y-8 `:
         innerWidth < 630 ? `hidden` :`flex space-x-4 md:space-x-8 `} `}>
         <li className='navList px-7 md:px-3'><a href="#home" onClick={()=>setClick(false)}>Home</a></li>
         <hr/>
@@ -41,7 +41,7 @@ window.addEventListener('resize', handleResize)
       <span className="group-hover:-translate-x-4 transition-transform rotate-180 w-4 mx-4">
         <Arrow />
       </span>
-      <span  >Back</span>
+      <span>Back</span>
     </button>}
       </ul>
       
