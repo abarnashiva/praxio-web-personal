@@ -14,7 +14,7 @@ setInnerWidth(window.innerWidth)
 window.addEventListener('resize', handleResize)
   }
   )
-  
+
   return (
     <header className=" scroll-smooth flex justify-between py-6 px-6 bg-neutral-50 text-neutral-900 shadow-md">
       <img src="/praxio.svg" alt="Image Description" className="w-32" />
@@ -28,15 +28,15 @@ window.addEventListener('resize', handleResize)
         <hr/>
         <li className='navList px-7 md:px-3'><a href="#about" onClick={()=>setClick(false)}>About Us</a></li>
         <hr/>
-        <li className='navList px-7 md:px-3'><a href="#products" onClick={()=>setClick(false)}>Service</a></li>
+        <li className='navList px-7 md:px-3'><a href="/service" onClick={()=>setClick(false)}>Service</a></li>
         <hr/>
         <li className='navList px-7 md:px-3'><a href="#career" onClick={()=>setClick(false)}>Career</a></li>
         <hr/>
         <li className='navList px-7 md:px-3'><a href="#contact" onClick={()=>setClick(false)}>Contact</a></li>
         <hr/>
-        {innerWidth < 630 && 
+        {innerWidth < 630 &&
         <button className="group flex items-center shadow-sm shadow-neutral-500 px-5 py-3 bg-red-600 hover:bg-red-500
-          text-white transition-all" 
+          text-white transition-all"
           onClick={()=>setClick(false)} >
       <span className="group-hover:-translate-x-4 transition-transform rotate-180 w-4 mx-4">
         <Arrow />
@@ -44,7 +44,7 @@ window.addEventListener('resize', handleResize)
       <span>Back</span>
     </button>}
       </ul>
-      
+
       </nav>
     </header>
   );
