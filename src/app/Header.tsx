@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Arrow } from './common';
 import { FaBars } from "react-icons/fa6";
+import Link from 'next/link';
 
 
 function Header() {
@@ -17,7 +18,7 @@ window.addEventListener('resize', handleResize)
 
   return (
     <header className=" scroll-smooth flex justify-between py-6 px-6 bg-neutral-50 text-neutral-900 shadow-md">
-      <img src="/praxio.svg" alt="Image Description" className="w-32" />
+      <Link href="/"><img src="/praxio.svg" alt="Image Description" className="w-32" /></Link>
       <nav>
         {innerWidth < 630 && !click && <div className='text-red-600 right-0  w-8 text-center cursor-pointer text-2xl font-medium rounded'
           onClick={()=>setClick(true)}>
