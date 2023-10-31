@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./common/Card";
+import Card from "../common/Card";
 function Services() {
   return (
     <section id="services" className="py-10  ">

@@ -5,7 +5,7 @@ import { Controller, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { Swiper as SwiperType } from "swiper";
-import { Button } from "./common";
+import { Button } from "../common";
 
 const phrases = [
   {

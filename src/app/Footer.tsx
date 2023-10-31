@@ -20,7 +20,7 @@ export default function Footer() {
 
             <div className='md:w-6/12 grid gap-3'>
               <Link href="">Resources</Link>
-              <Link href="">news Letter</Link>
+              <Link href="">News Letter</Link>
               <Link href="">Careers</Link>
               <Link href="">Contact</Link>
             </div>

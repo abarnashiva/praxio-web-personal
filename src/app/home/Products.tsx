@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./common/Card";
+import Card from "../common/Card";
 
 function Products() {
   return (
@@ -28,7 +28,7 @@ function Products() {
           }
         />
 
-        {/* 
+        {/*
                 <div className="flex-1 flex flex-col gap-3 p-5 border">
           <div className="w-full h-64 bg-neutral-200">image</div>
           <h3 className="text-xl">Product 1</h3>
