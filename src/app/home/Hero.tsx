@@ -5,23 +5,45 @@ import { Controller, Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-fade";
 import { Swiper as SwiperType } from "swiper";
-import { Button } from "../common";
+import { Button } from "../common/Button";
 
 const phrases = [
   {
-    label: "Vision AI",
-    image: "vision AI image",
-    description: "Crafting the future, one pixel at a time",
+    label: "Visual Intelligence",
+    heading: "Elevate Your Understanding with",
+    image: `${"./images/vision-ai.jpg"}`,
+    description:
+      "At PRAXIO, we use Visual Intelligence to swiftly transform data into meaningful insights, providing clarity in a world of information overload and empowering your decision-making process.",
+    shortDescription: "See Beyond with Visual Artificial Intelligence",
+    name: "Explore Visual Intelligence Now",
   },
   {
     label: "IoT Solutions",
-    image: "IoT image",
-    description: "Connecting Tomorrow, Today: Unleash the Power of IoT",
+    heading: "Unlock the Future with seamless",
+    image: "./images/iot-solution.jpg",
+    description:
+      "At PRAXIO, our IoT solutions redefine connectivity, communication, and creation. Enter a realm where devices collaborate effortlessly, data transforms into actionable insights, and innovation knows no bounds.",
+    shortDescription: "Connecting the World, One Device at a Time",
+    name: "Explore our IOT Solutions",
   },
   {
     label: "Smart City Solutions",
-    image: "smart city image",
-    description: "The blueprint for tomorrow’s cities starts here",
+    heading: "Discover Seamless",
+    image: "./images/smart-city.jpg",
+    description:
+      "At PRAXIO, our IoT solutions redefine connectivity, communication, and creation. Enter a realm where devices collaborate effortlessly, data transforms into actionable insights, and innovation knows no bounds.",
+    shortDescription: "Connecting Cities, Empowering Communities",
+    name: "Explore our Smart City Solutions",
+  },
+  {
+    label: "Rapid Prototyping",
+    heading: "Unleash Your Ideas Faster with",
+    image: "./images/rapid-prototyping.png",
+    description:
+      "At PRAXIO where innovation meets speed. Break through the barriers of traditional development and bring your ideas to life swiftly with our cutting-edge rapid prototyping solutions",
+    shortDescription:
+      "Accelerates product development by quickly creating and testing initial design concepts",
+    name: "Explore our Rapid Prototype Solutions",
   },
 ];
 
@@ -63,12 +85,20 @@ const Hero: React.FC = () => {
           <SwiperSlide key={index}>
             <div className="flex flex-wrap">
               <div className=" flex-1 flex flex-col min-w-[20rem] items-start gap-4 py-24 px-7">
-                <h1 className="text-5xl">{phrase.label}</h1>
-                <p className="">{phrase.description}</p>
-                <Button text="Learn More" />
+                <text className="text-lg font-semibold opacity-75">
+                  {phrase.heading}
+                </text>
+                <h1 className="text-5xl text-primary font-semibold">
+                  {phrase.label}
+                </h1>
+                <div className="h-16">{phrase.description}</div>
+                <Button text={phrase.name} />
               </div>
-              <div className=" flex-1 flex min-w-[20rem] h-[clamp(25rem,_60vw,_700px)] bg-gray-200">
-                <p className="m-auto">{phrase.image}</p>
+              <div className=" flex-1 flex min-w-[20rem] h-[clamp(25rem,_60vw,_700px)]">
+                <img
+                  src={phrase.image}
+                  className="object-cover w-full my-4"
+                />
               </div>
             </div>
           </SwiperSlide>
@@ -94,7 +124,10 @@ const Hero: React.FC = () => {
                   active === index ? "bg-red-400" : "bg-gray-400"
                 } mb-2`}
               ></div>
-              <h1 className="text-xl">{phrase.label}</h1>
+              <h1 className="text-xl font-medium hover:cursor-pointer">
+                {phrase.label}
+              </h1>
+              <p className="hover:cursor-pointer">{phrase.shortDescription}</p>
             </SwiperSlide>
           ))}
         </Swiper>

@@ -8,7 +8,7 @@ interface CardProps {
 
 export default function Card({ header, imgSrc, content }: CardProps) {
   return (
-    <div>
+    <div className="md:w-4/12">
       <div className="relative mx-auto card p-5 w-auto bg-white shadow-md transition-transform duration-500 ease-linear cursor-pointer hover:shadow-lg">
         <div>
           <div className={`transition-all`}>
