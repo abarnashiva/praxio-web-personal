@@ -38,7 +38,7 @@ const phrases = [
   {
     label: "Rapid Prototyping",
     heading: "Unleash Your Ideas Faster with",
-    image: "./images/rapid-prototyping.png",
+    image: "./images/rapid-prototyping.jpg",
     description:
       "At PRAXIO where innovation meets speed. Break through the barriers of traditional development and bring your ideas to life swiftly with our cutting-edge rapid prototyping solutions",
     shortDescription:
