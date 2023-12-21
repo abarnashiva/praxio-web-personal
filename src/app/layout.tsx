@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Header from './Header'
 import Footer from './Footer'
+import Box from './common/Box'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <div className="font-sans min-h-screen text-gray-900 bg-white flex flex-col">
           <Header />
           {children}
+          <Box />
           <div className="mt-auto">
           <Footer />
           </div>
