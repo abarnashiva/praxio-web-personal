@@ -12,7 +12,7 @@ export default function Paragraph({ children }: ParagraphProps) {
       {words.map((word, index) => (
         <span
           key={index}
-          className={`${word === "PRAXIO" ? "font-bold text-lg" : ""}`}
+          className={`${word === "PRAXIO" ? "font-semibold" : ""}`}
         >
           {word}{" "}
         </span>
