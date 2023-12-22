@@ -5,7 +5,7 @@ import Content from "./content";
 export default function Service() {
   return (
     <>
-      <div className="lg:p-16 p-5 w-full">
+      <div>
         <Content />
       </div>
     </>

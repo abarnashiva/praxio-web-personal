@@ -23,13 +23,13 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="font-sans min-h-screen text-gray-900 bg-white flex flex-col">
           <Header />
-          {children}
+          <div className='container mx-auto'>{children}</div>
           <Box />
           <div className="mt-auto">
-          <Footer />
+            <Footer />
           </div>
         </div>
       </body>
     </html>
-  )
+  );
 }

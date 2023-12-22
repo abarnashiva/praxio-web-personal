@@ -5,7 +5,7 @@ import Content from "./content";
 export default function Service() {
   return (
     <>
-      <div className="container mx-auto pt-4">
+      <div>
         <Content />
       </div>
     </>
