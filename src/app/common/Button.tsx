@@ -34,5 +34,19 @@ const SecondaryButton: React.FC<{ text: string; outline?: boolean }> = (props) =
   );
 };
 
-export { Button, SecondaryButton };
+const SimpleButton: React.FC<{ text: string; outline?: boolean }> = (props) => {
+  const baseStyles = `group flex items-center shadow-sm shadow-neutral-500 px-5 py-3 transition-all  border-2 border-primary `;
+  const filledStyles = `bg-primary-500 hover:bg-primary-400 text-white`;
+  const outlinedStyles = ` hover:border-primary-400 text-primary`;
+  const btnStyles = `${baseStyles} ${
+    props.outline ? outlinedStyles : filledStyles
+  } my-4 mx-auto`;
+  return (
+    <button className={`${btnStyles}`}>
+      <span>{props.text}</span>
+    </button>
+  );
+};
+
+export { Button, SecondaryButton, SimpleButton };
 
