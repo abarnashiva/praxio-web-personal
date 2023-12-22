@@ -1,6 +1,9 @@
 import React from "react";
 import { Button } from "../../common/Button";
 import ReactMarkdown from "react-markdown";
+import Heading from "@/app/components/Heading";
+import Paragraph from "@/app/components/Paragraph";
+import SubHeading from "@/app/components/SubHeading";
 
 const markdownContent = `
 
@@ -30,46 +33,42 @@ Rapid Prototyping & Development is a process that quickly creates a scaled-down 
 
 export default function Content() {
   return (
-    <div className="container mx-auto">
-      <div className="p-4 my-6 md:my-12">
-        <h1 className="text-2xl md:text-4xl text-primary font-semibold">
-          Rapid Prototyping & Development
-        </h1>
-        <p className="mt-2">
-          Turning ideas into tangible solutions swiftly and efficiently,
-          fostering innovation and product evolution.
-        </p>
+    <div>
+      <Heading>Rapid Prototyping & Development</Heading>
+      <Paragraph>
+        Turning ideas into tangible solutions swiftly and efficiently, fostering
+        innovation and product evolution.
+      </Paragraph>
 
-        <h2 className="text-xl md:text-2xl text-primary mt-6 font-semibold">
-          Accelerating Ideas to Reality: Rapid Prototyping & Development
-          Solutions
-        </h2>
-        <p className="mt-2">
-          At <text className="font-semibold">PRAXIO,</text> we specialize in
-          turning concepts into reality at an unmatched pace. Our Rapid
-          Prototyping & Development services empower businesses to innovate,
-          iterate, and bring their products to market faster than ever before.
-          Whether you{`'`}re a startup with a groundbreaking idea or an established
-          enterprise seeking swift product enhancements, our expert team is here
-          to transform your visions into tangible, high-quality prototypes and
-          products.
-        </p>
+      <SubHeading>
+        Accelerating Ideas to Reality: Rapid Prototyping & Development Solutions
+      </SubHeading>
 
-        <div className="my-8">
-          <Button text={"Start Your Project"}></Button>
-        </div>
+      <Paragraph>
+        At PRAXIO, we specialize in
+        turning concepts into reality at an unmatched pace. Our Rapid
+        Prototyping & Development services empower businesses to innovate,
+        iterate, and bring their products to market faster than ever before.
+        Whether you{`'`}re a startup with a groundbreaking idea or an
+        established enterprise seeking swift product enhancements, our expert
+        team is here to transform your visions into tangible, high-quality
+        prototypes and products.
+      </Paragraph>
 
-        <ReactMarkdown
-          components={{
-            h2: ({ node, ...props }) => (
-              <h2 className="text-primary font-semibold text-lg" {...props} />
-            ),
-            p: ({ node, ...props }) => <p className="my-4" {...props} />,
-          }}
-        >
-          {markdownContent}
-        </ReactMarkdown>
-      </div>
+      <Button text={"Start Your Project"}></Button>
+
+      <ReactMarkdown
+        components={{
+          h2: ({ node, ...props }) => (
+            <h2 className="text-primary font-bold text-lg py-3" {...props} />
+          ),
+          p: ({ node, ...props }) => (
+            <p className="text-gray-700 py-4" {...props} />
+          ),
+        }}
+      >
+        {markdownContent}
+      </ReactMarkdown>
     </div>
   );
 }

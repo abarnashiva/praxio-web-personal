@@ -1,6 +1,8 @@
 import React from "react";
 import { Button } from "../../common/Button";
 import ReactMarkdown from "react-markdown";
+import Heading from "@/app/components/Heading";
+import SubContent from "@/app/components/SubContent";
 
 const markdownContent = `
 
@@ -33,31 +35,27 @@ and understand images and videos.
 
 export default function Content() {
   return (
-    <div className="container mx-auto">
-      <div className="p-4 my-6 md:my-12">
-        <h1 className="text-2xl md:text-4xl text-primary font-semibold">
-          Visual Intelligence
-        </h1>
-        <p className="mt-2">
-          <text className="font-semibold">Visual Intelligence</text> enables machines to understand and
-          interpret visual information.
-        </p>
+    <div>
+      <Heading>Visual Intelligence</Heading>
+      <SubContent>
+        Visual Intelligence enables machines to understand and interpret visual
+        information.
+      </SubContent>
 
-        <div className="my-8">
-          <Button text={"Start Your Project"}></Button>
-        </div>
+      <Button text={"Start Your Project"}></Button>
 
-        <ReactMarkdown
-          components={{
-            h2: ({ node, ...props }) => (
-              <h2 className="text-primary font-semibold text-lg" {...props} />
-            ),
-            p: ({ node, ...props }) => <p className="my-4" {...props} />,
-          }}
-        >
-          {markdownContent}
-        </ReactMarkdown>
-      </div>
+      <ReactMarkdown
+        components={{
+          h2: ({ node, ...props }) => (
+            <h2 className="text-primary font-bold text-lg py-3" {...props} />
+          ),
+          p: ({ node, ...props }) => (
+            <p className="text-gray-700 py-4" {...props} />
+          ),
+        }}
+      >
+        {markdownContent}
+      </ReactMarkdown>
     </div>
   );
 }

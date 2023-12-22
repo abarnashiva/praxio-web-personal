@@ -1,6 +1,9 @@
 import React from "react";
 import { Button } from "../../common/Button";
 import ReactMarkdown from "react-markdown";
+import Heading from "@/app/components/Heading";
+import Paragraph from "@/app/components/Paragraph";
+import SubHeading from "@/app/components/SubHeading";
 
 const markdownContent = `
 
@@ -28,44 +31,39 @@ Smart city solutions integrate advanced technologies and data analytics to enhan
 
 export default function Content() {
   return (
-    <div className="container mx-auto">
-      <div className="p-4 my-6 md:my-12">
-        <h1 className="text-2xl md:text-4xl text-primary font-semibold">
-          Smart City Development Solutions
-        </h1>
-        <p className="mt-2">
-          Harnessing technology for sustainable urban growth, enhanced citizen
-          services, and efficient municipal management.
-        </p>
+    <div>
+      <Heading>Smart City Development Solutions</Heading>
+      <Paragraph>
+        Harnessing technology for sustainable urban growth, enhanced citizen
+        services, and efficient municipal management.
+      </Paragraph>
 
-        <h2 className="text-xl md:text-2xl text-primary mt-6 font-semibold">
-          Empowering Smarter Futures: Our Smart City Development Solutions
-        </h2>
-        <p className="mt-2">
-          At <text className="font-semibold">PRAXIO,</text> we specialize in
-          cutting-edge Smart City Development Solutions designed to transform
-          urban landscapes into efficient, connected, and eco-friendly
-          environments. Our expert team of urban planners, engineers, and
-          technology innovators collaborates to implement comprehensive
-          solutions that enhance quality of life, improve infrastructure, and
-          foster economic growth.
-        </p>
+      <SubHeading>
+        Empowering Smarter Futures: Our Smart City Development Solutions
+      </SubHeading>
+      <Paragraph>
+        At PRAXIO, we specialize in cutting-edge Smart City Development
+        Solutions designed to transform urban landscapes into efficient,
+        connected, and eco-friendly environments. Our expert team of urban
+        planners, engineers, and technology innovators collaborates to implement
+        comprehensive solutions that enhance quality of life, improve
+        infrastructure, and foster economic growth.
+      </Paragraph>
 
-        <div className="my-8">
-          <Button text={"Start Your Project"}></Button>
-        </div>
+      <Button text={"Start Your Project"}></Button>
 
-        <ReactMarkdown
-          components={{
-            h2: ({ node, ...props }) => (
-              <h2 className="text-primary font-semibold text-lg" {...props} />
-            ),
-            p: ({ node, ...props }) => <p className="my-4" {...props} />,
-          }}
-        >
-          {markdownContent}
-        </ReactMarkdown>
-      </div>
+      <ReactMarkdown
+        components={{
+          h2: ({ node, ...props }) => (
+            <h2 className="text-primary font-bold text-lg py-3" {...props} />
+          ),
+          p: ({ node, ...props }) => (
+            <p className="text-gray-700 py-4" {...props} />
+          ),
+        }}
+      >
+        {markdownContent}
+      </ReactMarkdown>
     </div>
   );
 }

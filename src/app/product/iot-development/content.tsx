@@ -1,6 +1,10 @@
 import React from "react";
 import { Button } from "../../common/Button";
 import ReactMarkdown from "react-markdown";
+import Heading from "@/app/components/Heading";
+import SubContent from "@/app/components/SubContent";
+import SubHeading from "@/app/components/SubHeading";
+import Paragraph from "@/app/components/Paragraph";
 
 const markdownContent = `
 
@@ -28,45 +32,39 @@ Internet of Things, works by connecting everyday devices to the internet, allowi
 
 export default function Content() {
   return (
-    <div className="container mx-auto">
-      <div className="p-4 my-6 md:my-12">
-        <h1 className="text-2xl md:text-4xl text-primary font-semibold">
-          IoT Integration Development
-        </h1>
-        <p className="mt-2">
-          IoT transforms the way we interact with the world, making our lives
-          more convenient, efficient, and connected.
-        </p>
+    <div>
+      <Heading>IoT Integration Development</Heading>
+      <SubContent>
+        IoT transforms the way we interact with the world, making our lives more
+        convenient, efficient, and connected.
+      </SubContent>
 
-        <h2 className="text-xl md:text-2xl text-primary mt-6 font-semibold">
-          Connecting Your World, Enhancing Your Life: Embrace the IoT
-          Revolution!
-        </h2>
-        <p className="mt-2">
-          At <text className="font-semibold">PRAXIO,</text>we empower
-          businesses to thrive in the digital age with our cutting-edge IoT
-          Integration Development services. In an era where connectivity is
-          paramount, our expert team specializes in seamlessly integrating smart
-          devices, sensors, and systems, creating intelligent ecosystems that
-          drive efficiency, enhance user experiences, and unlock unprecedented
-          possibilities.
-        </p>
+      <SubHeading>
+        Connecting Your World, Enhancing Your Life: Embrace the IoT Revolution!
+      </SubHeading>
 
-        <div className="my-8">
-          <Button text={"Start Your Project"}></Button>
-        </div>
+      <Paragraph>
+        At PRAXIO,we empower businesses to thrive in the digital age with our
+        cutting-edge IoT Integration Development services. In an era where
+        connectivity is paramount, our expert team specializes in seamlessly
+        integrating smart devices, sensors, and systems, creating intelligent
+        ecosystems that drive efficiency, enhance user experiences, and unlock
+        unprecedented possibilities.
+      </Paragraph>
+      <Button text={"Start Your Project"}></Button>
 
-        <ReactMarkdown
-          components={{
-            h2: ({ node, ...props }) => (
-              <h2 className="text-primary font-semibold text-lg" {...props} />
-            ),
-            p: ({ node, ...props }) => <p className="my-4" {...props} />,
-          }}
-        >
-          {markdownContent}
-        </ReactMarkdown>
-      </div>
+      <ReactMarkdown
+        components={{
+          h2: ({ node, ...props }) => (
+            <h2 className="text-primary font-bold text-lg py-3" {...props} />
+          ),
+          p: ({ node, ...props }) => (
+            <p className="text-gray-700 py-4" {...props} />
+          ),
+        }}
+      >
+        {markdownContent}
+      </ReactMarkdown>
     </div>
   );
 }
