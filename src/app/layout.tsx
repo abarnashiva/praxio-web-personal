@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="font-sans min-h-screen text-gray-900 bg-white flex flex-col">
           <Header />
-          <div className='container mx-auto'>{children}</div>
+          <div className='p-6'>{children}</div>
           <div className="mt-auto">
             <Footer />
           </div>
