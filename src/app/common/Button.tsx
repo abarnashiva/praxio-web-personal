@@ -6,7 +6,7 @@ const Button: React.FC<{ text: string; outline?: boolean }> = (props) => {
   const outlinedStyles = ` hover:border-primary-400 text-primary`;
   const btnStyles = `${baseStyles} ${
     props.outline ? outlinedStyles : filledStyles
-  }`;
+  } my-4`;
   return (
     <button className={`${btnStyles}`}>
       <span>{props.text}</span>
@@ -23,7 +23,7 @@ const SecondaryButton: React.FC<{ text: string; outline?: boolean }> = (props) =
   const outlinedStyles = ` hover:border-primary-400 text-primary`;
   const btnStyles = `${baseStyles} ${
     props.outline ? outlinedStyles : filledStyles
-  }`;
+  } my-4`;
   return (
     <button className={`${btnStyles}`}>
       <span>{props.text}</span>
