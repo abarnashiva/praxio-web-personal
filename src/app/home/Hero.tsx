@@ -6,6 +6,14 @@ import "swiper/css";
 import "swiper/css/effect-fade";
 import { Swiper as SwiperType } from "swiper";
 import { Button } from "../common/Button";
+import MainHeading from "../components/MainHeading";
+import Paragraph from "../components/Paragraph";
+import Heading from "../components/Heading";
+import HeroImage from "../components/HeroImage";
+import HeroText from "../components/HeroText";
+import HeroContent from "../components/HeroContent";
+import FlexBox from "../components/FlexBox";
+import HeroSwipe from "../components/HeroSwipe";
 
 const phrases = [
   {
@@ -83,28 +91,21 @@ const Hero: React.FC = () => {
       >
         {phrases.map((phrase, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-wrap">
-              <div className=" flex-1 flex flex-col min-w-[20rem] items-start gap-4 py-24 px-7">
-                <text className="text-lg font-semibold opacity-75">
+            <FlexBox normal>
+              <HeroContent>
+                <HeroText>
                   {phrase.heading}
-                </text>
-                <h1 className="text-5xl text-primary font-semibold">
-                  {phrase.label}
-                </h1>
-                <div className="h-16">{phrase.description}</div>
+                </HeroText>
+                <MainHeading>{phrase.label}</MainHeading>
+                <Paragraph>{phrase.description}</Paragraph>
                 <Button text={phrase.name} />
-              </div>
-              <div className=" flex-1 flex min-w-[20rem] h-[clamp(25rem,_60vw,_700px)]">
-                <img
-                  src={phrase.image}
-                  className="object-cover w-full my-4"
-                />
-              </div>
-            </div>
+              </HeroContent>
+              <HeroImage source={phrase.image}></HeroImage>
+            </FlexBox>
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="w-full bg-red-100 p-7">
+      <HeroSwipe>
         <Swiper
           spaceBetween={50}
           slidesPerView={phrases.length}
@@ -124,14 +125,12 @@ const Hero: React.FC = () => {
                   active === index ? "bg-red-400" : "bg-gray-400"
                 } mb-2`}
               ></div>
-              <h1 className="text-xl font-medium hover:cursor-pointer">
-                {phrase.label}
-              </h1>
-              <p className="hover:cursor-pointer">{phrase.shortDescription}</p>
+              <Heading black>{phrase.label}</Heading>
+              <Paragraph>{phrase.shortDescription}</Paragraph>
             </SwiperSlide>
           ))}
         </Swiper>
-      </div>
+      </HeroSwipe>
     </div>
   );
 };
