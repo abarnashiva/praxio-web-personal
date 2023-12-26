@@ -1,11 +1,13 @@
 import React from "react";
 import Content from "./content";
 import Box from "@/app/common/Box";
+import ContainerBox from "@/app/components/ContainerBox";
 
 export default function VisualIntelligence() {
 	return (
-    <div className="container mx-auto p-4 my-6 md:my-12">
+    <ContainerBox>
       <Content />
-    </div>
+      <Box />
+    </ContainerBox>
   );
 }

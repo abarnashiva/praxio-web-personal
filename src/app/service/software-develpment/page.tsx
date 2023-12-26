@@ -1,14 +1,13 @@
 import React from "react";
 import Content from "./content";
 import Box from "@/app/common/Box";
+import ContainerBox from "@/app/components/ContainerBox";
 
 export default function Service() {
   return (
-    <>
-      <div>
-        <Content />
-        <Box />
-      </div>
-    </>
+    <ContainerBox>
+      <Content />
+      <Box />
+    </ContainerBox>
   );
 }
