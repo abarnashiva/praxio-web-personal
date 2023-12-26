@@ -1,13 +1,31 @@
-import Link from 'next/link';
-import React from 'react';
-import { MdOutlinePhone, MdOutlineEmail } from "react-icons/md"
+import Link from "next/link";
+import React from "react";
+import { MdOutlinePhone, MdOutlineEmail } from "react-icons/md";
+import FlexSocial from "./components/FlexSocial";
+import Icons from "./components/Icons";
+import { FaFacebookF } from "react-icons/fa";
+import { BsInstagram, BsLinkedin } from "react-icons/bs";
+import Paragraph from "./components/Paragraph";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white">
       <div className="flex flex-wrap p-4 md:p-6 lg:p-8">
-        <div className="md:w-3/12">
-          <img src="" alt="logo" />
+        <div className="md:w-3/12 my-auto flex justify-center">
+          <div>
+            <img src="/footer-logo.svg" alt="logo" className="w-40" />
+            <FlexSocial centerAlign>
+              <Icons white small>
+                <FaFacebookF />
+              </Icons>
+              <Icons white small>
+                <BsInstagram />
+              </Icons>
+              <Icons white small>
+                <BsLinkedin />
+              </Icons>
+            </FlexSocial>
+          </div>
         </div>
 
         <div className="md:w-6/12">
@@ -61,11 +79,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="py-3 border-t-2 border-[##FFFFFF]">
-        <p className="mx-auto">
-          Copyright © 2023 PRAXIO IT CONSULTING PRIVATE LIMITED,
-        </p>
-      </div>
+      <Paragraph whiteText>
+        Copyright © 2023 Praxio IT Consulting Private Limited,
+      </Paragraph>
     </footer>
   );
 }
