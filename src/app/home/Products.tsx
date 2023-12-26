@@ -1,43 +1,57 @@
 import React from "react";
 import Card from "../common/Card";
+import Heading from "../components/Heading";
+import FlexBox from "../components/FlexBox";
+import List from "../components/List";
+import ProductImage from "../components/ProductImage";
+
+const product1 = [
+  { key: 1, content: "Hardware Platforms" },
+  { key: 2, content: "Software Algorithms & Tools" },
+  { key: 3, content: "Deployment Scenarios" },
+];
+
+const product2 = [
+  { key: 1, content: "IoT Hardware Modules" },
+  { key: 2, content: "IoT Software & Platform Integration" },
+];
+
+const product3 = [
+  { key: 1, content: "Hardware Modules for Infrastructure" },
+  { key: 2, content: "Software for Urban Management & Analysis" },
+];
 
 export default function Products() {
   return (
     <section id="products" className="py-10">
-      <h2 className="text-center text-2xl mb-8 ">Our Products and Solutions</h2>
-      <div className="flex gap-6 px-7">
+      <Heading center margin>
+        Products that Empower
+      </Heading>
+      <FlexBox>
         <Card
-          imgSrc={<div className="w-full h-64 bg-neutral-200">image</div>}
-          header={"Title of the Above Image"}
-          content={
-            <ul className="list-disc list-inside h-20">
-              <li className="">Hardware Platforms</li>
-              <li className="">Software Algorithms & Tools</li>
-              <li className="">Deployment Scenarios</li>
-            </ul>
+          imgSrc={
+            <ProductImage
+              source={"./images/visual-intelligence.jpg"}
+            ></ProductImage>
           }
+          header={"Title of the Above Image"}
+          content={<List items={product1}></List>}
         />
         <Card
-          imgSrc={<div className="w-full h-64 bg-neutral-200">image</div>}
-          header={"Title of the Above Image"}
-          content={
-            <ul className="list-disc list-inside h-20">
-              <li className="">IoT Hardware Modules</li>
-              <li className="">IoT Software & Platform Integration</li>
-            </ul>
+          imgSrc={
+            <ProductImage source={"./images/management.jpg"}></ProductImage>
           }
+          header={"Title of the Above Image"}
+          content={<List items={product2}></List>}
         />
         <Card
-          imgSrc={<div className="w-full h-64 bg-neutral-200">image</div>}
-          header={"Title of the Above Image"}
-          content={
-            <ul className="list-disc list-inside h-20">
-              <li className="">Hardware Modules for Infrastructure</li>
-              <li className="">Software for Urban Management & Analysis</li>
-            </ul>
+          imgSrc={
+            <ProductImage source={"./images/smart-solution.jpg"}></ProductImage>
           }
+          header={"Title of the Above Image"}
+          content={<List items={product3}></List>}
         />
-      </div>
+      </FlexBox>
     </section>
   );
 }

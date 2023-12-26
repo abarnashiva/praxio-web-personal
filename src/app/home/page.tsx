@@ -4,6 +4,7 @@ import Hero from './Hero'
 import Products from './Products'
 import Services from './Services'
 import CenteredBoxWithButton from '../common/Box'
+import Box from '../common/Box'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <FutureTechnology />
         <Products />
         <Services />
+        <Box />
     </div>
   )
 }
