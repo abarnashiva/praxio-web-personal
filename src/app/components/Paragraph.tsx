@@ -4,15 +4,21 @@ interface ParagraphProps {
   children: React.ReactNode;
   large?: boolean;
   whiteText?: boolean;
+  footerText?: boolean;
 }
 
-export default function Paragraph({ children, large, whiteText }: ParagraphProps) {
+export default function Paragraph({ children, large, whiteText, footerText }: ParagraphProps) {
   const words = React.Children.toArray(children).join(" ").split(" ");
-  const largeAlign = large ? "text-lg" : "";
-  const whiteTexts = whiteText ? "text-white text-center my-4" : "";
+  const defaultText = large
+    ? "text-lg"
+    : whiteText
+    ? "text-white text-center py-4"
+    : footerText
+    ? "text-white leading-7"
+    : "text-gray-700 py-4";
 
   return (
-    <p className={`text-gray-700 py-4 ${largeAlign} ${whiteTexts}`}>
+    <p className={`${defaultText}`}>
       {words.map((word, index) => (
         <span
           key={index}
