@@ -14,6 +14,7 @@ import HeroText from "../components/HeroText";
 import HeroContent from "../components/HeroContent";
 import FlexBox from "../components/FlexBox";
 import HeroSwipe from "../components/HeroSwipe";
+import { useRouter } from "next/navigation";
 
 const phrases = [
   {
@@ -24,6 +25,7 @@ const phrases = [
       "At PRAXIO, we use Visual Intelligence to swiftly transform data into meaningful insights, providing clarity in a world of information overload and empowering your decision-making process.",
     shortDescription: "See Beyond with Visual Artificial Intelligence",
     name: "Explore Visual Intelligence Now",
+    url: "/product/visual-intelligence",
   },
   {
     label: "IoT Solutions",
@@ -33,6 +35,7 @@ const phrases = [
       "At PRAXIO, our IoT solutions redefine connectivity, communication, and creation. Enter a realm where devices collaborate effortlessly, data transforms into actionable insights, and innovation knows no bounds.",
     shortDescription: "Connecting the World, One Device at a Time",
     name: "Explore our IOT Solutions",
+    url: "/product/iot-development",
   },
   {
     label: "Smart City Solutions",
@@ -42,6 +45,7 @@ const phrases = [
       "At PRAXIO, our IoT solutions redefine connectivity, communication, and creation. Enter a realm where devices collaborate effortlessly, data transforms into actionable insights, and innovation knows no bounds.",
     shortDescription: "Connecting Cities, Empowering Communities",
     name: "Explore our Smart City Solutions",
+    url: "/product/smart-city",
   },
   {
     label: "Rapid Prototyping",
@@ -52,6 +56,7 @@ const phrases = [
     shortDescription:
       "Accelerates product development by quickly creating and testing initial design concepts",
     name: "Explore our Rapid Prototype Solutions",
+    url: "/product/rapid-prototyping",
   },
 ];
 
@@ -72,6 +77,7 @@ const Hero: React.FC = () => {
   const [firstSwiper, setFirstSwiper] = React.useState<SwiperType>();
   const [secondSwiper, setSecondSwiper] = React.useState<SwiperType>();
   const [active, setActive] = React.useState<number>(0);
+  const router = useRouter();
 
   firstSwiper?.on("slideChange", (swiper) => {
     setActive(swiper.realIndex);
@@ -93,12 +99,13 @@ const Hero: React.FC = () => {
           <SwiperSlide key={index}>
             <FlexBox normal>
               <HeroContent>
-                <HeroText>
-                  {phrase.heading}
-                </HeroText>
+                <HeroText>{phrase.heading}</HeroText>
                 <MainHeading>{phrase.label}</MainHeading>
                 <Paragraph>{phrase.description}</Paragraph>
-                <Button text={phrase.name} />
+                <Button
+                  text={phrase.name}
+                  onClick={() => router.push(`${phrase.url}`)}
+                />
               </HeroContent>
               <HeroImage source={phrase.image}></HeroImage>
             </FlexBox>

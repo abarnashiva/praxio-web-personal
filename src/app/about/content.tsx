@@ -5,33 +5,16 @@ import SubContent from "../components/SubContent";
 import SubHeading from "../components/SubHeading";
 import Paragraph from "../components/Paragraph";
 import SemiHeading from "../components/SemiHeading";
-import { createFormItem } from "../components/FormItem";
-import TextInput from "../components/Input";
-import Select from "../components/Select";
-import { useForm } from "react-hook-form";
 import { Button } from "../common/Button";
 import FlexContent from "../components/FlexContent";
 import CardContent from "../components/Cardcontent";
 import NumberUnFill from "../components/Numberunfill";
+import { useRouter } from "next/navigation";
 
 export default function Content() {
-  const {
-    control,
-    formState: { errors },
-  } = useForm({
-    mode: "onBlur",
-    reValidateMode: "onChange",
-  });
 
-  const FormInput = React.useMemo(
-    () => createFormItem(control, errors, TextInput),
-    [control, errors]
-  );
+  const router = useRouter();
 
-  const FormSelect = React.useMemo(
-    () => createFormItem(control, errors, Select),
-    [control, errors]
-  );
   return (
     <div>
       <Heading>About US</Heading>
@@ -51,7 +34,7 @@ export default function Content() {
         nature harmoniously coexist, and we&#39;re dedicated to making that
         vision a reality.
       </Paragraph>
-      <Button text={"Contact Us"} />
+      <Button text={"Contact Us"} onClick={() => router.push(`/contact`)} />
       <SemiHeading>Mission</SemiHeading>
       <Paragraph>
         To integrate pioneering technologies with urban development, providing

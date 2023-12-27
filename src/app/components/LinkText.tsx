@@ -8,7 +8,7 @@ interface LinkTextProps {
 export default function LinkText({ children }: LinkTextProps) {
   return (
     <>
-      <Link className="contents text-primary font-semibold cursor-pointer" href={""}>
+      <Link className="contents text-primary font-semibold cursor-pointer" href={"/about"}>
         {children}
       </Link>
     </>
