@@ -9,7 +9,6 @@ import { BsInstagram, BsLinkedin } from "react-icons/bs";
 import Paragraph from "./components/Paragraph";
 import FlexBox from "./components/FlexBox";
 import FlexContent from "./components/FlexContent";
-import SemiHeading from "./components/SemiHeading";
 import SubHeading from "./components/SubHeading";
 
 export default function Footer() {
@@ -75,7 +74,7 @@ export default function Footer() {
           </FlexContent>
         </div>
         <div>
-          <SemiHeading whiteText>Products & Solutions</SemiHeading>
+          <SubHeading whiteText>Products & Solutions</SubHeading>
           <FlexContent normal>
             <Link href="/product/visual-intelligence">Visuals Intelligence Platform</Link>
             <Link href="/product/iot-development">IoT Management Platform</Link>
@@ -84,7 +83,7 @@ export default function Footer() {
           </FlexContent>
         </div>
         <div>
-          <SemiHeading whiteText>Service</SemiHeading>
+          <SubHeading whiteText>Services</SubHeading>
           <FlexContent normal>
             <Link href="/service/hardware-design">Custom Hardware Design & Prototyping</Link>
             <Link href="/service/software-development">Custom Software Development & Integration</Link>
@@ -117,7 +116,7 @@ export default function Footer() {
       </FlexBox>
 
       <Paragraph whiteText>
-        Copyright © 2023 Praxio IT Consulting Private Limited,
+        Copyright © 2023 Praxio IT Consulting Private Limited
       </Paragraph>
     </footer>
   );
