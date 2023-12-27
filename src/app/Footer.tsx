@@ -68,28 +68,28 @@ export default function Footer() {
         <div>
           <SubHeading whiteText>Quick Links</SubHeading>
           <FlexContent normal>
-            <Link href="">Home</Link>
-            <Link href="">About Us</Link>
-            <Link href="">Contact</Link>
-            <Link href="">Support</Link>
+            <Link href="/home">Home</Link>
+            <Link href="/about">About Us</Link>
+            <Link href="/contact">Contact</Link>
+            <Link href="/support">Support</Link>
           </FlexContent>
         </div>
         <div>
           <SemiHeading whiteText>Products & Solutions</SemiHeading>
           <FlexContent normal>
-            <Link href="">Visuals Intelligence Platform</Link>
-            <Link href="">IoT Management Platform</Link>
-            <Link href="">Smart City Solutions</Link>
-            <Link href="">Rapid Prototyping</Link>
+            <Link href="/product/visual-intelligence">Visuals Intelligence Platform</Link>
+            <Link href="/product/iot-development">IoT Management Platform</Link>
+            <Link href="/product/smart-city">Smart City Solutions</Link>
+            <Link href="/product/rapid-prototyping">Rapid Prototyping</Link>
           </FlexContent>
         </div>
         <div>
           <SemiHeading whiteText>Service</SemiHeading>
           <FlexContent normal>
-            <Link href="">Custom Hardware Design & Prototyping</Link>
-            <Link href="">Custom Software Development & Integration</Link>
-            <Link href="">Testing & Quality Assurance</Link>
-            <Link href="">Deployment & Scalability</Link>
+            <Link href="/service/hardware-design">Custom Hardware Design & Prototyping</Link>
+            <Link href="/service/software-development">Custom Software Development & Integration</Link>
+            <Link href="/service/testing-quality">Testing & Quality Assurance</Link>
+            <Link href="/service/deployment">Deployment & Scalability</Link>
           </FlexContent>
         </div>
         <FlexContent normal>
