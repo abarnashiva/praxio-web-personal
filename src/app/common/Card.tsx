@@ -4,16 +4,13 @@ interface CardProps {
   header?: React.ReactNode;
   imgSrc?: React.ReactNode;
   content?: React.ReactNode;
-  small?: boolean;
 }
 
-export default function Card({ header, imgSrc, content, small }: CardProps) {
-  const smallAlign = small ? "min-h-[400px]" : "";
-
+export default function Card({ header, imgSrc, content }: CardProps) {
   return (
-    <div className="md:w-4/12">
+    <div className="h-auto">
       <div
-        className={`relative mx-auto card p-5 w-auto bg-white shadow-md transition-transform duration-500 ease-linear cursor-pointer hover:shadow-lg ${!smallAlign && "min-h-[520px]" } ${smallAlign}`}
+        className={`relative card p-5 w-auto bg-white shadow-md h-full transition-transform duration-500 ease-linear cursor-pointer hover:shadow-lg `}
       >
         <div>
           <div className={`transition-all`}>
@@ -25,7 +22,7 @@ export default function Card({ header, imgSrc, content, small }: CardProps) {
               </div>
             </div>
           </div>
-          <div className="text-gray-700 leading-relaxed">{content}</div>
+          <div className="text-gray-700">{content}</div>
         </div>
       </div>
     </div>

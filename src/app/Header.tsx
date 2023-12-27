@@ -134,14 +134,14 @@ function Header() {
                     <div
                       className={` mt-4  ${
                         !smallScreen &&
-                        "absolute top-8 z-10 bg-slate-50 p-4 rounded-lg "
+                        "absolute top-8 z-10 bg-slate-50 rounded-lg "
                       } flex flex-col gap-4 ${smallScreen && "w-full"} `}
                       onMouseLeave={() => setShow(false)}
                     >
                       {item.children.map((child, ind) => {
                         return (
                           <div
-                            className="  navList flex py-2 transition-all"
+                            className="  navList flex px-4 py-2 hover:bg-slate-200 transition-all"
                             key={ind}
                           >
                             <a className=" truncate" href={child.url}>

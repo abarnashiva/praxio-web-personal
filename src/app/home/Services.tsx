@@ -11,7 +11,7 @@ function Services() {
         Tailored Services, Tangible Results
       </Heading>
       <FlexBox>
-        <Card small
+        <Card
           imgSrc={
             <ServiceImage source={"./images/hardware.jpg"}></ServiceImage>
           }
@@ -26,7 +26,7 @@ function Services() {
           }
         />
 
-        <Card small
+        <Card
           imgSrc={
             <ServiceImage source={"./images/software.jpg"}></ServiceImage>
           }
@@ -40,7 +40,7 @@ function Services() {
             </Paragraph>
           }
         />
-        <Card small
+        <Card
           imgSrc={
             <ServiceImage source={"./images/testing.jpg"}></ServiceImage>
           }
