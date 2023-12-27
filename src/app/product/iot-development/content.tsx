@@ -1,10 +1,10 @@
 import React from "react";
-import { Button } from "../../common/Button";
 import ReactMarkdown from "react-markdown";
 import Heading from "@/app/components/Heading";
 import SubContent from "@/app/components/SubContent";
 import SubHeading from "@/app/components/SubHeading";
 import Paragraph from "@/app/components/Paragraph";
+import StartProject from "@/app/common/StartProject";
 
 const markdownContent = `
 
@@ -51,7 +51,7 @@ export default function Content() {
         ecosystems that drive efficiency, enhance user experiences, and unlock
         unprecedented possibilities.
       </Paragraph>
-      <Button text={"Start Your Project"}></Button>
+      <StartProject />
 
       <ReactMarkdown
         components={{

@@ -1,8 +1,8 @@
 import React from "react";
-import { Button } from "../../common/Button";
 import ReactMarkdown from "react-markdown";
 import Heading from "@/app/components/Heading";
 import SubContent from "@/app/components/SubContent";
+import StartProject from "@/app/common/StartProject";
 
 const markdownContent = `
 
@@ -42,7 +42,7 @@ export default function Content() {
         information.
       </SubContent>
 
-      <Button text={"Start Your Project"}></Button>
+      <StartProject />
 
       <ReactMarkdown
         components={{

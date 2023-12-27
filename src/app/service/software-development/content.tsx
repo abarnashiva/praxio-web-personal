@@ -2,13 +2,13 @@ import React from "react";
 
 import Subheading from "../../components/SubHeading";
 import Paragraph from "../../components/Paragraph";
-import { Button } from "../../common/Button";
 import Heading from "../../components/Heading";
 import SubContent from "../../components/SubContent";
 import SemiHeading from "../../components/SemiHeading";
 import CardContent from "../../components/Cardcontent";
 import Numberunfill from "../../components/Numberunfill";
 import FlexContent from "../../components/FlexContent";
+import StartProject from "@/app/common/StartProject";
 
 export default function Content() {
   return (
@@ -45,7 +45,7 @@ export default function Content() {
         systems, we ensure a smooth and secure integration process, minimizing
         disruptions and maximizing the value of your technology investments.
       </Paragraph>
-      <Button text={"Start Your Project "}></Button>
+      <StartProject />
       <SemiHeading>
         Why choose PRAXIO for Software Development & Integration?
       </SemiHeading>

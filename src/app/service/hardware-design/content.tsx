@@ -2,13 +2,13 @@ import React from "react";
 
 import Subheading from "../../components/SubHeading";
 import Paragraph from "../../components/Paragraph";
-import { Button } from "../../common/Button";
 import Heading from "../../components/Heading";
 import SubContent from "../../components/SubContent";
 import SemiHeading from "../../components/SemiHeading";
 import CardContent from "../../components/Cardcontent";
 import Numberunfill from "../../components/Numberunfill";
 import FlexContent from "../../components/FlexContent";
+import StartProject from "@/app/common/StartProject";
 
 export default function Content() {
   return (
@@ -43,7 +43,7 @@ export default function Content() {
         Partner with us and experience the journey of turning your vision into a
         tangible, functional prototype. Explore the possibilities with PRAXIO.
       </Paragraph>
-      <Button text={"Start Your Project "}></Button>
+      <StartProject />
       <SemiHeading>
         Why choose PRAXIO for Hardware Design & Prototyping?
       </SemiHeading>
