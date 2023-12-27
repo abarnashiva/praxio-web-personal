@@ -36,6 +36,14 @@ export default function Content() {
     () => createFormItem(control, errors, Select),
     [control, errors]
   );
+  
+  const services = [
+    { id: 1, name: "Custom Hardware Design &  Prototyping" },
+    { id: 2, name: "Custom Software Development & Integration" },
+    { id: 3, name: "Testing & Quality Assurance" },
+    { id: 4, name: "Deployment & Scalability" },
+  ];
+
   return (
     <div>
       <Heading>Contact US</Heading>
@@ -79,7 +87,7 @@ export default function Content() {
               <FormInput label={"Name"} name={"name"} />
               <FormInput label={"Mail ID"} name={"email"} />
               <FormInput label={"Phone No"} name={"phone"} />
-              <FormSelect label={""} name={""} />
+              <FormSelect label={"Service"} name={"service"} options={services} />
               <FormInput
                 label={"Your Comments (Optional)"}
                 name={"comments"}
