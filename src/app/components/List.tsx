@@ -11,7 +11,7 @@ interface ListProps {
 
 export default function List({ items }: ListProps) {
   return (
-    <ul className="list-disc list-inside h-20">
+    <ul className="list-disc list-inside">
       {items.map((item) => (
         <li key={item.key}>{item.content}</li>
       ))}
