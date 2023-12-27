@@ -108,7 +108,12 @@ const Hero: React.FC = () => {
       <HeroSwipe>
         <Swiper
           spaceBetween={50}
-          slidesPerView={phrases.length}
+          slidesPerView={1}
+          breakpoints={{
+            1024: {
+              slidesPerView: phrases.length,
+            },
+          }}
           modules={[Controller]}
           onSwiper={setSecondSwiper}
           controller={{ control: firstSwiper }}

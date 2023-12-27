@@ -6,7 +6,7 @@ import Paragraph from "../components/Paragraph";
 import FlexBox from "../components/FlexBox";
 function Services() {
   return (
-    <section id="services">
+    <section id="services" className="py-10">
       <Heading center margin>
         Tailored Services, Tangible Results
       </Heading>

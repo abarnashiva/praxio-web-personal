@@ -23,7 +23,7 @@ const product3 = [
 
 export default function Products() {
   return (
-    <section id="products" className="py-10">
+    <section id="products">
       <Heading center margin>
         Products that Empower
       </Heading>
