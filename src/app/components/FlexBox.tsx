@@ -23,7 +23,7 @@ export default function FlexBox({
     ? "flex flex-wrap lg:flex-nowrap xl:justify-between lg:gap-10 gap-14 p-7"
     : logo
     ? "my-auto flex justify-center pt-6 lg:pt-0 mx-auto lg:mx-0"
-    : "flex lg:flex-nowrap flex-wrap gap-10 lg:px-7 justify-center";
+    : "grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-10 lg:px-7 justify-center";
 
   return (
     <>

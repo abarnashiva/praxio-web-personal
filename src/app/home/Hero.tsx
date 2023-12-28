@@ -133,9 +133,9 @@ const Hero: React.FC = () => {
               }}
             >
               <div
-                className={`w-16 h-1 transition-colors ${
-                  active === index ? "bg-red-400" : "bg-gray-400"
-                } mb-2`}
+                className={`h-1 transition-colors ${
+                  active === index ? "progress-animation" : ""
+                } bg-gray-400 mb-2`}
               ></div>
               <Heading black>{phrase.label}</Heading>
               <Paragraph>{phrase.shortDescription}</Paragraph>

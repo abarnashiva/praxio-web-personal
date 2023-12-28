@@ -96,12 +96,12 @@ function Header() {
           </div>
         )}
         <ul
-          className={`${
+          className={`font-semibold ${
             smallScreen && click
-              ? `flex py-4 w-full h-auto  inset-y-0 right-0 bg-neutral-50 z-50 flex-col  overflow-scroll text-base space-y-8 `
+              ? `flex py-4 w-full h-auto  inset-y-0 right-0 bg-neutral-50 z-50 flex-col  overflow-scroll text-base  space-y-8 `
               : smallScreen
               ? "hidden"
-              : "flex space-x-8 sm:space-x-4"
+              : "flex space-x-12 "
           }  `}
         >
           {navigation.map((item, index) => {
@@ -110,7 +110,7 @@ function Header() {
             return (
               <>
                 <li
-                  className="group navList cursor-pointer justify-between h-auto  overflow-scroll items-center px-3 md:px-1 sm:px-0.5 transition-all truncate"
+                  className=" navList cursor-pointer justify-between h-auto overflow-scroll hover:text-red-600 items-center px-3 md:px-1 sm:px-0.5 transition-all truncate"
                   key={index}
                   onClick={() => setShow(!show)}
                   onMouseEnter={() => setShow(true)}
@@ -124,7 +124,7 @@ function Header() {
                       <span
                         className={`color-red-600 group-hover:translate-y-1 transition-transform ${
                           show ? `-rotate-90` : `rotate-90`
-                        } w-4 mx-4 scale-75`}
+                        } w-4 mx-1 scale-50`}
                       >
                         <Arrow fill="#ED1F24CC" />
                       </span>
@@ -132,22 +132,22 @@ function Header() {
                   </div>
                   {show && item.children && (
                     <div
-                      className={` mt-4  ${
+                      className={` mt-4   ${
                         !smallScreen &&
-                        "absolute top-8 z-10 bg-slate-50 rounded-lg "
+                        "absolute top-8 z-10 shadow-slate-400 shadow-lg bg-slate-50 rounded-lg "
                       } flex flex-col gap-4 ${smallScreen && "w-full"} `}
                       onMouseLeave={() => setShow(false)}
                     >
                       {item.children.map((child, ind) => {
                         return (
                           <div
-                            className="  navList flex px-4 py-2 hover:bg-slate-200 transition-all"
+                            className="  navList flex group px-4 py-2 text-gray-700 hover:text-red-600  transition-all rounded-lg"
                             key={ind}
                           >
-                            <a className=" truncate" href={child.url}>
+                            <a className="  truncate" href={child.url}>
                               {child.name}
                             </a>
-                            <span className="w-4 mx-4 scale-75 ">
+                            <span className="w-4  mx-4 opacity-0 scale-75 group-hover:opacity-100 ">
                               <Arrow fill="#ED1F24CC" />
                             </span>
                           </div>

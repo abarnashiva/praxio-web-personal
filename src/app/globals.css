@@ -54,3 +54,19 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
 }
+
+@keyframes progressAnimation {
+  from {
+    width: 0%;
+    background-color: #ed1f24cc;
+  }
+  to {
+    width: 100%;
+    background-color: #ed1f24cc;
+  }
+}
+
+.progress-animation {
+  animation: progressAnimation 3s linear;
+  background: #ed1f24cc;
+}
