@@ -8,7 +8,7 @@ const Button: React.FC<{ text: string; outline?: boolean; onClick?:()=>void }> =
     props.outline ? outlinedStyles : filledStyles
   } my-4`;
   return (
-    <button className={`${btnStyles} md:scale-100 lg:scale-100 scale-75 -ml-8 md:m-0`} onClick={props.onClick}>
+    <button className={`${btnStyles} md:scale-100 lg:scale-100 scale-75 -ml-8 md:m-0 `} onClick={props.onClick}>
       <span>{props.text}</span>
       <span className="group-hover:translate-x-4 transition-transform w-4 mx-4">
         <Arrow fill={`${props.outline ? "#ED1F24CC" : ""}`} />
