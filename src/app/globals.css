@@ -56,17 +56,24 @@
 }
 
 @keyframes progressAnimation {
-  from {
+  0% {
     width: 0%;
-    background-color: #ed1f24cc;
+    background-color: black;
   }
-  to {
+  25%{
+    background-color: #ED1F24CC;
+  }
+  100% {
     width: 100%;
-    background-color: #ed1f24cc;
+    background-color: #ED1F24CC;
+  }
+  110%{
+    width: 100%;
+    background-color: #ED1F24CC;
   }
 }
 
 .progress-animation {
-  animation: progressAnimation 3s linear;
-  background: #ed1f24cc;
+  transition: ease-in-out;
+  animation: progressAnimation 5s linear;
 }

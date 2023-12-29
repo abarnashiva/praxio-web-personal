@@ -132,11 +132,14 @@ const Hero: React.FC = () => {
                 firstSwiper?.slideTo(index);
               }}
             >
+              <div className=" mb-2 h-1">
+
               <div
-                className={`h-1 transition-colors ${
+                className={`h-full transition-colors rounded-md ${
                   active === index ? "progress-animation" : ""
-                } bg-gray-400 mb-2`}
-              ></div>
+                }  `}
+                ></div>
+                </div>
               <Heading black>{phrase.label}</Heading>
               <Paragraph>{phrase.shortDescription}</Paragraph>
             </SwiperSlide>
