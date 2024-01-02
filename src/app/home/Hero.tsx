@@ -15,6 +15,7 @@ import HeroContent from "../components/HeroContent";
 import FlexBox from "../components/FlexBox";
 import HeroSwipe from "../components/HeroSwipe";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 const phrases = [
   {
@@ -133,15 +134,16 @@ const Hero: React.FC = () => {
               }}
             >
               <div className=" mb-2 h-1">
-
-              <div
-                className={`h-full transition-colors rounded-md ${
-                  active === index ? "progress-animation" : ""
-                }  `}
+                <div
+                  className={`h-full transition-colors rounded-md ${
+                    active === index ? "progress-animation" : ""
+                  }  `}
                 ></div>
-                </div>
-              <Heading black>{phrase.label}</Heading>
-              <Paragraph>{phrase.shortDescription}</Paragraph>
+              </div>
+              <Link href={phrase.url}>
+                <Heading black>{phrase.label}</Heading>
+                <Paragraph>{phrase.shortDescription}</Paragraph>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>

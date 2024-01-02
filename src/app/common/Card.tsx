@@ -15,7 +15,7 @@ export default function Card({ header, imgSrc, content }: CardProps) {
         <div>
           <div className={`transition-all`}>
             <div className="m-auto">{imgSrc}</div>
-            <div className="flex my-4 h-auto items-center justify-between ">
+            <div className="flex my-4 h-auto items-center">
               <div className="font-semibold">{header}</div>
               <div className="icon w-[1rem] ms-3">
                 <Arrow fill="#ed1f24cc" />

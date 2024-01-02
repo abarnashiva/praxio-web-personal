@@ -4,6 +4,8 @@ import Heading from "../components/Heading";
 import ServiceImage from "../components/ServiceImage";
 import Paragraph from "../components/Paragraph";
 import FlexBox from "../components/FlexBox";
+import Link from "next/link";
+
 function Services() {
   return (
     <section id="services" className="py-10">
@@ -15,7 +17,7 @@ function Services() {
           imgSrc={
             <ServiceImage source={"./images/hardware.jpg"}></ServiceImage>
           }
-          header={"Custom Hardware Design & Prototyping"}
+          header={<Link href="/service/hardware-design">Custom Hardware Design & Prototyping</Link>}
           content={
             <Paragraph>
               It empowers businesses and industries to innovate and find unique
@@ -30,7 +32,9 @@ function Services() {
           imgSrc={
             <ServiceImage source={"./images/software.jpg"}></ServiceImage>
           }
-          header={"Custom Software Development & Integration"}
+          header={
+            <Link href="/service/software-development">Custom Software Development & Integration</Link>
+          }
           content={
             <Paragraph>
               It refer to the process of creating and seamlessly combining
@@ -41,10 +45,8 @@ function Services() {
           }
         />
         <Card
-          imgSrc={
-            <ServiceImage source={"./images/testing.jpg"}></ServiceImage>
-          }
-          header={"Testing & Quality Assurance"}
+          imgSrc={<ServiceImage source={"./images/testing.jpg"}></ServiceImage>}
+          header={<Link href="/service/testing-quality">Testing & Quality Assurance</Link>}
           content={
             <Paragraph>
               They ensure that software products meet the highest standards of
