@@ -45,14 +45,13 @@ export default function Content() {
       </SubHeading>
 
       <Paragraph>
-        At PRAXIO, we specialize in
-        turning concepts into reality at an unmatched pace. Our Rapid
-        Prototyping & Development services empower businesses to innovate,
-        iterate, and bring their products to market faster than ever before.
-        Whether you{`'`}re a startup with a groundbreaking idea or an
-        established enterprise seeking swift product enhancements, our expert
-        team is here to transform your visions into tangible, high-quality
-        prototypes and products.
+        At PRAXIO, we specialize in turning concepts into reality at an
+        unmatched pace. Our Rapid Prototyping & Development services empower
+        businesses to innovate, iterate, and bring their products to market
+        faster than ever before. Whether you{`'`}re a startup with a
+        groundbreaking idea or an established enterprise seeking swift product
+        enhancements, our expert team is here to transform your visions into
+        tangible, high-quality prototypes and products.
       </Paragraph>
 
       <StartProject />
