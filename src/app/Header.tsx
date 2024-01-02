@@ -86,7 +86,7 @@ function Header() {
     >
       <div className={`flex ${smallScreen && `w-full`}  justify-between`}>
 
-        <Link href="/">
+        <Link href="/home">
           <img src="/praxio.svg" alt="Image Description" className="w-32" />
         </Link>
         {smallScreen && (

@@ -30,7 +30,9 @@ export default function Footer() {
       {smallScreen && (
         <FlexBox logo>
           <div>
-            <img src="/footer-logo.svg" alt="logo" className="w-40" />
+            <Link href="/home">
+              <img src="/footer-logo.svg" alt="logo" className="w-40" />
+            </Link>
             <FlexSocial centerAlign>
               <Icons white small>
                 <FaFacebookF />
@@ -49,7 +51,9 @@ export default function Footer() {
         {!smallScreen && (
           <FlexBox logo>
             <div>
-              <img src="/footer-logo.svg" alt="logo" className="w-40" />
+              <Link href="/home">
+                <img src="/footer-logo.svg" alt="logo" className="w-40" />
+              </Link>
               <FlexSocial centerAlign>
                 <Icons white small>
                   <FaFacebookF />
@@ -76,7 +80,9 @@ export default function Footer() {
         <div>
           <SubHeading whiteText>Products & Solutions</SubHeading>
           <FlexContent normal>
-            <Link href="/product/visual-intelligence">Visuals Intelligence Platform</Link>
+            <Link href="/product/visual-intelligence">
+              Visuals Intelligence Platform
+            </Link>
             <Link href="/product/iot-development">IoT Management Platform</Link>
             <Link href="/product/smart-city">Smart City Solutions</Link>
             <Link href="/product/rapid-prototyping">Rapid Prototyping</Link>
@@ -85,9 +91,15 @@ export default function Footer() {
         <div>
           <SubHeading whiteText>Services</SubHeading>
           <FlexContent normal>
-            <Link href="/service/hardware-design">Custom Hardware Design & Prototyping</Link>
-            <Link href="/service/software-development">Custom Software Development & Integration</Link>
-            <Link href="/service/testing-quality">Testing & Quality Assurance</Link>
+            <Link href="/service/hardware-design">
+              Custom Hardware Design & Prototyping
+            </Link>
+            <Link href="/service/software-development">
+              Custom Software Development & Integration
+            </Link>
+            <Link href="/service/testing-quality">
+              Testing & Quality Assurance
+            </Link>
             <Link href="/service/deployment">Deployment & Scalability</Link>
           </FlexContent>
         </div>
