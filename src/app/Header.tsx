@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Header() {
   const [click, setClick] = useState(false);
-  const [smallScreen, setSmallScreen] = useState(true);
+  const [smallScreen, setSmallScreen] = useState(false);
   const isClient = typeof window === `object` ? true : false;
 
   const navigation = [
@@ -90,7 +90,7 @@ function Header() {
       } justify-between py-6 overFlow-auto px-6 bg-neutral-50 text-neutral-900  shadow-md`}
     >
       <div className={`flex ${smallScreen && `w-full`}  justify-between`}>
-        <Link href="/home">
+        <Link href="/">
           <img src="/praxio.svg" alt="Image Description" className="w-32" />
         </Link>
         {smallScreen && (

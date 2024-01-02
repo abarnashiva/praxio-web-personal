@@ -1,23 +1,27 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useMemo, useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
+import lodash from "lodash";
 
 const Router = () => {
-  const [currentPage, setcurrentPage] = useState<string>("Home");
-  const isClient = typeof window === `object` ? true : false;
+  const pathname = usePathname();
+  const [currentPage, setcurrentPage] = useState<string>("");
+  const isClient = useMemo(
+    () => (typeof window === `object` ? true : false),
+    []
+  );
 
-  useEffect(() => {
-    setcurrentPage(
-      `${
-        window.location.pathname.split("/")[1].charAt(0).toUpperCase() +
-        window.location.pathname.split("/")[1].slice(1)
-      }`
-    );
-  }, [isClient]);
+  const pageName = useMemo(() => {
+    const firstSegment = pathname.split("/")?.[1];
+    if (!firstSegment) return "";
+
+    return firstSegment.toLowerCase();
+  }, [pathname]);
 
   return (
     <>
-      {currentPage !== "Home" ? (
+      {pageName !== "home" && pageName !== "" ? (
         <div className="flex mt-6 pt-6 lg:pl-0 pl-6 container">
           <div className="flex" key="1">
             <p className="hover:underline font-semibold">
@@ -26,7 +30,7 @@ const Router = () => {
             <p className="ml-2 mt-1.5 font-bold">
               <FaChevronRight />
             </p>
-            <p className="ml-2  font-semibold">{currentPage}</p>
+            <p className="ml-2  font-semibold">{lodash.capitalize(pageName)}</p>
           </div>
         </div>
       ) : (
