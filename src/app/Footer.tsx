@@ -83,24 +83,24 @@ export default function Footer() {
             <Link href="/product/visual-intelligence">
               Visuals Intelligence Platform
             </Link>
-            <Link href="/product/iot-development">IoT Management Platform</Link>
-            <Link href="/product/smart-city">Smart City Solutions</Link>
-            <Link href="/product/rapid-prototyping">Rapid Prototyping</Link>
+            <Link href="/products/iot-development">IoT Management Platform</Link>
+            <Link href="/products/smart-city">Smart City Solutions</Link>
+            <Link href="/products/rapid-prototyping">Rapid Prototyping</Link>
           </FlexContent>
         </div>
         <div>
           <SubHeading whiteText>Services</SubHeading>
           <FlexContent normal>
-            <Link href="/service/hardware-design">
+            <Link href="/services/hardware-design">
               Custom Hardware Design & Prototyping
             </Link>
-            <Link href="/service/software-development">
+            <Link href="/services/software-development">
               Custom Software Development & Integration
             </Link>
-            <Link href="/service/testing-quality">
+            <Link href="/services/testing-quality">
               Testing & Quality Assurance
             </Link>
-            <Link href="/service/deployment">Deployment & Scalability</Link>
+            <Link href="/services/deployment">Deployment & Scalability</Link>
           </FlexContent>
         </div>
         <FlexContent normal>

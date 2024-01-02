@@ -35,21 +35,21 @@ export default function Products() {
               source={"./images/visual-intelligence.jpg"}
             ></ProductImage>
           }
-          header={<Link href="/product/visual-intelligence">Visual Intelligence Platform</Link>}
+          header={<Link href="/products/visual-intelligence">Visual Intelligence Platform</Link>}
           content={<List items={product1}></List>}
         />
         <Card
           imgSrc={
             <ProductImage source={"./images/management.jpg"}></ProductImage>
           }
-          header={<Link href="/product/iot-development">IoT Management Platform</Link>}
+          header={<Link href="/products/iot-development">IoT Management Platform</Link>}
           content={<List items={product2}></List>}
         />
         <Card
           imgSrc={
             <ProductImage source={"./images/smart-solution.jpg"}></ProductImage>
           }
-          header={<Link href="/product/smart-city">Smart City Solutions</Link>}
+          header={<Link href="/products/smart-city">Smart City Solutions</Link>}
           content={<List items={product3}></List>}
         />
       </FlexBox>

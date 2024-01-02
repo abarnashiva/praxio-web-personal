@@ -17,7 +17,7 @@ function Services() {
           imgSrc={
             <ServiceImage source={"./images/hardware.jpg"}></ServiceImage>
           }
-          header={<Link href="/service/hardware-design">Custom Hardware Design & Prototyping</Link>}
+          header={<Link href="/services/hardware-design">Custom Hardware Design & Prototyping</Link>}
           content={
             <Paragraph>
               It empowers businesses and industries to innovate and find unique
@@ -33,7 +33,7 @@ function Services() {
             <ServiceImage source={"./images/software.jpg"}></ServiceImage>
           }
           header={
-            <Link href="/service/software-development">Custom Software Development & Integration</Link>
+            <Link href="/services/software-development">Custom Software Development & Integration</Link>
           }
           content={
             <Paragraph>
@@ -46,7 +46,7 @@ function Services() {
         />
         <Card
           imgSrc={<ServiceImage source={"./images/testing.jpg"}></ServiceImage>}
-          header={<Link href="/service/testing-quality">Testing & Quality Assurance</Link>}
+          header={<Link href="/services/testing-quality">Testing & Quality Assurance</Link>}
           content={
             <Paragraph>
               They ensure that software products meet the highest standards of

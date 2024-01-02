@@ -1,13 +1,13 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { Arrow } from "./common";
-import { FaBars, FaXmark  } from "react-icons/fa6";
+import { FaBars, FaXmark } from "react-icons/fa6";
 import Link from "next/link";
 
 function Header() {
   const [click, setClick] = useState(false);
   const [smallScreen, setSmallScreen] = useState(true);
-  const isClient  = typeof window === `object` ? true : false;
+  const isClient = typeof window === `object` ? true : false;
 
   const navigation = [
     {
@@ -23,19 +23,19 @@ function Header() {
       children: [
         {
           name: "Custom Hardware Design & Prototyping",
-          url: "/service/hardware-design",
+          url: "/services/hardware-design",
         },
         {
           name: "Custom Software Development & Integration",
-          url: "/service/software-development",
+          url: "/services/software-development",
         },
         {
           name: "Testing & Quality Assurance",
-          url: "/service/testing-quality",
+          url: "/services/testing-quality",
         },
         {
           name: "Deployment & Scalability",
-          url: "/service/deployment",
+          url: "/services/deployment",
         },
       ],
     },
@@ -44,15 +44,15 @@ function Header() {
       children: [
         {
           name: "Visuals Intelligence Platform",
-          url: "/product/visual-intelligence",
+          url: "/products/visual-intelligence",
         },
         {
           name: "IoT Management Platform",
-          url: "/product/iot-development",
+          url: "/products/iot-development",
         },
         {
           name: "Smart City Solutions",
-          url: "/product/smart-city",
+          url: "/products/smart-city",
         },
         {
           name: "Rapid Prototyping",
@@ -75,17 +75,21 @@ function Header() {
     setSmallScreen(window.innerWidth <= 800);
   };
   useEffect(() => {
-    window.addEventListener("resize", handleResize)
+    window.addEventListener("resize", handleResize);
     handleResize();
-  }, [isClient] );
+  }, [isClient]);
 
   return (
     <header
-      className={` scroll-smooth ${!smallScreen ? "flex " : smallScreen && !click ? "flex w-full  " : "fixed w-full h-full overflow-scroll bg-neutral-50 z-10  "
-        } justify-between py-6 overFlow-auto px-6 bg-neutral-50 text-neutral-900  shadow-md`}
+      className={` scroll-smooth ${
+        !smallScreen
+          ? "flex "
+          : smallScreen && !click
+          ? "flex w-full  "
+          : "fixed w-full h-full overflow-scroll bg-neutral-50 z-10  "
+      } justify-between py-6 overFlow-auto px-6 bg-neutral-50 text-neutral-900  shadow-md`}
     >
       <div className={`flex ${smallScreen && `w-full`}  justify-between`}>
-
         <Link href="/home">
           <img src="/praxio.svg" alt="Image Description" className="w-32" />
         </Link>
@@ -94,18 +98,19 @@ function Header() {
             className="text-red-600 right-0 w-8 text-center cursor-pointer text-2xl font-medium rounded"
             onClick={() => setClick(!click)}
           >
-            {click ?  (<FaXmark />) : <FaBars />}
+            {click ? <FaXmark /> : <FaBars />}
           </div>
         )}
       </div>
       <nav>
         <ul
-          className={`font-semibold ${smallScreen && click
+          className={`font-semibold ${
+            smallScreen && click
               ? ` mt-4 flex pt-4 w-full h-auto  inset-y-0 right-0 bg-neutral-50 z-50 flex-col  overflow-scroll text-base  space-y-8 `
               : smallScreen
-                ? "hidden"
-                : "flex lg:space-x-12 md:space-x-5"
-            }  `}
+              ? "hidden"
+              : "flex lg:space-x-12 md:space-x-5"
+          }  `}
         >
           {navigation.map((item, index) => {
             // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -127,8 +132,9 @@ function Header() {
                     </a>
                     {item.children && (
                       <span
-                        className={`color-red-600 group-hover:translate-y-1 transition-transform ${show ? `-rotate-90` : `rotate-90`
-                          } w-4 mx-1 scale-50`}
+                        className={`color-red-600 group-hover:translate-y-1 transition-transform ${
+                          show ? `-rotate-90` : `rotate-90`
+                        } w-4 mx-1 scale-50`}
                       >
                         <Arrow fill="#ED1F24CC" />
                       </span>
@@ -136,9 +142,10 @@ function Header() {
                   </div>
                   {show && item.children && (
                     <div
-                      className={` mt-4   ${!smallScreen &&
+                      className={` mt-4   ${
+                        !smallScreen &&
                         "absolute top-8 z-10 shadow-slate-400 shadow-lg bg-slate-50 rounded-lg "
-                        } flex flex-col gap-4 ${smallScreen && "w-full"} `}
+                      } flex flex-col gap-4 ${smallScreen && "w-full"} `}
                       onMouseLeave={() => setShow(false)}
                     >
                       {item.children.map((child, ind) => {

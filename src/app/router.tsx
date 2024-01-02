@@ -1,30 +1,39 @@
-"use client"
-import React from 'react'
+"use client";
+import React, { useEffect, useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 
-const router = () => {
+const Router = () => {
+  const [currentPage, setcurrentPage] = useState<string>();
+  const isClient = typeof window === `object` ? true : false;
 
-     const currentPage = window.location.pathname.split("/")[1].charAt(0).toUpperCase() + window.location.pathname.split("/")[1].slice(1)
+  useEffect(() => {
+    setcurrentPage(
+      `${
+        window.location.pathname.split("/")[1].charAt(0).toUpperCase() +
+        window.location.pathname.split("/")[1].slice(1)
+      }`
+    );
+  }, [isClient]);
 
-    return (
-        <>
-        {currentPage !== "Home" ?
-        <div className='flex mt-6 pt-6 lg:pl-0 pl-6 container'>
-            <div className='flex' key="1">
-                <p className='hover:underline font-semibold' >
-                    <a href="/home">
-                        Home
-                    </a>
-                </p>
-                <p className='ml-2 mt-1.5 font-bold'><FaChevronRight /></p>
-                <p className='ml-2  font-semibold'>{window.location.pathname.split("/")[1].charAt(0).toUpperCase() + window.location.pathname.split("/")[1].slice(1)}</p>
-            </div>
-
-        </div>:
+  return (
+    <>
+      {currentPage !== "Home" ? (
+        <div className="flex mt-6 pt-6 lg:pl-0 pl-6 container">
+          <div className="flex" key="1">
+            <p className="hover:underline font-semibold">
+              <a href="/home">Home</a>
+            </p>
+            <p className="ml-2 mt-1.5 font-bold">
+              <FaChevronRight />
+            </p>
+            <p className="ml-2  font-semibold">{currentPage}</p>
+          </div>
+        </div>
+      ) : (
         <></>
-        }
-        </>
-    )
-}
+      )}
+    </>
+  );
+};
 
-export default router
+export default Router;
