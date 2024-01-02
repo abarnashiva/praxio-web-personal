@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 
 const Router = () => {
-  const [currentPage, setcurrentPage] = useState<string>();
+  const [currentPage, setcurrentPage] = useState<string>("Home");
   const isClient = typeof window === `object` ? true : false;
 
   useEffect(() => {
