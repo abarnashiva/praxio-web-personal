@@ -22,10 +22,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-       <head>
-      <link rel="icon" href="title-logo.svg" type="image/svg+xml"></link>
-      <Title />
-       </head>
+      <head>
+        <link rel="icon" href="/title-logo.svg" type="image/svg+xml"></link>
+        <Title />
+      </head>
       <body className={inter.className}>
         <div className="font-sans min-h-screen text-gray-900 bg-white flex flex-col">
           <Header />
