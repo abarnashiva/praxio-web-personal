@@ -5,9 +5,10 @@ interface ParagraphProps {
   large?: boolean;
   whiteText?: boolean;
   footerText?: boolean;
+  contact?: boolean;
 }
 
-export default function Paragraph({ children, large, whiteText, footerText }: ParagraphProps) {
+export default function Paragraph({ children, large, whiteText, footerText, contact }: ParagraphProps) {
   const words = React.Children.toArray(children).join(" ").split(" ");
   const defaultText = large
     ? "text-lg"
@@ -15,6 +16,8 @@ export default function Paragraph({ children, large, whiteText, footerText }: Pa
     ? "text-white text-center py-4"
     : footerText
     ? "text-white leading-7"
+    : contact
+    ? "leading-7"
     : "text-gray-700 py-4";
 
   return (

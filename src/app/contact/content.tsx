@@ -17,6 +17,8 @@ import { SimpleButton } from "../common/Button";
 import Icons from "../components/Icons";
 import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
+import FlexBox from "../components/FlexBox";
+import { MdOutlineEmail, MdOutlineLocationOn, MdOutlinePhone } from "react-icons/md";
 
 export default function Content() {
   const {
@@ -61,12 +63,34 @@ export default function Content() {
         <div>
           <SemiHeading>Reach us out at</SemiHeading>
           <FlexAddress>
-            <Paragraph>
-              No. 17, IInd Floor, SANHASA SQUARE, Bharathi Park Rd, Bharathi Pk
-              Cross Rd 3, Coimbatore, Tamil Nadu 641043
-            </Paragraph>
-            <Paragraph>sales@praxio.in</Paragraph>
-            <Paragraph>096000 43335</Paragraph>
+            <FlexBox contact>
+              <Icons contact>
+                <MdOutlineLocationOn className="text-3xl" />
+              </Icons>
+              <div>
+                <Paragraph contact>
+                  No. 17, IInd Floor, SANHASA SQUARE,
+                </Paragraph>
+                <Paragraph contact>Bharathi Park Rd,</Paragraph>
+                <Paragraph contact>Bharathi Pk Cross Rd 3,</Paragraph>
+                <Paragraph contact>Coimbatore,</Paragraph>
+                <Paragraph contact>Tamil Nadu 641043.</Paragraph>
+              </div>
+            </FlexBox>
+            <div>
+              <FlexBox content>
+                <Icons contact>
+                  <MdOutlinePhone />
+                </Icons>
+                096000 43335
+              </FlexBox>
+              <FlexBox content>
+                <Icons contact>
+                  <MdOutlineEmail />
+                </Icons>
+                sales@praxio.in
+              </FlexBox>
+            </div>
           </FlexAddress>
           <SemiHeading>Follow us on</SemiHeading>
           <FlexSocial>
@@ -87,7 +111,11 @@ export default function Content() {
               <FormInput label={"Name"} name={"name"} />
               <FormInput label={"Mail ID"} name={"email"} />
               <FormInput label={"Phone No"} name={"phone"} />
-              <FormSelect label={"Service"} name={"service"} options={services} />
+              <FormSelect
+                label={"Service"}
+                name={"service"}
+                options={services}
+              />
               <FormInput
                 label={"Your Comments (Optional)"}
                 name={"comments"}
