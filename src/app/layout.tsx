@@ -3,14 +3,16 @@ import React from "react";
 import { Inter } from "next/font/google";
 import Title from "./title";
 import RouterBar from "./router";
-import logo from "../../public/title-logo.svg";
 import "./globals.css";
 import Header from "./Header";
 import Footer from "./Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+interface LocalMetadata extends Metadata {
+  favicon?: string;
+}
 
-export const metadata: Metadata = {
+export const metadata: LocalMetadata = {
   description: "Empowering Tomorrow with Intelligent Solutions",
   favicon: "/title-logo.svg",
 };
