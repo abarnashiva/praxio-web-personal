@@ -30,7 +30,7 @@ export default function Footer() {
       {smallScreen && (
         <FlexBox logo>
           <div>
-            <Link href="/home">
+            <Link href="/">
               <img src="/footer-logo.svg" alt="logo" className="w-40" />
             </Link>
             <FlexSocial centerAlign>
@@ -51,7 +51,7 @@ export default function Footer() {
         {!smallScreen && (
           <FlexBox logo>
             <div>
-              <Link href="/home">
+              <Link href="/">
                 <img src="/footer-logo.svg" alt="logo" className="w-40" />
               </Link>
               <FlexSocial centerAlign>
@@ -71,7 +71,7 @@ export default function Footer() {
         <div>
           <SubHeading whiteText>Quick Links</SubHeading>
           <FlexContent normal>
-            <Link href="/home">Home</Link>
+            <Link href="/">Home</Link>
             <Link href="/about">About Us</Link>
             <Link href="/contact">Contact</Link>
             <Link href="/support">Support</Link>

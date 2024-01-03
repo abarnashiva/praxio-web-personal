@@ -11,7 +11,7 @@ function Header() {
 
   const navigation = [
     {
-      url: "/home",
+      url: "/",
       label: "Home",
     },
     {

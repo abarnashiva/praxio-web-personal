@@ -15,7 +15,7 @@ export default function Title() {
         window.location.pathname.split("/")[1].slice(1);
 
       const newPageTitle =
-        currentUrl === "Home" || ""
+        currentUrl === ""
           ? "Praxio IT Consulting Pvt Ltd"
           : `Praxio | ${currentUrl}`;
       setPageTitle(newPageTitle);

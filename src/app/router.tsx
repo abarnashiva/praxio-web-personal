@@ -25,7 +25,7 @@ const Router = () => {
         <div className="flex mt-6 pt-6 lg:pl-0 pl-6 container">
           <div className="flex" key="1">
             <p className="hover:underline font-semibold">
-              <a href="/home">Home</a>
+              <a href="/">Home</a>
             </p>
             <p className="ml-2 mt-1.5 font-bold">
               <FaChevronRight />
