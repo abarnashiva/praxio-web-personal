@@ -6,6 +6,7 @@ import RouterBar from "./router";
 import "./globals.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,12 +21,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <link rel="icon" href="/title-logo.svg" type="image/svg+xml" />
         <meta property="og:image" content="/praxio.svg" />
         <meta property="og:title" content="Praxio IT Consulting Pvt Ltd" />
         <Title />
-      </head>
+      </Head>
       <body className={inter.className}>
         <div className="font-sans min-h-screen text-gray-900 bg-white flex flex-col">
           <Header />
