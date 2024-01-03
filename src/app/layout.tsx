@@ -21,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/title-logo.svg" type="image/svg+xml"></link>
+        <link rel="icon" href="/title-logo.svg" type="image/svg+xml" />
+        <meta property="og:image" content="/praxio.svg" />
+        <meta property="og:title" content="Praxio IT Consulting Pvt Ltd" />
         <Title />
       </head>
       <body className={inter.className}>
