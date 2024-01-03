@@ -8,13 +8,9 @@ import Header from "./Header";
 import Footer from "./Footer";
 
 const inter = Inter({ subsets: ["latin"] });
-interface LocalMetadata extends Metadata {
-  favicon?: string;
-}
 
-export const metadata: LocalMetadata = {
+export const metadata: Metadata = {
   description: "Empowering Tomorrow with Intelligent Solutions",
-  favicon: "/title-logo.svg",
 };
 
 export default function RootLayout({
