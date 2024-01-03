@@ -23,7 +23,7 @@ export default function RootLayout({
       <head>
         <meta
           property="og:image"
-          content="https://praxio-web-personal.vercel.app/praxio.svg"
+          content="https://praxio-web-personal.vercel.app/title-logo.svg"
         />
         <meta property="og:title" content="Praxio IT Consulting Pvt Ltd" />
         <link rel="icon" href="/title-logo.svg" type="image/svg+xml" />
