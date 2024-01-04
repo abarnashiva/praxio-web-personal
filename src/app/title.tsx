@@ -17,7 +17,7 @@ export default function Title() {
       const newPageTitle =
         currentUrl === ""
           ? "Praxio IT Consulting Pvt Ltd"
-          : `Praxio | ${currentUrl}`;
+          : `${currentUrl} - Praxio`;
       setPageTitle(newPageTitle);
     };
     setPageTitleBasedOnURL();

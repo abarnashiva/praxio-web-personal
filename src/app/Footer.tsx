@@ -80,7 +80,7 @@ export default function Footer() {
         <div>
           <SubHeading whiteText>Products & Solutions</SubHeading>
           <FlexContent normal>
-            <Link href="/product/visual-intelligence">
+            <Link href="/products/visual-intelligence">
               Visuals Intelligence Platform
             </Link>
             <Link href="/products/iot-development">IoT Management Platform</Link>
