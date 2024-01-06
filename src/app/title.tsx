@@ -1,28 +1,25 @@
 "use client";
 import { Inter } from "next/font/google";
+import { usePathname } from "next/navigation";
 import React, { useState } from "react";
+import lodash from "lodash";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Title() {
-  const [pageTitle, setPageTitle] = useState("Praxio");
-
+  const [pageTitle, setPageTitle] = useState<string>();
+  const pathname = usePathname();
   const isClient = typeof window === `object` ? true : false;
 
-  React.useEffect(() => {
-    const setPageTitleBasedOnURL = () => {
-      const currentUrl =
-        window.location.pathname.split("/")[1].charAt(0).toUpperCase() +
-        window.location.pathname.split("/")[1].slice(1);
+  const pageName = React.useMemo(() => {
+    const firstSegment = pathname.split("/")?.[1];
+    if (!firstSegment) return "";
 
-      const newPageTitle =
-        currentUrl === "" ? "Praxio " : `${currentUrl} - Praxio`;
-      setPageTitle(newPageTitle);
-    };
-    setPageTitleBasedOnURL();
-    window.addEventListener("popstate", setPageTitleBasedOnURL);
-    return () => {
-      window.removeEventListener("popstate", setPageTitleBasedOnURL);
-    };
-  }, [isClient]);
-  return <title>{pageTitle}</title>;
+    return firstSegment.toLowerCase();
+  }, [pathname]);
+
+  return pageName !== "home" && pageName !== "" ? (
+    <title>{`Praxio - ${lodash.capitalize(pageName)}`}</title>
+  ) : (
+    <title>Praxio</title>
+  );
 }

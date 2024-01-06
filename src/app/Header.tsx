@@ -90,7 +90,7 @@ function Header() {
       } justify-between overFlow-auto p-6 bg-neutral-50 text-neutral-900  shadow-md`}
     >
       <div className={`flex ${smallScreen && `w-full`} justify-between`}>
-        <Link className="w-32 lg:mx-6" href="/">
+        <Link className="w-32 " href="/">
           <img src="/praxio.svg" alt="Image Description" className="w-full" />
         </Link>
         {smallScreen && (
@@ -127,9 +127,16 @@ function Header() {
                   onMouseLeave={() => setShow(false)}
                 >
                   <div className="flex justify-between">
-                    <a className={`h-full`} href={item.url && item.url}>
-                      {item.label}
-                    </a>
+                    {item.url ? (
+                      <Link
+                        className={`h-full`}
+                        href={`${item.url && item.url}`}
+                      >
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <p>{item.label}</p>
+                    )}
                     {item.children && (
                       <span
                         className={`color-red-600 group-hover:translate-y-1 transition-transform ${
@@ -154,9 +161,9 @@ function Header() {
                             className="  navList flex group px-4 py-2 text-gray-700 hover:text-red-600  transition-all rounded-lg"
                             key={ind}
                           >
-                            <a className="  truncate" href={child.url}>
+                            <Link className="  truncate" href={`${child.url}`}>
                               {child.name}
-                            </a>
+                            </Link>
                             <span className="w-4  mx-4 opacity-0 scale-75 group-hover:opacity-100 ">
                               <Arrow fill="#ED1F24CC" />
                             </span>

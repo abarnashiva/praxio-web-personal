@@ -29,29 +29,37 @@ export default function Products() {
         Products that Empower
       </Heading>
       <FlexBox>
-        <Card
-          imgSrc={
-            <ProductImage
-              source={"./images/visual-intelligence.jpg"}
-            ></ProductImage>
-          }
-          header={<Link href="/products/visual-intelligence">Visual Intelligence Platform</Link>}
-          content={<List items={product1}></List>}
-        />
-        <Card
-          imgSrc={
-            <ProductImage source={"./images/management.jpg"}></ProductImage>
-          }
-          header={<Link href="/products/iot-development">IoT Management Platform</Link>}
-          content={<List items={product2}></List>}
-        />
-        <Card
-          imgSrc={
-            <ProductImage source={"./images/smart-solution.jpg"}></ProductImage>
-          }
-          header={<Link href="/products/smart-city">Smart City Solutions</Link>}
-          content={<List items={product3}></List>}
-        />
+        <Link href="/products/visual-intelligence">
+          <Card
+            imgSrc={
+              <ProductImage
+                source={"./images/visual-intelligence.jpg"}
+              ></ProductImage>
+            }
+            header={<p>Visual Intelligence Platform</p>}
+            content={<List items={product1}></List>}
+          />
+        </Link>
+        <Link href="/products/iot-development">
+          <Card
+            imgSrc={
+              <ProductImage source={"./images/management.jpg"}></ProductImage>
+            }
+            header={<p>IoT Management Platform</p>}
+            content={<List items={product2}></List>}
+          />
+        </Link>
+        <Link href="/products/smart-city">
+          <Card
+            imgSrc={
+              <ProductImage
+                source={"./images/smart-solution.jpg"}
+              ></ProductImage>
+            }
+            header={<p>Smart City Solutions</p>}
+            content={<List items={product3}></List>}
+          />
+        </Link>
       </FlexBox>
     </section>
   );

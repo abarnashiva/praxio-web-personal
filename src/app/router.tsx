@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import React, { useEffect, useMemo, useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import lodash from "lodash";
+import Link from "next/link";
 
 const Router = () => {
   const pathname = usePathname();
@@ -24,9 +25,9 @@ const Router = () => {
       {pageName !== "home" && pageName !== "" ? (
         <div className="flex mt-6 pt-6  container">
           <div className="flex" key="1">
-            <p className="hover:underline font-semibold">
-              <a href="/">Home</a>
-            </p>
+            <Link href="/">
+              <p className="hover:underline font-semibold">Home</p>
+            </Link>
             <p className="ml-2 mt-1.5 font-bold">
               <FaChevronRight />
             </p>
