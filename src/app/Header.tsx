@@ -6,8 +6,16 @@ import Link from "next/link";
 
 function Header() {
   const [click, setClick] = useState(false);
-  const [smallScreen, setSmallScreen] = useState(false);
+  const [smallScreen, setSmallScreen] = useState<boolean>(true);
   const isClient = typeof window === `object` ? true : false;
+
+  const handleResize = () => {
+    setSmallScreen(window.innerWidth <= 800);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+  }, [isClient]);
 
   const navigation = [
     {
@@ -70,14 +78,6 @@ function Header() {
       label: "Support",
     },
   ];
-
-  const handleResize = () => {
-    setSmallScreen(window.innerWidth <= 800);
-  };
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
-    handleResize();
-  }, [isClient]);
 
   return (
     <header
