@@ -18,7 +18,11 @@ import Icons from "../components/Icons";
 import { FaFacebookF } from "react-icons/fa";
 import { BsInstagram, BsLinkedin } from "react-icons/bs";
 import FlexBox from "../components/FlexBox";
-import { MdOutlineEmail, MdOutlineLocationOn, MdOutlinePhone } from "react-icons/md";
+import {
+  MdOutlineEmail,
+  MdOutlineLocationOn,
+  MdOutlinePhone,
+} from "react-icons/md";
 
 export default function Content() {
   const {
@@ -38,7 +42,7 @@ export default function Content() {
     () => createFormItem(control, errors, Select),
     [control, errors]
   );
-  
+
   const services = [
     { id: 1, name: "Custom Hardware Design &  Prototyping" },
     { id: 2, name: "Custom Software Development & Integration" },
@@ -106,6 +110,7 @@ export default function Content() {
           </FlexSocial>
         </div>
         <div>
+          <SubHeading>Connect With Our Team</SubHeading>  
           <BorderBox>
             <form>
               <FormInput label={"Name"} name={"name"} />

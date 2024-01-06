@@ -6,6 +6,7 @@ import RouterBar from "./router";
 import "./globals.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import ContainerBox from "./components/ContainerBox";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,10 +31,11 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="font-sans min-h-screen text-gray-900 bg-white flex flex-col">
           <Header />
-          <div className="container mx-auto">
+          <ContainerBox>
             <RouterBar />
-          </div>
-          <div className="p-6">{children}</div>
+            <div className="">{children}</div>
+          </ContainerBox>
+
           <div className="mt-auto">
             <Footer />
           </div>

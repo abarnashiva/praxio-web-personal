@@ -4,10 +4,10 @@ import Box from "@/app/common/Box";
 import ContainerBox from "@/app/components/ContainerBox";
 
 export default function VisualIntelligence() {
-	return (
-    <ContainerBox>
+  return (
+    <>
       <Content />
       <Box />
-    </ContainerBox>
+    </>
   );
 }

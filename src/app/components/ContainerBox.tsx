@@ -7,7 +7,7 @@ interface ContainerBoxProps {
 export default function ContainerBox({ children }: ContainerBoxProps) {
   return (
     <>
-      <div className="container mx-auto">{children}</div>
+      <div className="px-8 md:px-12 ">{children}</div>
     </>
   );
 }

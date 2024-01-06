@@ -87,7 +87,7 @@ function Header() {
           : smallScreen && !click
           ? "flex w-full  "
           : "fixed w-full h-full overflow-scroll bg-neutral-50 z-10  "
-      } justify-between py-6 overFlow-auto px-6 bg-neutral-50 text-neutral-900  shadow-md`}
+      } justify-between overFlow-auto p-6 bg-neutral-50 text-neutral-900  shadow-md`}
     >
       <div className={`flex ${smallScreen && `w-full`} justify-between`}>
         <Link className="w-32 lg:mx-6" href="/">

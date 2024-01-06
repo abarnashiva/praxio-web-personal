@@ -7,7 +7,9 @@ interface HeroContentProps {
 export default function HeroContent({ children }: HeroContentProps) {
   return (
     <>
-      <div className="flex-1 flex flex-col items-start gap-4 lg:py-24 lg:px-7">{children}</div>
+      <div className="flex-1 flex flex-col items-start gap-4 lg:py-24">
+        {children}
+      </div>
     </>
   );
 }

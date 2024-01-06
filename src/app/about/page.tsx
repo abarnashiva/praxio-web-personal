@@ -5,9 +5,9 @@ import ContainerBox from "../components/ContainerBox";
 
 export default function About() {
   return (
-    <ContainerBox>
+    <>
       <Content />
       <Box />
-    </ContainerBox>
+    </>
   );
 }

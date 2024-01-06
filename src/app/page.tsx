@@ -7,12 +7,12 @@ import Box from "./common/Box";
 
 export default function Page() {
   return (
-    <div>
+    <>
       <Hero />
       <FutureTechnology />
       <Products />
       <Services />
       <Box />
-    </div>
+    </>
   );
 }

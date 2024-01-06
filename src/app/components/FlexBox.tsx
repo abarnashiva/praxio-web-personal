@@ -7,6 +7,7 @@ interface FlexBoxProps {
   footer?: boolean;
   logo?: boolean;
   contact?: boolean;
+  customClass?: string;
 }
 
 export default function FlexBox({
@@ -15,23 +16,20 @@ export default function FlexBox({
   content,
   footer,
   logo,
-  contact
+  contact,
+  customClass,
 }: FlexBoxProps) {
   const defaultFlex = normal
     ? "flex flex-wrap"
     : content
-    ? "flex gap-2 items-center pt-3"
+    ? "flex gap-2 pt-3"
     : footer
-    ? "flex flex-wrap lg:flex-nowrap xl:justify-between lg:gap-10 gap-14 p-7"
+    ? "flex flex-wrap justify-start lg:flex-nowrap xl:justify-around lg:gap-10 gap-14"
     : logo
-    ? "my-auto flex justify-center pt-6 lg:pt-0 mx-auto lg:mx-0"
+    ? "my-auto flex justify-center md:justify-start pt-6 lg:pt-0 mx-auto lg:mx-0"
     : contact
     ? "flex gap-2"
     : "grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-10 lg:px-7 justify-center";
 
-  return (
-    <>
-      <div className={`${defaultFlex}`}>{children}</div>
-    </>
-  );
+  return <div className={` ${customClass} ${defaultFlex}`}>{children}</div>;
 }
