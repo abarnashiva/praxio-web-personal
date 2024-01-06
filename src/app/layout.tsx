@@ -33,7 +33,7 @@ export default function RootLayout({
           <Header />
           <ContainerBox>
             <RouterBar />
-            <div className="">{children}</div>
+            <div className="mt-10">{children}</div>
           </ContainerBox>
 
           <div className="mt-auto">
