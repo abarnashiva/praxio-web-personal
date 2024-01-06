@@ -11,6 +11,7 @@ import ContainerBox from "./components/ContainerBox";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  title: "Praxio",
   description: "Empowering Tomorrow with Intelligent Solutions",
 };
 
@@ -24,7 +25,7 @@ export default function RootLayout({
       <head>
         <meta property="og:image" content="/favicon.ico" />
         <meta property="og:twitter:image" content="/favicon.ico" />
-        <meta property="og:title" content="Praxio IT Consulting Pvt Ltd" />
+        <meta property="og:title" content="Praxio" />
         <link rel="icon" href="/title-logo.svg" type="image/svg+xml" />
         <Title />
       </head>

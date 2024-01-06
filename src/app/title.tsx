@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function Title() {
-  const [pageTitle, setPageTitle] = useState("Praxio IT Consulting Pvt Ltd");
+  const [pageTitle, setPageTitle] = useState("Praxio");
 
   const isClient = typeof window === `object` ? true : false;
 
@@ -15,9 +15,7 @@ export default function Title() {
         window.location.pathname.split("/")[1].slice(1);
 
       const newPageTitle =
-        currentUrl === ""
-          ? "Praxio IT Consulting Pvt Ltd"
-          : `${currentUrl} - Praxio`;
+        currentUrl === "" ? "Praxio " : `${currentUrl} - Praxio`;
       setPageTitle(newPageTitle);
     };
     setPageTitleBasedOnURL();
