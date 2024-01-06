@@ -89,9 +89,9 @@ function Header() {
           : "fixed w-full h-full overflow-scroll bg-neutral-50 z-10  "
       } justify-between py-6 overFlow-auto px-6 bg-neutral-50 text-neutral-900  shadow-md`}
     >
-      <div className={`flex ${smallScreen && `w-full`}  justify-between`}>
-        <Link href="/">
-          <img src="/praxio.svg" alt="Image Description" className="w-32" />
+      <div className={`flex ${smallScreen && `w-full`} justify-between`}>
+        <Link className="w-32 lg:mx-6" href="/">
+          <img src="/praxio.svg" alt="Image Description" className="w-full" />
         </Link>
         {smallScreen && (
           <div
@@ -109,7 +109,7 @@ function Header() {
               ? ` mt-4 flex pt-4 w-full h-auto  inset-y-0 right-0 bg-neutral-50 z-50 flex-col  overflow-scroll text-base  space-y-8 `
               : smallScreen
               ? "hidden"
-              : "flex lg:space-x-12 md:space-x-5"
+              : "flex space-x-12 "
           }  `}
         >
           {navigation.map((item, index) => {
