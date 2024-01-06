@@ -7,7 +7,7 @@ interface FutureContentProps {
 export default function FlexFuture({ children }: FutureContentProps) {
   return (
     <>
-      <div className="flex lg:flex-nowrap flex-wrap gap-20 mt-4 lg:px-6">{children}</div>
+      <div className="flex lg:flex-nowrap flex-wrap gap-20 mt-4">{children}</div>
     </>
   );
 }

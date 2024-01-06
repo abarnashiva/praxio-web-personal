@@ -140,10 +140,10 @@ const Hero: React.FC = () => {
                   }  `}
                 ></div>
               </div>
-              <Link href={phrase.url}>
+              <div>
                 <Heading black>{phrase.label}</Heading>
                 <Paragraph>{phrase.shortDescription}</Paragraph>
-              </Link>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

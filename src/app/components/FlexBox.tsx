@@ -29,7 +29,7 @@ export default function FlexBox({
     ? "my-auto flex justify-center md:justify-start pt-6 lg:pt-0 mx-auto lg:mx-0"
     : contact
     ? "flex gap-2"
-    : "grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-10 lg:px-7 justify-center";
+    : "grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-center";
 
   return <div className={` ${customClass} ${defaultFlex}`}>{children}</div>;
 }
