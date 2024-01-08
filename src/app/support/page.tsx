@@ -4,8 +4,8 @@ import ContainerBox from "../components/ContainerBox";
 
 export default function Support() {
   return (
-    <>
+    <ContainerBox>
       <Content />
-    </>
+    </ContainerBox>
   );
 }

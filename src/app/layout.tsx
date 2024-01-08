@@ -32,11 +32,8 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="font-sans min-h-screen text-gray-900 bg-white flex flex-col">
           <Header />
-          <ContainerBox>
-            <RouterBar />
-            <div className="mt-10">{children}</div>
-          </ContainerBox>
-
+          <RouterBar />
+          <div>{children}</div>
           <div className="mt-auto">
             <Footer />
           </div>

@@ -23,7 +23,7 @@ const Router = () => {
   return (
     <>
       {pageName !== "home" && pageName !== "" ? (
-        <div className="flex mt-6 pt-6  container">
+        <div className="flex mt-6 px-6  container">
           <div className="flex" key="1">
             <Link href="/">
               <p className="hover:underline font-semibold">Home</p>

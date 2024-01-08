@@ -5,9 +5,9 @@ import ContainerBox from "@/app/components/ContainerBox";
 
 export default function VisualIntelligence() {
   return (
-    <>
+    <ContainerBox>
       <Content />
       <Box />
-    </>
+    </ContainerBox>
   );
 }

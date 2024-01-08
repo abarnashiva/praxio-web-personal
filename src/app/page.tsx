@@ -4,6 +4,7 @@ import Hero from "./home/Hero";
 import Products from "./home/Products";
 import Services from "./home/Services";
 import Box from "./common/Box";
+import ContainerBox from "./components/ContainerBox";
 
 export default function Page() {
   return (
@@ -12,7 +13,9 @@ export default function Page() {
       <FutureTechnology />
       <Products />
       <Services />
-      <Box />
+      <ContainerBox>
+        <Box />
+      </ContainerBox>
     </>
   );
 }

@@ -15,6 +15,7 @@ import HeroContent from "../components/HeroContent";
 import FlexBox from "../components/FlexBox";
 import HeroSwipe from "../components/HeroSwipe";
 import { useRouter } from "next/navigation";
+import ContainerBox from "../components/ContainerBox";
 import Link from "next/link";
 
 const phrases = [
@@ -86,33 +87,34 @@ const Hero: React.FC = () => {
 
   return (
     <div>
-      <Swiper
-        effect="fade"
-        fadeEffect={{ crossFade: true }}
-        spaceBetween={50}
-        slidesPerView={1}
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
-        modules={[Controller, Autoplay, EffectFade]}
-        onSwiper={setFirstSwiper}
-        controller={{ control: secondSwiper }}
-      >
-        {phrases.map((phrase, index) => (
-          <SwiperSlide key={index}>
-            <FlexBox normal>
-              <HeroContent>
-                <HeroText>{phrase.heading}</HeroText>
-                <MainHeading>{phrase.label}</MainHeading>
-                <Paragraph>{phrase.description}</Paragraph>
-                <Button
-                  text={phrase.name}
-                  onClick={() => router.push(`${phrase.url}`)}
-                />
-              </HeroContent>
-              <HeroImage source={phrase.image}></HeroImage>
-            </FlexBox>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <ContainerBox>
+        <Swiper
+          effect="fade"
+          fadeEffect={{ crossFade: true }}
+          spaceBetween={50}
+          slidesPerView={1}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          modules={[Controller, Autoplay, EffectFade]}
+          onSwiper={setFirstSwiper}
+          controller={{ control: secondSwiper }}
+        >
+          {phrases.map((phrase, index) => (
+            <SwiperSlide key={index}>
+              <FlexBox normal>
+                <HeroContent>
+                  <HeroText>{phrase.heading}</HeroText>
+                  <MainHeading>{phrase.label}</MainHeading>
+                  <Paragraph>{phrase.description}</Paragraph>
+                  <Link href={`${phrase.url}`}>
+                    <Button text={"Learn More"}/>
+                  </Link>
+                </HeroContent>
+                <HeroImage source={phrase.image}></HeroImage>
+              </FlexBox>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </ContainerBox>
       <HeroSwipe>
         <Swiper
           spaceBetween={50}
