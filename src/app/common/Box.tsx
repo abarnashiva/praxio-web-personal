@@ -1,10 +1,8 @@
-"use client";
 import React from "react";
 import { SecondaryButton } from "../common/Button";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function CenteredBoxWithButton() {
-  const router = useRouter();
 
   return (
     <div className="md:w-6/12 bg-primary p-4 mx-auto my-12 rounded-md">
@@ -13,10 +11,9 @@ export default function CenteredBoxWithButton() {
           Have a project in mind?
         </p>
         <div className="lg:mt-5 flex justify-center">
-          <SecondaryButton
-            text={"Lets Discuss"}
-            onClick={() => router.push(`/contact`)}
-          ></SecondaryButton>
+          <Link href={"/contact"}>
+            <SecondaryButton text={"Lets Discuss"}></SecondaryButton>
+          </Link>
         </div>
       </div>
     </div>

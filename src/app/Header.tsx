@@ -86,8 +86,8 @@ function Header() {
           ? "flex "
           : smallScreen && !click
           ? "flex w-full  "
-          : "fixed w-full h-full overflow-scroll bg-neutral-50 z-10  "
-      } justify-between overFlow-auto p-6 bg-neutral-50 text-neutral-900  shadow-md`}
+          : "fixed w-full h-full overflow-auto bg-neutral-50 z-10  "
+      } justify-between overFlow-auto p-6 bg-neutral-50 text-neutral-900 shadow-md`}
     >
       <div className={`flex ${smallScreen && `w-full`} justify-between`}>
         <Link className="w-32 " href="/">
@@ -106,10 +106,10 @@ function Header() {
         <ul
           className={`font-semibold ${
             smallScreen && click
-              ? ` mt-4 flex pt-4 w-full h-auto  inset-y-0 right-0 bg-neutral-50 z-50 flex-col  overflow-scroll text-base  space-y-8 `
+              ? ` mt-4 flex pt-4 w-full h-auto  inset-y-0 right-0 bg-neutral-50 z-50 flex-col  overflow-auto text-base  space-y-8 `
               : smallScreen
               ? "hidden"
-              : "flex space-x-12 "
+              : "flex xl:space-x-12 space-x-4"
           }  `}
         >
           {navigation.map((item, index) => {

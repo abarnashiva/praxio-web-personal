@@ -9,12 +9,9 @@ import { Button } from "../common/Button";
 import FlexContent from "../components/FlexContent";
 import CardContent from "../components/Cardcontent";
 import NumberUnFill from "../components/Numberunfill";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Content() {
-
-  const router = useRouter();
-
   return (
     <div>
       <Heading>About US</Heading>
@@ -34,7 +31,9 @@ export default function Content() {
         nature harmoniously coexist, and we&#39;re dedicated to making that
         vision a reality.
       </Paragraph>
-      <Button text={"Contact Us"} onClick={() => router.push(`/contact`)} />
+      <Link href="/contact">
+        <Button text={"Contact Us"} />
+      </Link>
       <SemiHeading>Mission</SemiHeading>
       <Paragraph>
         To integrate pioneering technologies with urban development, providing

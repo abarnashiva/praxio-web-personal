@@ -7,7 +7,7 @@ interface FutureContentProps {
 export default function FutureContent({ children }: FutureContentProps) {
   return (
     <>
-      <div className="w-full flex justify-center my-auto xl:px-16">{children}</div>
+      <div className="w-full flex justify-center my-auto">{children}</div>
     </>
   );
 }

@@ -11,7 +11,7 @@ interface ParagraphProps {
 export default function Paragraph({ children, large, whiteText, footerText, contact }: ParagraphProps) {
   const words = React.Children.toArray(children).join(" ").split(" ");
   const defaultText = large
-    ? "text-lg"
+    ? "text-lg py-4"
     : whiteText
     ? "text-white text-center py-4"
     : footerText

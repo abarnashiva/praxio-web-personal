@@ -16,7 +16,7 @@ export default function Heading({ children, center, margin, black }: HeadingProp
 
   return (
     <h1
-      className={`font-semibold text-3xl pt-4 ${textAlignClass} ${marginAlign} ${blacktext}`}
+      className={`font-semibold text-3xl ${textAlignClass} ${marginAlign} ${blacktext}`}
     >
       {children}
     </h1>
