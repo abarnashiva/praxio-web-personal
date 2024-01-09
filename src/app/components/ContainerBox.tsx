@@ -7,7 +7,7 @@ interface ContainerBoxProps {
 export default function ContainerBox({ children }: ContainerBoxProps) {
   return (
     <>
-      <div className="container w-full md:px-6">{children}</div>
+      <div className="container w-full px-6 xl:px-0">{children}</div>
     </>
   );
 }

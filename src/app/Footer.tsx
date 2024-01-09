@@ -28,6 +28,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-800 text-white py-4">
+      <ContainerBox>
         {smallScreen && (
           <FlexBox logo>
             <div>
@@ -130,9 +131,8 @@ export default function Footer() {
           </FlexContent>
         </FlexBox>
 
-        <Paragraph whiteText>
-          Copyright © 2023 Praxio
-        </Paragraph>
+        <Paragraph whiteText>Copyright © 2023 Praxio</Paragraph>
+      </ContainerBox>
     </footer>
   );
 }
