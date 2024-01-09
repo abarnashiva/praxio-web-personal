@@ -1,21 +1,20 @@
-import React from 'react'
-import Heading from '../components/Heading';
-import FlexFuture from '../components/FlexFuture';
-import FutureImage from '../components/FutureImage';
-import FutureContent from '../components/FutureContent';
-import Paragraph from '../components/Paragraph';
-import ContainerBox from '../components/ContainerBox';
-import { Button } from '../common/Button';
-import Link from 'next/link';
+import React from "react";
+import Heading from "../components/Heading";
+import FlexFuture from "../components/FlexFuture";
+import FutureImage from "../components/FutureImage";
+import FutureContent from "../components/FutureContent";
+import Paragraph from "../components/Paragraph";
+import ContainerBox from "../components/ContainerBox";
+import { Button } from "../common/Button";
+import Link from "next/link";
 
 export default function FutureTechnology() {
   return (
     <div>
-      <Heading center margin>
-        Crafting the Future of Technology
-      </Heading>
-
       <ContainerBox>
+        <Heading center margin>
+          Crafting the Future of Technology
+        </Heading>
         <FlexFuture>
           <FutureImage source={"./images/future-technology.png"}></FutureImage>
           <FutureContent>
