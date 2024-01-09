@@ -22,7 +22,7 @@ export default function Content() {
         Innovate, Design, Deliver: Transforming Ideas into Seamless Solutions
       </Subheading>
       <Paragraph>
-        At PRAXIO, we specialize in comprehensive software development and
+        At Praxio, we specialize in comprehensive software development and
         integration services, designed to elevate your business to new heights.
         Our expert team of developers, engineers, and integration specialists
         collaborates with you to craft cutting-edge software solutions that

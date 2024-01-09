@@ -45,7 +45,7 @@ export default function Content() {
       </SubHeading>
 
       <Paragraph>
-        At PRAXIO, we specialize in turning concepts into reality at an
+        At Praxio, we specialize in turning concepts into reality at an
         unmatched pace. Our Rapid Prototyping & Development services empower
         businesses to innovate, iterate, and bring their products to market
         faster than ever before. Whether you{`'`}re a startup with a

@@ -27,7 +27,7 @@ export default function Content() {
         like AI, IoT, and Visual Intelligence. With a customer-centric ethos, we
         pride ourselves on transforming visions into tangible solutions,
         offering end-to-end services that seamlessly integrate technology into
-        urban spaces. At PRAXIO, we believe in a future where technology and
+        urban spaces. At Praxio, we believe in a future where technology and
         nature harmoniously coexist, and we&#39;re dedicated to making that
         vision a reality.
       </Paragraph>

@@ -22,7 +22,7 @@ export default function Content() {
         Innovative Designs, Seamless Prototypes: Transforming Ideas into Reality
       </Subheading>
       <Paragraph>
-        At PRAXIO, we specialize in cutting-edge hardware design and prototyping
+        At Praxio, we specialize in cutting-edge hardware design and prototyping
         services. Our dedicated team of experienced engineers and designers is
         committed to bringing your innovative ideas to life. From concept
         development and schematic design to PCB layout, fabrication, and

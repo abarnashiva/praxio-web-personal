@@ -24,7 +24,7 @@ const phrases = [
     heading: "Elevate Your Understanding with",
     image: `${"./images/vision-ai.jpg"}`,
     description:
-      "At PRAXIO, we use Visual Intelligence to swiftly transform data into meaningful insights, providing clarity in a world of information overload and empowering your decision-making process.",
+      "At Praxio, we use Visual Intelligence to swiftly transform data into meaningful insights, providing clarity in a world of information overload and empowering your decision-making process.",
     shortDescription: "See Beyond with Visual Artificial Intelligence",
     name: "Explore Visual Intelligence Now",
     url: "/products/visual-intelligence",
@@ -34,7 +34,7 @@ const phrases = [
     heading: "Unlock the Future with seamless",
     image: "./images/iot-solution.jpg",
     description:
-      "At PRAXIO, our IoT solutions redefine connectivity, communication, and creation. Enter a realm where devices collaborate effortlessly, data transforms into actionable insights, and innovation knows no bounds.",
+      "At Praxio, our IoT solutions redefine connectivity, communication, and creation. Enter a realm where devices collaborate effortlessly, data transforms into actionable insights, and innovation knows no bounds.",
     shortDescription: "Connecting the World, One Device at a Time",
     name: "Explore our IOT Solutions",
     url: "/products/iot-development",
@@ -44,7 +44,7 @@ const phrases = [
     heading: "Discover Seamless",
     image: "./images/smart-city.jpg",
     description:
-      "At PRAXIO, our IoT solutions redefine connectivity, communication, and creation. Enter a realm where devices collaborate effortlessly, data transforms into actionable insights, and innovation knows no bounds.",
+      "At Praxio, our IoT solutions redefine connectivity, communication, and creation. Enter a realm where devices collaborate effortlessly, data transforms into actionable insights, and innovation knows no bounds.",
     shortDescription: "Connecting Cities, Empowering Communities",
     name: "Explore our Smart City Solutions",
     url: "/products/smart-city",
@@ -54,7 +54,7 @@ const phrases = [
     heading: "Unleash Your Ideas Faster with",
     image: "./images/rapid-prototyping.jpg",
     description:
-      "At PRAXIO where innovation meets speed. Break through the barriers of traditional development and bring your ideas to life swiftly with our cutting-edge rapid prototyping solutions",
+      "At Praxio where innovation meets speed. Break through the barriers of traditional development and bring your ideas to life swiftly with our cutting-edge rapid prototyping solutions",
     shortDescription:
       "Accelerates product development by quickly creating and testing initial design concepts",
     name: "Explore our Rapid Prototype Solutions",

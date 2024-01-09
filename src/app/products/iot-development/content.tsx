@@ -44,7 +44,7 @@ export default function Content() {
       </SubHeading>
 
       <Paragraph>
-        At PRAXIO,we empower businesses to thrive in the digital age with our
+        At Praxio,we empower businesses to thrive in the digital age with our
         cutting-edge IoT Integration Development services. In an era where
         connectivity is paramount, our expert team specializes in seamlessly
         integrating smart devices, sensors, and systems, creating intelligent

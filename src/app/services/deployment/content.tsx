@@ -22,7 +22,7 @@ export default function Content() {
         Elevate Your Solutions: Seamless Deployment, Infinite Scalability
       </Subheading>
       <Paragraph>
-        At PRAXIO, we understand the critical importance of deployment and
+        At Praxio, we understand the critical importance of deployment and
         scalability in today&#39;s dynamic business landscape. Our expert
         services in deployment and scalability ensure that your solutions are
         not only seamlessly implemented but also designed to grow with your

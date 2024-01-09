@@ -42,7 +42,7 @@ export default function Content() {
         Empowering Smarter Futures: Our Smart City Development Solutions
       </SubHeading>
       <Paragraph>
-        At PRAXIO, we specialize in cutting-edge Smart City Development
+        At Praxio, we specialize in cutting-edge Smart City Development
         Solutions designed to transform urban landscapes into efficient,
         connected, and eco-friendly environments. Our expert team of urban
         planners, engineers, and technology innovators collaborates to implement

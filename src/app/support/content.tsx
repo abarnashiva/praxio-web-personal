@@ -39,7 +39,7 @@ export default function Content() {
       <SubContent>We&#39;re Here to Help!</SubContent>
       <SubHeading>Where Every Query Finds a Solution.</SubHeading>
       <Paragraph>
-        At PRAXIO, we are committed to providing exceptional support to our
+        At Praxio, we are committed to providing exceptional support to our
         valued customers. Whether you have questions, need technical assistance,
         or want to explore our resources, you&#39;re in the right place. Our
         dedicated support team is here to assist you every step of the way.
@@ -92,7 +92,7 @@ export default function Content() {
             developers have at PRAXIO?
           </SemiHeading>
           <Paragraph>
-            At PRAXIO developers have an average of 5+ years of expertise in
+            At Praxio developers have an average of 5+ years of expertise in
             their respective development field. Our developers keep up with the
             latest technologies and techniques to create world-class solutions
             that support market trends. They have a lot of expertise with
