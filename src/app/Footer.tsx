@@ -124,7 +124,7 @@ export default function Footer() {
                 </FlexBox>
                 <FlexBox content>
                   <MdOutlineEmail className="text-xl" />
-                  sales@praxio.in
+                  info@praxio.in
                 </FlexBox>
               </div>
             </div>

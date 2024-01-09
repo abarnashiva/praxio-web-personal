@@ -144,7 +144,7 @@ const Hero: React.FC = () => {
               </div>
               <div>
                 <Heading black>{phrase.label}</Heading>
-                <Paragraph>{phrase.shortDescription}</Paragraph>
+                <Paragraph swiper>{phrase.shortDescription}</Paragraph>
               </div>
             </SwiperSlide>
           ))}

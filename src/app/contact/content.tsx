@@ -92,7 +92,7 @@ export default function Content() {
                 <Icons contact>
                   <MdOutlineEmail />
                 </Icons>
-                sales@praxio.in
+                info@praxio.in
               </FlexBox>
             </div>
           </FlexAddress>
