@@ -10,7 +10,7 @@ function Header() {
   const isClient = typeof window === `object` ? true : false;
 
   const handleResize = () => {
-    setSmallScreen(window.innerWidth <= 800);
+    setSmallScreen(window.innerWidth <= 900);
   };
   useEffect(() => {
     window.addEventListener("resize", handleResize);
