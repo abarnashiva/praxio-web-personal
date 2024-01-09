@@ -132,6 +132,7 @@ function Header() {
                         <Link
                           className={`h-full`}
                           href={`${item.url && item.url}`}
+                          onClick={() => setClick(!click)}
                         >
                           {item.label}
                         </Link>
@@ -155,6 +156,7 @@ function Header() {
                           "absolute top-8 z-10 shadow-slate-400 shadow-lg bg-slate-50 rounded-lg "
                         } flex flex-col gap-4 ${smallScreen && "w-full"} `}
                         onMouseLeave={() => setShow(false)}
+                        onClick={() => setClick(!click)}
                       >
                         {item.children.map((child, ind) => {
                           return (
