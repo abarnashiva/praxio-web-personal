@@ -153,29 +153,35 @@ function Header() {
                       <div
                         className={` mt-4   ${
                           !smallScreen &&
-                          "absolute top-8 z-10 shadow-slate-400 shadow-lg bg-slate-50 rounded-lg "
-                        } flex flex-col gap-4 ${smallScreen && "w-full"} `}
+                          "absolute top-8 z-10  bg-transperant rounded-lg pt-2.5"
+                        } flex flex-col gap-4   ${smallScreen && "w-full"} `}
                         onMouseLeave={() => setShow(false)}
                         onClick={() => setClick(!click)}
                       >
-                        {item.children.map((child, ind) => {
-                          return (
-                            <div
-                              className="  navList flex group px-4 py-2 text-gray-700 hover:text-red-600  transition-all rounded-lg"
-                              key={ind}
-                            >
-                              <Link
-                                className="  truncate"
-                                href={`${child.url}`}
+                        <div
+                          className={`bg-slate-50 ${
+                            !smallScreen && "shadow-slate-400 shadow-md  mt-4"
+                          }`}
+                        >
+                          {item.children.map((child, ind) => {
+                            return (
+                              <div
+                                className="navList flex group px-4 py-2 text-gray-700 bg-slate-50 hover:text-red-600  transition-all rounded-lg"
+                                key={ind}
                               >
-                                {child.name}
-                              </Link>
-                              <span className="w-4  mx-4 opacity-0 scale-75 group-hover:opacity-100 ">
-                                <Arrow fill="#ED1F24CC" />
-                              </span>
-                            </div>
-                          );
-                        })}
+                                <Link
+                                  className="  truncate"
+                                  href={`${child.url}`}
+                                >
+                                  {child.name}
+                                </Link>
+                                <span className="w-4  mx-4 opacity-0 scale-75 group-hover:opacity-100 ">
+                                  <Arrow fill="#ED1F24CC" />
+                                </span>
+                              </div>
+                            );
+                          })}
+                        </div>
                       </div>
                     )}
                   </li>

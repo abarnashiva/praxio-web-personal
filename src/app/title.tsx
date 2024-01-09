@@ -18,7 +18,7 @@ export default function Title() {
   }, [pathname]);
 
   return pageName !== "home" && pageName !== "" ? (
-    <title>{`Praxio - ${lodash.capitalize(pageName)}`}</title>
+    <title>{`${lodash.capitalize(pageName)} - Praxio`}</title>
   ) : (
     <title>Praxio</title>
   );

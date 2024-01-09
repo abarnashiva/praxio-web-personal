@@ -14,7 +14,7 @@ export default function Card({ header, imgSrc, content }: CardProps) {
       >
         <div>
           <div className={`transition-all`}>
-            <div className="m-auto">{imgSrc}</div>
+            <div className="m-auto pt-5">{imgSrc}</div>
             <div className="flex my-4 h-auto px-5 items-center">
               <div className="font-semibold">{header}</div>
               <div className="icon w-[1rem] ms-3">
