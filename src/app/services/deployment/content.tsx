@@ -13,11 +13,6 @@ import StartProject from "@/app/common/StartProject";
 export default function Content() {
   return (
     <div>
-      <Heading>Deployment & Scalability</Heading>
-      <SubContent>
-        Seamless deployment of cutting-edge technologies and the ability to
-        scale operations are pivotal factors.
-      </SubContent>
       <Subheading>
         Elevate Your Solutions: Seamless Deployment, Infinite Scalability
       </Subheading>

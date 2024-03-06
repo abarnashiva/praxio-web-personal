@@ -7,7 +7,7 @@ interface HeroTextProps {
 export default function HeroText({ children }: HeroTextProps) {
   return (
     <>
-      <text className="text-lg font-semibold opacity-75">
+      <text className="text-lg font-semibold text-banner">
         {children}
       </text>
     </>

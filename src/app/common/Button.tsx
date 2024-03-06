@@ -6,7 +6,7 @@ const Button: React.FC<{
   onClick?: () => void;
 }> = (props) => {
   const baseStyles = `group flex items-center shadow-sm shadow-neutral-500 lg:px-5 px-3 lg:py-3 py-1 transition-all  border-2 border-primary `;
-  const filledStyles = `bg-primary-500 hover:bg-primary-400 text-white`;
+  const filledStyles = `bg-primary hover:bg-primary-200 text-white`;
   const outlinedStyles = ` hover:border-primary-400 text-primary`;
   const btnStyles = `${baseStyles} ${
     props.outline ? outlinedStyles : filledStyles
@@ -27,20 +27,21 @@ const SecondaryButton: React.FC<{
   onClick?: () => void;
 }> = (props) => {
   const baseStyles = `group flex items-center shadow-sm shadow-neutral-500 lg:px-5 px-3 lg:py-3 py-1 transition-all border-2 border-white `;
-  const filledStyles = `bg-white hover:bg-white hover:shadow-md text-primary-500 font-semibold`;
+  const filledStyles = `bg-white hover:bg-white hover:shadow-md text-primary font-semibold`;
   const outlinedStyles = `hover:border-primary-400 text-primary`;
-  const btnStyles = `${baseStyles} ${props.outline ? outlinedStyles : filledStyles} my-4`; // Adjusted margin for different screen sizes
+  const btnStyles = `${baseStyles} ${
+    props.outline ? outlinedStyles : filledStyles
+  } my-4`; // Adjusted margin for different screen sizes
 
   return (
     <button className={`${btnStyles} `} onClick={props.onClick}>
       <span>{props.text}</span>
       <span className="group-hover:translate-x-4 transition-transform w-3 lg:w-4 lg:mx-4 mx-2">
-        <Arrow fill="#ed1f24cc" />
+        <Arrow fill="#106FB1" />
       </span>
     </button>
   );
 };
-
 
 const SimpleButton: React.FC<{
   text: string;

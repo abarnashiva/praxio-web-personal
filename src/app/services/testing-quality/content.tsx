@@ -9,15 +9,11 @@ import CardContent from "../../components/Cardcontent";
 import Numberunfill from "../../components/Numberunfill";
 import FlexContent from "../../components/FlexContent";
 import StartProject from "@/app/common/StartProject";
+import HeroSwipe from "@/app/components/HeroSwipe";
 
 export default function Content() {
   return (
     <div>
-      <Heading>Testing & Quality Assurance</Heading>
-      <SubContent>
-        Ensuring software reliability and performance through rigorous testing
-        and quality assurance processes.
-      </SubContent>
       <Subheading>
         Ensuring Excellence Through Rigorous Testing & Quality Assurance
       </Subheading>

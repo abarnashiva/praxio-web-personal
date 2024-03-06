@@ -32,12 +32,6 @@ Smart city solutions integrate advanced technologies and data analytics to enhan
 export default function Content() {
   return (
     <div>
-      <Heading>Smart City Development Solutions</Heading>
-      <Paragraph>
-        Harnessing technology for sustainable urban growth, enhanced citizen
-        services, and efficient municipal management.
-      </Paragraph>
-
       <SubHeading>
         Empowering Smarter Futures: Our Smart City Development Solutions
       </SubHeading>

@@ -20,7 +20,7 @@ export default function Paragraph({ children, large, whiteText, footerText, cont
     : contact
     ? "leading-7"
     : swiper
-    ? "hover:cursor-pointer py-2"
+    ? "text-white hover:cursor-pointer py-2"
     : "text-gray-700 py-4";
 
   return (

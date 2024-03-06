@@ -52,8 +52,7 @@ export default function Content() {
 
   return (
     <div>
-      <Heading>Contact US</Heading>
-      <SubContent>Get in touch with PRAXIO</SubContent>
+
       <SubHeading>
         Connecting Dreams to Reality: Reach Out and Let&#39;s Create Together!
       </SubHeading>

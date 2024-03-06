@@ -10,12 +10,11 @@ import FlexContent from "../components/FlexContent";
 import CardContent from "../components/Cardcontent";
 import NumberUnFill from "../components/Numberunfill";
 import Link from "next/link";
+import HeroSwipe from "../components/HeroSwipe";
 
 export default function Content() {
   return (
     <div>
-      <Heading>About US</Heading>
-      <SubContent>Your Vision, Our Innovation - A Brighter Tomorrow</SubContent>
       <SubHeading>Empowering Tomorrow with Intelligent Solutions</SubHeading>
       <Paragraph>
         Established in 2018, PRAXIO is a beacon of innovation and commitment to

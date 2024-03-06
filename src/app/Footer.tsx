@@ -27,13 +27,13 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="bg-gray-800 text-white py-4">
+    <footer className="bg-banner text-white py-4">
       <ContainerBox>
         {smallScreen && (
           <FlexBox logo>
             <div>
               <Link href="/">
-                <img src="/footer-logo.svg" alt="logo" className="w-40" />
+                <img src="/Praxio logo final.png" alt="logo" className="w-40" />
               </Link>
               <FlexSocial centerAlign>
                 <Icons white small>
@@ -54,7 +54,11 @@ export default function Footer() {
             <FlexBox logo>
               <div>
                 <Link href="/">
-                  <img src="/footer-logo.svg" alt="logo" className="w-40" />
+                  <img
+                    src="/Praxio logo final.png"
+                    alt="logo"
+                    className="w-40"
+                  />
                 </Link>
                 <FlexSocial centerAlign>
                   <Icons white small>

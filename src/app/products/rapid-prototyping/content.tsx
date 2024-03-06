@@ -34,12 +34,6 @@ Rapid Prototyping & Development is a process that quickly creates a scaled-down 
 export default function Content() {
   return (
     <div>
-      <Heading>Rapid Prototyping & Development</Heading>
-      <Paragraph>
-        Turning ideas into tangible solutions swiftly and efficiently, fostering
-        innovation and product evolution.
-      </Paragraph>
-
       <SubHeading>
         Accelerating Ideas to Reality: Rapid Prototyping & Development Solutions
       </SubHeading>

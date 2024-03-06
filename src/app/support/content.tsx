@@ -35,8 +35,6 @@ export default function Content() {
   );
   return (
     <div>
-      <Heading>Support</Heading>
-      <SubContent>We&#39;re Here to Help!</SubContent>
       <SubHeading>Where Every Query Finds a Solution.</SubHeading>
       <Paragraph>
         At Praxio, we are committed to providing exceptional support to our
@@ -110,7 +108,12 @@ export default function Content() {
             <form>
               <FormInput label={"Name"} name={"name"} />
               <FormInput label={"Mail ID"} name={"email"} />
-              <FormInput label={"Your Query"} name={"query"} type="textarea" rows={6} />
+              <FormInput
+                label={"Your Query"}
+                name={"query"}
+                type="textarea"
+                rows={6}
+              />
               <SimpleButton text={"Submit"} />
             </form>
           </BorderBox>

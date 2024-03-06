@@ -33,12 +33,6 @@ Internet of Things, works by connecting everyday devices to the internet, allowi
 export default function Content() {
   return (
     <div>
-      <Heading>IoT Integration Development</Heading>
-      <SubContent>
-        IoT transforms the way we interact with the world, making our lives more
-        convenient, efficient, and connected.
-      </SubContent>
-
       <SubHeading>
         Connecting Your World, Enhancing Your Life: Embrace the IoT Revolution!
       </SubHeading>
@@ -56,7 +50,7 @@ export default function Content() {
       <ReactMarkdown
         components={{
           h2: ({ node, ...props }) => (
-            <h2 className="text-primary font-bold text-lg py-3" {...props} />
+            <h2 className="text-primary font-bold text-xl py-3" {...props} />
           ),
           p: ({ node, ...props }) => (
             <p className="text-gray-700 py-4" {...props} />

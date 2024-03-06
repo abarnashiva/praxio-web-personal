@@ -18,20 +18,29 @@ const config: Config = {
       background: "#fff",
       colors: {
         primary: {
-          DEFAULT: "#ED1F24CC",
-          100: "#ED1F24CC",
-          200: "#f9b8ba",
-          300: "#f6898c",
-          400: "#f25a5d",
-          500: "#ED1F24CC",
-          600: "#f25a5d",
-          700: "#a50d11",
+          DEFAULT: "#106FB1",
+          100: "#106FB1",
+          200: "#0e649f",
+          300: "#0d598e",
+          400: "#0b4e7c",
+          500: "#0a436a",
+          600: "#083859",
+          700: "#062c47",
+        },
+        secondary: {
+          DEFAULT: "#7DBC44",
+        },
+        banner: {
+          DEFAULT: "#333333",
         },
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      fontFamily: {
+        sans: ["var(--font-family)", "sans-serif"],
       },
     },
   },

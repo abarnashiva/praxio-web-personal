@@ -106,7 +106,7 @@ const Hero: React.FC = () => {
                   <MainHeading>{phrase.label}</MainHeading>
                   <Paragraph>{phrase.description}</Paragraph>
                   <Link href={`${phrase.url}`}>
-                    <Button text={"Learn More"}/>
+                    <Button text={"Learn More"} />
                   </Link>
                 </HeroContent>
                 <HeroImage source={phrase.image}></HeroImage>
@@ -142,9 +142,17 @@ const Hero: React.FC = () => {
                   }  `}
                 ></div>
               </div>
-              <div>
-                <Heading black>{phrase.label}</Heading>
-                <Paragraph swiper>{phrase.shortDescription}</Paragraph>
+              <div
+                className={`${
+                  active === index ? "text-secondary" : "text-white"
+                }`}
+              >
+                <h2 className="font-semibold text-2xl hover:cursor-pointer">
+                  {phrase.label}
+                </h2>
+                <p className="hover:cursor-pointer py-2">
+                  {phrase.shortDescription}
+                </p>
               </div>
             </SwiperSlide>
           ))}

@@ -45,6 +45,10 @@ function Header() {
           name: "Deployment & Scalability",
           url: "/services/deployment",
         },
+        {
+          name: "Digital Marketing",
+          url: "/services/digital-marketing",
+        },
       ],
     },
     {
@@ -92,11 +96,15 @@ function Header() {
       >
         <div className={`flex ${smallScreen && `w-full`} justify-between`}>
           <Link className="w-32 " href="/">
-            <img src="/praxio.svg" alt="Image Description" className="w-full" />
+            <img
+              src="/Praxio logo final.png"
+              alt="Image Description"
+              className="w-full"
+            />
           </Link>
           {smallScreen && (
             <div
-              className="text-red-600 right-0 w-8 text-center cursor-pointer text-2xl font-medium rounded"
+              className="text-primary right-0 w-8 text-center cursor-pointer text-2xl font-medium rounded"
               onClick={() => setClick(!click)}
             >
               {click ? <FaXmark /> : <FaBars />}
@@ -121,7 +129,7 @@ function Header() {
                   <hr />
 
                   <li
-                    className=" navList cursor-pointer justify-between h-auto overflow-scroll hover:text-red-600 items-center px-3 md:px-1 sm:px-0.5 transition-all truncate"
+                    className=" navList cursor-pointer justify-between h-auto overflow-scroll hover:text-primary items-center px-3 md:px-1 sm:px-0.5 transition-all truncate"
                     key={index}
                     onClick={() => setShow(!show)}
                     onMouseEnter={() => setShow(true)}
@@ -145,7 +153,7 @@ function Header() {
                             show ? `-rotate-90` : `rotate-90`
                           } w-4 mx-1 scale-50`}
                         >
-                          <Arrow fill="#ED1F24CC" />
+                          <Arrow fill="#106FB1" />
                         </span>
                       )}
                     </div>
@@ -166,7 +174,7 @@ function Header() {
                           {item.children.map((child, ind) => {
                             return (
                               <div
-                                className="navList flex group px-4 py-2 text-gray-700 bg-slate-50 hover:text-red-600  transition-all rounded-lg"
+                                className="navList flex group px-4 py-2 text-gray-700 bg-slate-50 hover:text-primary  transition-all rounded-lg"
                                 key={ind}
                               >
                                 <Link
@@ -176,7 +184,7 @@ function Header() {
                                   {child.name}
                                 </Link>
                                 <span className="w-4  mx-4 opacity-0 scale-75 group-hover:opacity-100 ">
-                                  <Arrow fill="#ED1F24CC" />
+                                  <Arrow fill="#106FB1" />
                                 </span>
                               </div>
                             );

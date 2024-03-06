@@ -10,7 +10,7 @@ export default function Card({ header, imgSrc, content }: CardProps) {
   return (
     <div className="h-full">
       <div
-        className={`relative card  bg-white shadow-md h-full transition-transform duration-500 ease-linear cursor-pointer hover:shadow-lg `}
+        className={`relative card  bg-white shadow-md h-full transition-transform duration-500 ease-linear cursor-pointer hover:shadow-lg rounded-md`}
       >
         <div>
           <div className={`transition-all`}>
@@ -18,7 +18,7 @@ export default function Card({ header, imgSrc, content }: CardProps) {
             <div className="flex my-4 h-auto px-5 items-center">
               <div className="font-semibold">{header}</div>
               <div className="icon w-[1rem] ms-3">
-                <Arrow fill="#ed1f24cc" />
+                <Arrow fill="#7DBC44" />
               </div>
             </div>
           </div>

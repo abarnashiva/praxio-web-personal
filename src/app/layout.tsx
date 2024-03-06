@@ -26,7 +26,7 @@ export default function RootLayout({
         <meta property="og:image" content="/favicon.ico" />
         <meta property="og:twitter:image" content="/favicon.ico" />
         <meta property="og:title" content="Praxio" />
-        <link rel="icon" href="/title-logo.svg" type="image/svg+xml" />
+        <link rel="icon" href="/title-logo.png" type="image/png" />
         <Title />
       </head>
       <body className={inter.className}>

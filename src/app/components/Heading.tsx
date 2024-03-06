@@ -4,19 +4,24 @@ interface HeadingProps {
   children: React.ReactNode;
   center?: boolean;
   margin?: boolean;
-  black?: boolean;
+  green?: boolean;
 }
 
-export default function Heading({ children, center, margin, black }: HeadingProps) {
+export default function Heading({
+  children,
+  center,
+  margin,
+  green,
+}: HeadingProps) {
   const textAlignClass = center ? "text-center" : "";
   const marginAlign = margin ? "my-7 pb-4" : "";
-  const blacktext = black
-    ? "text-black text-1xl hover:cursor-pointer"
+  const whitetext = green
+    ? "text-secondary text-1xl hover:cursor-pointer "
     : "text-primary";
 
   return (
     <h1
-      className={`font-semibold text-3xl ${textAlignClass} ${marginAlign} ${blacktext}`}
+      className={`font-semibold text-3xl ${textAlignClass} ${marginAlign} ${whitetext}`}
     >
       {children}
     </h1>

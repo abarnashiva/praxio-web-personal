@@ -13,11 +13,7 @@ import StartProject from "@/app/common/StartProject";
 export default function Content() {
   return (
     <div>
-      <Heading>Software Development & Integration</Heading>
-      <SubContent>
-        Seamless software development and integration for innovative solutions
-        and enhanced user experiences.
-      </SubContent>
+      
       <Subheading>
         Innovate, Design, Deliver: Transforming Ideas into Seamless Solutions
       </Subheading>

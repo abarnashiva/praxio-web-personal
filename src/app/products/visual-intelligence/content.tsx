@@ -36,11 +36,7 @@ and understand images and videos.
 export default function Content() {
   return (
     <div>
-      <Heading>Visual Intelligence</Heading>
-      <SubContent>
-        Visual Intelligence enables machines to understand and interpret visual
-        information.
-      </SubContent>
+      
 
       <StartProject />
 

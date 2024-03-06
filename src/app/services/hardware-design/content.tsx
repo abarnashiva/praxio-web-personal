@@ -13,11 +13,7 @@ import StartProject from "@/app/common/StartProject";
 export default function Content() {
   return (
     <div>
-      <Heading>Hardware Design & Prototyping</Heading>
-      <SubContent>
-        Turning innovative ideas into tangible reality through expert hardware
-        design and rapid prototyping solutions.
-      </SubContent>
+      
       <Subheading>
         Innovative Designs, Seamless Prototypes: Transforming Ideas into Reality
       </Subheading>
