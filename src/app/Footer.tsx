@@ -143,6 +143,12 @@ export default function Footer() {
               >
                 Deployment & Scalability
               </Link>
+              <Link
+                href="/services/digital-marketing"
+                className="hover:text-secondary"
+              >
+                Digital Marketing
+              </Link>
             </FlexContent>
           </div>
           <FlexContent normal>

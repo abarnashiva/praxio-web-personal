@@ -46,11 +46,11 @@ export default function Content() {
     { id: 2, name: "Custom Software Development & Integration" },
     { id: 3, name: "Testing & Quality Assurance" },
     { id: 4, name: "Deployment & Scalability" },
+    { id: 5, name: "Digital Marketing" },
   ];
 
   return (
     <div>
-
       <SubHeading>
         Connecting Dreams to Reality: Reach Out and Let&#39;s Create Together!
       </SubHeading>
@@ -107,7 +107,7 @@ export default function Content() {
           </FlexSocial>
         </div>
         <div>
-          <SubHeading>Connect With Our Team</SubHeading>  
+          <SubHeading>Connect With Our Team</SubHeading>
           <BorderBox>
             <form>
               <FormInput label={"Name"} name={"name"} />
