@@ -9,12 +9,19 @@ interface ParagraphProps {
   swiper?: boolean;
 }
 
-export default function Paragraph({ children, large, whiteText, footerText, contact, swiper }: ParagraphProps) {
+export default function Paragraph({
+  children,
+  large,
+  whiteText,
+  footerText,
+  contact,
+  swiper,
+}: ParagraphProps) {
   const words = React.Children.toArray(children).join(" ").split(" ");
   const defaultText = large
-    ? "text-lg py-4"
+    ? "text-lg pb-6"
     : whiteText
-    ? "text-white text-center py-4"
+    ? "text-white text-center pb-4 pt-6"
     : footerText
     ? "text-white leading-7"
     : contact

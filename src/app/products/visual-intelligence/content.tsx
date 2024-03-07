@@ -1,8 +1,8 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import Heading from "@/app/components/Heading";
-import SubContent from "@/app/components/SubContent";
 import StartProject from "@/app/common/StartProject";
+import SubHeading from "@/app/components/SubHeading";
+import Paragraph from "@/app/components/Paragraph";
 
 const markdownContent = `
 
@@ -36,7 +36,18 @@ and understand images and videos.
 export default function Content() {
   return (
     <div>
-      
+      <SubHeading>
+        Transforming Perspectives : Unleashing the Power of Visual Intelligence
+      </SubHeading>
+      <Paragraph>
+        At PRAXIO we understand the significance of visual intelligence in
+        today&#39;s data-driven world. Our innovative products harness the
+        latest advancements in computer vision and artificial intelligence to
+        provide you with unparalleled insights and efficiencies. Explore our
+        range of visual intelligence solutions designed to transform raw visual
+        data into actionable information, empowering businesses across various
+        industries.
+      </Paragraph>
 
       <StartProject />
 

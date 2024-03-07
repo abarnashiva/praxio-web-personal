@@ -2,8 +2,6 @@ import React from "react";
 
 import Subheading from "../../components/SubHeading";
 import Paragraph from "../../components/Paragraph";
-import Heading from "../../components/Heading";
-import SubContent from "../../components/SubContent";
 import SemiHeading from "../../components/SemiHeading";
 import CardContent from "../../components/Cardcontent";
 import Numberunfill from "../../components/Numberunfill";
@@ -40,7 +38,7 @@ export default function Content() {
         tangible, functional prototype. Explore the possibilities with PRAXIO.
       </Paragraph>
       <StartProject />
-      <SemiHeading>
+      <SemiHeading both>
         Why choose PRAXIO for Hardware Design & Prototyping?
       </SemiHeading>
       <FlexContent>

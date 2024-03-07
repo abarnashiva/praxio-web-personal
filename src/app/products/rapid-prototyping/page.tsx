@@ -5,7 +5,6 @@ import Box from "@/app/common/Box";
 import Heading from "../../components/Heading";
 import HeroSwipe from "../../components/HeroSwipe";
 import SubContent from "@/app//components/SubContent";
-import SubHeading from "@/app/components/SubHeading";
 
 export default function SmartCity() {
   return (

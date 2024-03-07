@@ -27,13 +27,13 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="bg-banner text-white py-4">
+    <footer className="bg-banner text-white pt-6">
       <ContainerBox>
         {smallScreen && (
           <FlexBox logo>
             <div>
               <Link href="/">
-                <img src="/Praxio logo final.png" alt="logo" className="w-40" />
+                <img src="/footer logo.png" alt="logo" className="w-40" />
               </Link>
               <FlexSocial centerAlign>
                 <Icons white small>
@@ -54,11 +54,7 @@ export default function Footer() {
             <FlexBox logo>
               <div>
                 <Link href="/">
-                  <img
-                    src="/Praxio logo final.png"
-                    alt="logo"
-                    className="w-40"
-                  />
+                  <img src="/footer logo.png" alt="logo" className="w-40" />
                 </Link>
                 <FlexSocial centerAlign>
                   <Icons white small>
@@ -77,38 +73,76 @@ export default function Footer() {
           <div>
             <SubHeading whiteText>Quick Links</SubHeading>
             <FlexContent normal>
-              <Link href="/">Home</Link>
-              <Link href="/about">About Us</Link>
-              <Link href="/contact">Contact</Link>
-              <Link href="/support">Support</Link>
+              <Link href="/" className="hover:text-secondary">
+                Home
+              </Link>
+              <Link href="/about" className="hover:text-secondary">
+                About Us
+              </Link>
+              <Link href="/contact" className="hover:text-secondary">
+                Contact
+              </Link>
+              <Link href="/support" className="hover:text-secondary">
+                Support
+              </Link>
             </FlexContent>
           </div>
           <div>
             <SubHeading whiteText>Products & Solutions</SubHeading>
             <FlexContent normal>
-              <Link href="/products/visual-intelligence">
+              <Link
+                href="/products/visual-intelligence"
+                className="hover:text-secondary"
+              >
                 Visuals Intelligence Platform
               </Link>
-              <Link href="/products/iot-development">
+              <Link
+                href="/products/iot-development"
+                className="hover:text-secondary"
+              >
                 IoT Management Platform
               </Link>
-              <Link href="/products/smart-city">Smart City Solutions</Link>
-              <Link href="/products/rapid-prototyping">Rapid Prototyping</Link>
+              <Link
+                href="/products/smart-city"
+                className="hover:text-secondary"
+              >
+                Smart City Solutions
+              </Link>
+              <Link
+                href="/products/rapid-prototyping"
+                className="hover:text-secondary"
+              >
+                Rapid Prototyping
+              </Link>
             </FlexContent>
           </div>
           <div>
             <SubHeading whiteText>Services</SubHeading>
             <FlexContent normal>
-              <Link href="/services/hardware-design">
+              <Link
+                href="/services/hardware-design"
+                className="hover:text-secondary"
+              >
                 Custom Hardware Design & Prototyping
               </Link>
-              <Link href="/services/software-development">
+              <Link
+                href="/services/software-development"
+                className="hover:text-secondary"
+              >
                 Custom Software Development & Integration
               </Link>
-              <Link href="/services/testing-quality">
+              <Link
+                href="/services/testing-quality"
+                className="hover:text-secondary"
+              >
                 Testing & Quality Assurance
               </Link>
-              <Link href="/services/deployment">Deployment & Scalability</Link>
+              <Link
+                href="/services/deployment"
+                className="hover:text-secondary"
+              >
+                Deployment & Scalability
+              </Link>
             </FlexContent>
           </div>
           <FlexContent normal>

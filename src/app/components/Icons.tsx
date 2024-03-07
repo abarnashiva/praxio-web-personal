@@ -14,8 +14,8 @@ export default function Icons({ children, white, small, contact }: IconsProps) {
     : small
     ? "text-xl mt-5 py-4"
     : contact
-    ? "text-primary py-1 pr-2"
-    : "text-gray-700 py-4";
+    ? "text-secondary py-1 pr-2"
+    : "text-secondary py-4";
 
   return (
     <>

@@ -6,7 +6,7 @@ interface FlexSocialProps {
 }
 
 export default function FlexSocial({ children, centerAlign }: FlexSocialProps) {
-  const centerAligning = centerAlign ? "justify-center" : "";
+  const centerAligning = centerAlign ? "justify-center pt-2" : "";
 
   return (
     <>

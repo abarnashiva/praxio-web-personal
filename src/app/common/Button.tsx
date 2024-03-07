@@ -7,7 +7,7 @@ const Button: React.FC<{
 }> = (props) => {
   const baseStyles = `group flex items-center shadow-sm shadow-neutral-500 lg:px-5 px-3 lg:py-3 py-1 transition-all  border-2 border-primary `;
   const filledStyles = `bg-primary hover:bg-primary-200 text-white`;
-  const outlinedStyles = ` hover:border-primary-400 text-primary`;
+  const outlinedStyles = ` hover:border-primary-200 text-primary`;
   const btnStyles = `${baseStyles} ${
     props.outline ? outlinedStyles : filledStyles
   } my-4`;
@@ -49,7 +49,7 @@ const SimpleButton: React.FC<{
   onClick?: () => void;
 }> = (props) => {
   const baseStyles = `group flex items-center shadow-sm shadow-neutral-500 lg:px-5 px-3 lg:py-3 py-1 transition-all  border-2 border-primary `;
-  const filledStyles = `bg-primary-500 hover:bg-primary-400 text-white`;
+  const filledStyles = `bg-primary hover:bg-primary-200 text-white`;
   const outlinedStyles = ` hover:border-primary-400 text-primary`;
   const btnStyles = `${baseStyles} ${
     props.outline ? outlinedStyles : filledStyles

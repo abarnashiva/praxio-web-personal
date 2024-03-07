@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Heading from "../components/Heading";
-import SubContent from "../components/SubContent";
 import SubHeading from "../components/SubHeading";
 import Paragraph from "../components/Paragraph";
 import SemiHeading from "../components/SemiHeading";
@@ -10,7 +8,6 @@ import FlexContent from "../components/FlexContent";
 import CardContent from "../components/Cardcontent";
 import NumberUnFill from "../components/Numberunfill";
 import Link from "next/link";
-import HeroSwipe from "../components/HeroSwipe";
 
 export default function Content() {
   return (
@@ -33,7 +30,7 @@ export default function Content() {
       <Link href="/contact">
         <Button text={"Contact Us"} />
       </Link>
-      <SemiHeading>Mission</SemiHeading>
+      <SemiHeading top>Mission</SemiHeading>
       <Paragraph>
         To integrate pioneering technologies with urban development, providing
         sustainable, efficient, and intelligent solutions that enrich the lives
@@ -45,7 +42,7 @@ export default function Content() {
         set the benchmark, turning cities into thriving, eco-friendly, and
         technologically-advanced hubs of prosperity and well-being.
       </Paragraph>
-      <SemiHeading>Core Values</SemiHeading>
+      <SemiHeading bottom>Core Values</SemiHeading>
       <FlexContent>
         <CardContent>
           <NumberUnFill>01</NumberUnFill>

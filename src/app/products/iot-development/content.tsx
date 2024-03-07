@@ -1,7 +1,5 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-import Heading from "@/app/components/Heading";
-import SubContent from "@/app/components/SubContent";
 import SubHeading from "@/app/components/SubHeading";
 import Paragraph from "@/app/components/Paragraph";
 import StartProject from "@/app/common/StartProject";

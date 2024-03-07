@@ -1,15 +1,11 @@
 import React from "react";
-
 import Subheading from "../../components/SubHeading";
 import Paragraph from "../../components/Paragraph";
-import Heading from "../../components/Heading";
-import SubContent from "../../components/SubContent";
 import SemiHeading from "../../components/SemiHeading";
 import CardContent from "../../components/Cardcontent";
 import Numberunfill from "../../components/Numberunfill";
 import FlexContent from "../../components/FlexContent";
 import StartProject from "@/app/common/StartProject";
-import HeroSwipe from "@/app/components/HeroSwipe";
 
 export default function Content() {
   return (
@@ -43,7 +39,7 @@ export default function Content() {
         user satisfaction.
       </Paragraph>
       <StartProject />
-      <SemiHeading>
+      <SemiHeading both>
         Why choose PRAXIO for Testing & Quality Assurance?
       </SemiHeading>
       <FlexContent>

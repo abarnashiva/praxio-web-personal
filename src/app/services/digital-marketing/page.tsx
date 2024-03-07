@@ -12,7 +12,7 @@ export default function Service() {
       <HeroSwipe>
         <Heading green>Digital Marketing</Heading>
         <SubContent>
-          Unlock Your Digital Potential with Praxio&#39s Expert Marketing
+          Unlock Your Digital Potential with Praxio&#39;s Expert Marketing
           Solutions
         </SubContent>
       </HeroSwipe>

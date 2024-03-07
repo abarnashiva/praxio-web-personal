@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Heading from "../components/Heading";
-import SubContent from "../components/SubContent";
 import SubHeading from "../components/SubHeading";
 import Paragraph from "../components/Paragraph";
 import SemiHeading from "../components/SemiHeading";
@@ -64,7 +62,7 @@ export default function Content() {
       </Paragraph>
       <FlexContact>
         <div>
-          <SemiHeading>Reach us out at</SemiHeading>
+          <SemiHeading top>Reach us out at</SemiHeading>
           <FlexAddress>
             <FlexBox contact>
               <Icons contact>
@@ -95,7 +93,7 @@ export default function Content() {
               </FlexBox>
             </div>
           </FlexAddress>
-          <SemiHeading>Follow us on</SemiHeading>
+          <SemiHeading top>Follow us on</SemiHeading>
           <FlexSocial>
             <Icons>
               <FaFacebookF />

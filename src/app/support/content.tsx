@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Heading from "../components/Heading";
-import SubContent from "../components/SubContent";
 import SubHeading from "../components/SubHeading";
 import Paragraph from "../components/Paragraph";
 import SemiHeading from "../components/SemiHeading";
@@ -42,8 +40,8 @@ export default function Content() {
         or want to explore our resources, you&#39;re in the right place. Our
         dedicated support team is here to assist you every step of the way.
       </Paragraph>
-      <SubHeading>Development FAQ</SubHeading>
-      <FlexContent>
+      <SubHeading bottom>Development FAQ</SubHeading>
+      <FlexContent support>
         <CardContent>
           <NumberUnFill>01</NumberUnFill>
           <SemiHeading>What programming languages do you support?</SemiHeading>

@@ -26,7 +26,7 @@ export default function FlexBox({
     : footer
     ? "flex flex-wrap justify-start lg:flex-nowrap xl:justify-around md:gap-12 lg:gap-10 gap-14"
     : logo
-    ? "my-auto flex justify-center lg:justify-start pt-6 lg:pt-0 mx-auto lg:mx-0"
+    ? "my-auto flex justify-center lg:justify-start py-6 lg:pt-0 mx-auto lg:mx-0"
     : contact
     ? "flex gap-2"
     : "grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-center";

@@ -8,7 +8,6 @@ import { Swiper as SwiperType } from "swiper";
 import { Button } from "../common/Button";
 import MainHeading from "../components/MainHeading";
 import Paragraph from "../components/Paragraph";
-import Heading from "../components/Heading";
 import HeroImage from "../components/HeroImage";
 import HeroText from "../components/HeroText";
 import HeroContent from "../components/HeroContent";
