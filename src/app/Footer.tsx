@@ -14,6 +14,7 @@ import ContainerBox from "./components/ContainerBox";
 
 export default function Footer() {
   const [smallScreen, setSmallScreen] = useState(true);
+  const currentYear = new Date().getFullYear();
 
   const handleResize = () => {
     setSmallScreen(window.innerWidth <= 900);
@@ -175,7 +176,7 @@ export default function Footer() {
           </FlexContent>
         </FlexBox>
 
-        <Paragraph whiteText>Copyright © 2023 Praxio</Paragraph>
+        <Paragraph whiteText>Copyright © {currentYear} Praxio</Paragraph>
       </ContainerBox>
     </footer>
   );
