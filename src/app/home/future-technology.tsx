@@ -29,7 +29,7 @@ export default function FutureTechnology() {
                 services in cutting edge technologies.
               </Paragraph>
               <Link href={"/about"}>
-                <Button text={"Learn More"} ></Button>
+                <Button text={"Learn More"}></Button>
               </Link>
             </div>
           </FutureContent>

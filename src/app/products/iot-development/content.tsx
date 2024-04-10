@@ -4,6 +4,9 @@ import SubHeading from "@/app/components/SubHeading";
 import Paragraph from "@/app/components/Paragraph";
 import StartProject from "@/app/common/StartProject";
 import CommonPadding from "@/app/components/CommonPadding";
+import FlexContent from "@/app/components/FlexContent";
+import FlexBox from "@/app/components/FlexBox";
+import ProductImage from "@/app/components/ProductImage";
 
 const markdownContent = `
 
@@ -32,19 +35,25 @@ Internet of Things, works by connecting everyday devices to the internet, allowi
 export default function Content() {
   return (
     <CommonPadding>
-      <SubHeading>
-        Connecting Your World, Enhancing Your Life: Embrace the IoT Revolution!
-      </SubHeading>
+      <FlexBox product>
+        <FlexContent product>
+          <SubHeading>
+            Connecting Your World, Enhancing Your Life: Embrace the IoT
+            Revolution!
+          </SubHeading>
 
-      <Paragraph>
-        We empower businesses to thrive in the digital age with our
-        cutting-edge IoT Integration Development services. In an era where
-        connectivity is paramount, our expert team specializes in seamlessly
-        integrating smart devices, sensors, and systems, creating intelligent
-        ecosystems that drive efficiency, enhance user experiences, and unlock
-        unprecedented possibilities.
-      </Paragraph>
-      <StartProject />
+          <Paragraph>
+            We empower businesses to thrive in the digital age with our
+            cutting-edge IoT Integration Development services. In an era where
+            connectivity is paramount, our expert team specializes in seamlessly
+            integrating smart devices, sensors, and systems, creating
+            intelligent ecosystems that drive efficiency, enhance user
+            experiences, and unlock unprecedented possibilities.
+          </Paragraph>
+          <StartProject />
+        </FlexContent>
+        <ProductImage product source={"../images/iot small.svg"}></ProductImage>
+      </FlexBox>
 
       <ReactMarkdown
         components={{

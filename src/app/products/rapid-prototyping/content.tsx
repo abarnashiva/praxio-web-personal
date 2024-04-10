@@ -4,6 +4,9 @@ import Paragraph from "@/app/components/Paragraph";
 import SubHeading from "@/app/components/SubHeading";
 import StartProject from "@/app/common/StartProject";
 import CommonPadding from "@/app/components/CommonPadding";
+import FlexContent from "@/app/components/FlexContent";
+import FlexBox from "@/app/components/FlexBox";
+import ProductImage from "@/app/components/ProductImage";
 
 const markdownContent = `
 
@@ -34,21 +37,27 @@ Rapid Prototyping & Development is a process that quickly creates a scaled-down 
 export default function Content() {
   return (
     <CommonPadding>
-      <SubHeading>
-        Accelerating Ideas to Reality: Rapid Prototyping & Development Solutions
-      </SubHeading>
+      <FlexBox product>
+        <FlexContent product>
+          <SubHeading>
+            Accelerating Ideas to Reality: Rapid Prototyping & Development
+            Solutions
+          </SubHeading>
 
-      <Paragraph>
-        We specialize in turning concepts into reality at an
-        unmatched pace. Our Rapid Prototyping & Development services empower
-        businesses to innovate, iterate, and bring their products to market
-        faster than ever before. Whether you{`'`}re a startup with a
-        groundbreaking idea or an established enterprise seeking swift product
-        enhancements, our expert team is here to transform your visions into
-        tangible, high-quality prototypes and products.
-      </Paragraph>
+          <Paragraph>
+            We specialize in turning concepts into reality at an unmatched pace.
+            Our Rapid Prototyping & Development services empower businesses to
+            innovate, iterate, and bring their products to market faster than
+            ever before. Whether you{`'`}re a startup with a groundbreaking idea
+            or an established enterprise seeking swift product enhancements, our
+            expert team is here to transform your visions into tangible,
+            high-quality prototypes and products.
+          </Paragraph>
 
-      <StartProject />
+          <StartProject />
+        </FlexContent>
+        <ProductImage product source={"../images/rapid small.svg"}></ProductImage>
+      </FlexBox>
 
       <ReactMarkdown
         components={{

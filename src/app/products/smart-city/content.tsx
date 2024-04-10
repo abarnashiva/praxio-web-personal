@@ -4,6 +4,9 @@ import Paragraph from "@/app/components/Paragraph";
 import SubHeading from "@/app/components/SubHeading";
 import StartProject from "@/app/common/StartProject";
 import CommonPadding from "@/app/components/CommonPadding";
+import FlexContent from "@/app/components/FlexContent";
+import FlexBox from "@/app/components/FlexBox";
+import ProductImage from "@/app/components/ProductImage";
 
 const markdownContent = `
 
@@ -32,19 +35,27 @@ Smart city solutions integrate advanced technologies and data analytics to enhan
 export default function Content() {
   return (
     <CommonPadding>
-      <SubHeading>
-        Empowering Smarter Futures: Our Smart City Development Solutions
-      </SubHeading>
-      <Paragraph>
-        We specialize in cutting-edge Smart City Development
-        Solutions designed to transform urban landscapes into efficient,
-        connected, and eco-friendly environments. Our expert team of urban
-        planners, engineers, and technology innovators collaborates to implement
-        comprehensive solutions that enhance quality of life, improve
-        infrastructure, and foster economic growth.
-      </Paragraph>
+      <FlexBox product>
+        <FlexContent product>
+          <SubHeading>
+            Empowering Smarter Futures: Our Smart City Development Solutions
+          </SubHeading>
+          <Paragraph>
+            We specialize in cutting-edge Smart City Development Solutions
+            designed to transform urban landscapes into efficient, connected,
+            and eco-friendly environments. Our expert team of urban planners,
+            engineers, and technology innovators collaborates to implement
+            comprehensive solutions that enhance quality of life, improve
+            infrastructure, and foster economic growth.
+          </Paragraph>
 
-      <StartProject />
+          <StartProject />
+        </FlexContent>
+        <ProductImage
+          product
+          source={"../images/smart small.svg"}
+        ></ProductImage>
+      </FlexBox>
 
       <ReactMarkdown
         components={{

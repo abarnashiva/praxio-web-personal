@@ -8,6 +8,7 @@ interface FlexBoxProps {
   logo?: boolean;
   contact?: boolean;
   customClass?: string;
+  product?: boolean;
 }
 
 export default function FlexBox({
@@ -18,6 +19,7 @@ export default function FlexBox({
   logo,
   contact,
   customClass,
+  product
 }: FlexBoxProps) {
   const defaultFlex = normal
     ? "flex flex-wrap"
@@ -29,6 +31,8 @@ export default function FlexBox({
     ? "my-auto flex justify-center lg:justify-start py-6 lg:pt-0 mx-auto lg:mx-0"
     : contact
     ? "flex gap-2"
+    : product
+    ? "flex lg:flex-nowrap flex-wrap-reverse xl:gap-20 lg:gap-16 gap-10"
     : "grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-center";
 
   return <div className={` ${customClass} ${defaultFlex}`}>{children}</div>;

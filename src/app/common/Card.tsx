@@ -16,8 +16,8 @@ export default function Card({ header, imgSrc, content }: CardProps) {
           <div className={`transition-all`}>
             <div className="m-auto pt-5">{imgSrc}</div>
             <div className="flex my-4 h-auto px-5 items-center">
-              <div className="font-semibold">{header}</div>
-              <div className="icon w-[1rem] ms-3">
+              <div className="font-semibold pt-4">{header}</div>
+              <div className="icon w-[1rem] ms-3 pt-4">
                 <Arrow fill="#7DBC44" />
               </div>
             </div>

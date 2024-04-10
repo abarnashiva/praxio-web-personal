@@ -5,5 +5,5 @@ interface SubcontentProps {
 }
 
 export default function SubContent({ children }: SubcontentProps) {
-  return <h5 className="text-white py-4 font-medium text-xl">{children}</h5>;
+  return <h5 className="text-white py-4 font-medium lg:text-xl">{children}</h5>;
 }

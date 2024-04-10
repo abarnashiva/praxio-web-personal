@@ -3,6 +3,10 @@ import ReactMarkdown from "react-markdown";
 import StartProject from "@/app/common/StartProject";
 import SubHeading from "@/app/components/SubHeading";
 import Paragraph from "@/app/components/Paragraph";
+import FlexBox from "@/app/components/FlexBox";
+import CommonPadding from "@/app/components/CommonPadding";
+import FlexContent from "@/app/components/FlexContent";
+import ProductImage from "@/app/components/ProductImage";
 
 const markdownContent = `
 
@@ -35,21 +39,30 @@ and understand images and videos.
 
 export default function Content() {
   return (
-    <div>
-      <SubHeading>
-        Transforming Perspectives : Unleashing the Power of Visual Intelligence
-      </SubHeading>
-      <Paragraph>
-        At PRAXIO we understand the significance of visual intelligence in
-        today&#39;s data-driven world. Our innovative products harness the
-        latest advancements in computer vision and artificial intelligence to
-        provide you with unparalleled insights and efficiencies. Explore our
-        range of visual intelligence solutions designed to transform raw visual
-        data into actionable information, empowering businesses across various
-        industries.
-      </Paragraph>
+    <CommonPadding>
+      <FlexBox product>
+        <FlexContent product>
+          <SubHeading>
+            Transforming Perspectives : Unleashing the Power of Visual
+            Intelligence
+          </SubHeading>
+          <Paragraph>
+            We understand the significance of visual intelligence in today&#39;s
+            data-driven world. Our innovative products harness the latest
+            advancements in computer vision and artificial intelligence to
+            provide you with unparalleled insights and efficiencies. Explore our
+            range of visual intelligence solutions designed to transform raw
+            visual data into actionable information, empowering businesses
+            across various industries.
+          </Paragraph>
 
-      <StartProject />
+          <StartProject />
+        </FlexContent>
+        <ProductImage
+          product
+          source={"../images/visual small.svg"}
+        ></ProductImage>
+      </FlexBox>
 
       <ReactMarkdown
         components={{
@@ -63,6 +76,6 @@ export default function Content() {
       >
         {markdownContent}
       </ReactMarkdown>
-    </div>
+    </CommonPadding>
   );
 }
