@@ -20,7 +20,7 @@ export default function FutureTechnology() {
           <FutureContent>
             <div>
               <Paragraph large>
-                At Praxio, we&#39;re more than just technologists. We&#39;re
+                We&#39;re more than just technologists. We&#39;re
                 visionaries. With a team that brings together decades of
                 combined experience, we&#39;re committed to shaping a world
                 where technology amplifies potential and simplifies
@@ -29,7 +29,7 @@ export default function FutureTechnology() {
                 services in cutting edge technologies.
               </Paragraph>
               <Link href={"/about"}>
-                <Button text={"Learn More"} />
+                <Button text={"Learn More"} ></Button>
               </Link>
             </div>
           </FutureContent>

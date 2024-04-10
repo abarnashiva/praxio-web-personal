@@ -95,7 +95,7 @@ export default function Footer() {
                 href="/products/visual-intelligence"
                 className="hover:text-secondary"
               >
-                Visuals Intelligence Platform
+                Visual Intelligence Platform
               </Link>
               <Link
                 href="/products/iot-development"

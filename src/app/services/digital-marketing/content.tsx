@@ -7,17 +7,17 @@ import CardContent from "../../components/Cardcontent";
 import Numberunfill from "../../components/Numberunfill";
 import FlexContent from "../../components/FlexContent";
 import StartProject from "@/app/common/StartProject";
+import CommonPadding from "@/app/components/CommonPadding";
 
 export default function Content() {
   return (
-    <div>
-      
+    <CommonPadding>
       <Subheading>
         Creative Campaigns, Impactful Results: Turning Concepts into
         Conversions.
       </Subheading>
       <Paragraph>
-        At PRAXIO, we understand the pivotal role of innovation and execution in
+        We understand the pivotal role of innovation and execution in
         today&#39;s fast-paced digital marketing arena. Our expert digital
         marketing services are tailored to ensure your campaigns not only stand
         out but also drive tangible results.
@@ -104,6 +104,6 @@ export default function Content() {
           </Paragraph>
         </CardContent>
       </FlexContent>
-    </div>
+    </CommonPadding>
   );
 }

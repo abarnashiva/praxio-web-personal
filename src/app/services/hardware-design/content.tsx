@@ -7,16 +7,16 @@ import CardContent from "../../components/Cardcontent";
 import Numberunfill from "../../components/Numberunfill";
 import FlexContent from "../../components/FlexContent";
 import StartProject from "@/app/common/StartProject";
+import CommonPadding from "@/app/components/CommonPadding";
 
 export default function Content() {
   return (
-    <div>
-      
+    <CommonPadding>
       <Subheading>
         Innovative Designs, Seamless Prototypes: Transforming Ideas into Reality
       </Subheading>
       <Paragraph>
-        At Praxio, we specialize in cutting-edge hardware design and prototyping
+        We specialize in cutting-edge hardware design and prototyping
         services. Our dedicated team of experienced engineers and designers is
         committed to bringing your innovative ideas to life. From concept
         development and schematic design to PCB layout, fabrication, and
@@ -101,6 +101,6 @@ export default function Content() {
           </Paragraph>
         </CardContent>
       </FlexContent>
-    </div>
+    </CommonPadding>
   );
 }

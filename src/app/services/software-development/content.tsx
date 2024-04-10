@@ -6,16 +6,16 @@ import CardContent from "../../components/Cardcontent";
 import Numberunfill from "../../components/Numberunfill";
 import FlexContent from "../../components/FlexContent";
 import StartProject from "@/app/common/StartProject";
+import CommonPadding from "@/app/components/CommonPadding";
 
 export default function Content() {
   return (
-    <div>
-      
+    <CommonPadding>
       <Subheading>
         Innovate, Design, Deliver: Transforming Ideas into Seamless Solutions
       </Subheading>
       <Paragraph>
-        At Praxio, we specialize in comprehensive software development and
+        We specialize in comprehensive software development and
         integration services, designed to elevate your business to new heights.
         Our expert team of developers, engineers, and integration specialists
         collaborates with you to craft cutting-edge software solutions that
@@ -98,6 +98,6 @@ export default function Content() {
           </Paragraph>
         </CardContent>
       </FlexContent>
-    </div>
+    </CommonPadding>
   );
 }

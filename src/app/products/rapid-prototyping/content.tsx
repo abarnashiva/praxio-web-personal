@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import Paragraph from "@/app/components/Paragraph";
 import SubHeading from "@/app/components/SubHeading";
 import StartProject from "@/app/common/StartProject";
+import CommonPadding from "@/app/components/CommonPadding";
 
 const markdownContent = `
 
@@ -32,13 +33,13 @@ Rapid Prototyping & Development is a process that quickly creates a scaled-down 
 
 export default function Content() {
   return (
-    <div>
+    <CommonPadding>
       <SubHeading>
         Accelerating Ideas to Reality: Rapid Prototyping & Development Solutions
       </SubHeading>
 
       <Paragraph>
-        At Praxio, we specialize in turning concepts into reality at an
+        We specialize in turning concepts into reality at an
         unmatched pace. Our Rapid Prototyping & Development services empower
         businesses to innovate, iterate, and bring their products to market
         faster than ever before. Whether you{`'`}re a startup with a
@@ -61,6 +62,6 @@ export default function Content() {
       >
         {markdownContent}
       </ReactMarkdown>
-    </div>
+    </CommonPadding>
   );
 }

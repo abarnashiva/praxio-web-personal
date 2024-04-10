@@ -55,7 +55,7 @@ function Header() {
       label: "Products & Solutions",
       children: [
         {
-          name: "Visuals Intelligence Platform",
+          name: "Visual Intelligence Platform",
           url: "/products/visual-intelligence",
         },
         {

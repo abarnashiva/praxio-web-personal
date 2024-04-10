@@ -7,15 +7,16 @@ import CardContent from "../../components/Cardcontent";
 import Numberunfill from "../../components/Numberunfill";
 import FlexContent from "../../components/FlexContent";
 import StartProject from "@/app/common/StartProject";
+import CommonPadding from "@/app/components/CommonPadding";
 
 export default function Content() {
   return (
-    <div>
+    <CommonPadding>
       <Subheading>
         Elevate Your Solutions: Seamless Deployment, Infinite Scalability
       </Subheading>
       <Paragraph>
-        At Praxio, we understand the critical importance of deployment and
+        We understand the critical importance of deployment and
         scalability in today&#39;s dynamic business landscape. Our expert
         services in deployment and scalability ensure that your solutions are
         not only seamlessly implemented but also designed to grow with your
@@ -103,6 +104,6 @@ export default function Content() {
           </Paragraph>
         </CardContent>
       </FlexContent>
-    </div>
+    </CommonPadding>
   );
 }

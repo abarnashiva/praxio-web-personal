@@ -6,15 +6,16 @@ import CardContent from "../../components/Cardcontent";
 import Numberunfill from "../../components/Numberunfill";
 import FlexContent from "../../components/FlexContent";
 import StartProject from "@/app/common/StartProject";
+import CommonPadding from "@/app/components/CommonPadding";
 
 export default function Content() {
   return (
-    <div>
+    <CommonPadding>
       <Subheading>
         Ensuring Excellence Through Rigorous Testing & Quality Assurance
       </Subheading>
       <Paragraph>
-        At Praxio, we take pride in our comprehensive Testing & Quality
+        We take pride in our comprehensive Testing & Quality
         Assurance (QA) services, designed to guarantee that your software
         products meet the highest standards of quality and functionality.
       </Paragraph>
@@ -101,6 +102,6 @@ export default function Content() {
           </Paragraph>
         </CardContent>
       </FlexContent>
-    </div>
+    </CommonPadding>
   );
 }

@@ -21,6 +21,7 @@ import {
   MdOutlineLocationOn,
   MdOutlinePhone,
 } from "react-icons/md";
+import CommonPadding from "../components/CommonPadding";
 
 export default function Content() {
   const {
@@ -50,7 +51,7 @@ export default function Content() {
   ];
 
   return (
-    <div>
+    <CommonPadding>
       <SubHeading>
         Connecting Dreams to Reality: Reach Out and Let&#39;s Create Together!
       </SubHeading>
@@ -129,6 +130,6 @@ export default function Content() {
           </BorderBox>
         </div>
       </FlexContact>
-    </div>
+    </CommonPadding>
   );
 }

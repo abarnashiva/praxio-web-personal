@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import SubHeading from "@/app/components/SubHeading";
 import Paragraph from "@/app/components/Paragraph";
 import StartProject from "@/app/common/StartProject";
+import CommonPadding from "@/app/components/CommonPadding";
 
 const markdownContent = `
 
@@ -23,20 +24,20 @@ Internet of Things, works by connecting everyday devices to the internet, allowi
 
   **Mobile Application Development:** Our team develops intuitive and user-friendly mobile applications that enable users to monitor, manage, and interact with IoT devices on the go. Mobile integration ensures seamless control, empowering users with real-time data at their fingertips.
 
-  **Cloud Platform Integration:** We seamlessly integrate IoT solutions with leading cloud platforms, providing scalable storage, robust security, and efficient data management. Cloud integration empowers businesses to access data from anywhere, facilitating remote monitoring and control of connected devices.
+  **Cloud Platform Integration:** We seamlessly integrate IoT Management Platform with leading cloud platforms, providing scalable storage, robust security, and efficient data management. Cloud integration empowers businesses to access data from anywhere, facilitating remote monitoring and control of connected devices.
 
-  **Third-Party API Integration:** We integrate IoT solutions with third-party APIs, enhancing functionality and expanding the capabilities of your connected ecosystem. Integration with external services and platforms broadens the scope of your IoT applications, providing comprehensive solutions to end-users.
+  **Third-Party API Integration:** We integrate IoT Management Platform with third-party APIs, enhancing functionality and expanding the capabilities of your connected ecosystem. Integration with external services and platforms broadens the scope of your IoT applications, providing comprehensive solutions to end-users.
 `;
 
 export default function Content() {
   return (
-    <div>
+    <CommonPadding>
       <SubHeading>
         Connecting Your World, Enhancing Your Life: Embrace the IoT Revolution!
       </SubHeading>
 
       <Paragraph>
-        At Praxio,we empower businesses to thrive in the digital age with our
+        We empower businesses to thrive in the digital age with our
         cutting-edge IoT Integration Development services. In an era where
         connectivity is paramount, our expert team specializes in seamlessly
         integrating smart devices, sensors, and systems, creating intelligent
@@ -57,6 +58,6 @@ export default function Content() {
       >
         {markdownContent}
       </ReactMarkdown>
-    </div>
+    </CommonPadding>
   );
 }

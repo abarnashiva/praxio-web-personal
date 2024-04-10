@@ -12,6 +12,7 @@ import { SimpleButton } from "../common/Button";
 import FlexContent from "../components/FlexContent";
 import CardContent from "../components/Cardcontent";
 import NumberUnFill from "../components/Numberunfill";
+import CommonPadding from "../components/CommonPadding";
 
 export default function Content() {
   const {
@@ -32,10 +33,10 @@ export default function Content() {
     [control, errors]
   );
   return (
-    <div>
+    <CommonPadding>
       <SubHeading>Where Every Query Finds a Solution.</SubHeading>
       <Paragraph>
-        At Praxio, we are committed to providing exceptional support to our
+        We are committed to providing exceptional support to our
         valued customers. Whether you have questions, need technical assistance,
         or want to explore our resources, you&#39;re in the right place. Our
         dedicated support team is here to assist you every step of the way.
@@ -88,7 +89,7 @@ export default function Content() {
             developers have at PRAXIO?
           </SemiHeading>
           <Paragraph>
-            At Praxio developers have an average of 5+ years of expertise in
+            Our developers have an average of 5+ years of expertise in
             their respective development field. Our developers keep up with the
             latest technologies and techniques to create world-class solutions
             that support market trends. They have a lot of expertise with
@@ -117,6 +118,6 @@ export default function Content() {
           </BorderBox>
         </CardContent>
       </FlexContent>
-    </div>
+    </CommonPadding>
   );
 }

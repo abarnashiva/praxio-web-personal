@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 import Paragraph from "@/app/components/Paragraph";
 import SubHeading from "@/app/components/SubHeading";
 import StartProject from "@/app/common/StartProject";
+import CommonPadding from "@/app/components/CommonPadding";
 
 const markdownContent = `
 
@@ -30,12 +31,12 @@ Smart city solutions integrate advanced technologies and data analytics to enhan
 
 export default function Content() {
   return (
-    <div>
+    <CommonPadding>
       <SubHeading>
         Empowering Smarter Futures: Our Smart City Development Solutions
       </SubHeading>
       <Paragraph>
-        At Praxio, we specialize in cutting-edge Smart City Development
+        We specialize in cutting-edge Smart City Development
         Solutions designed to transform urban landscapes into efficient,
         connected, and eco-friendly environments. Our expert team of urban
         planners, engineers, and technology innovators collaborates to implement
@@ -57,6 +58,6 @@ export default function Content() {
       >
         {markdownContent}
       </ReactMarkdown>
-    </div>
+    </CommonPadding>
   );
 }
