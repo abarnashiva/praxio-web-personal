@@ -15,13 +15,13 @@ export default function Heading({
 }: HeadingProps) {
   const textAlignClass = center ? "text-center" : "";
   const marginAlign = margin ? "my-7 pb-4" : "";
-  const whitetext = green
-    ? "text-secondary text-1xl hover:cursor-pointer "
+  const greentext = green
+    ? "text-secondary lg:text-4xl hover:cursor-pointer"
     : "text-primary";
 
   return (
     <h1
-      className={`font-semibold text-3xl ${textAlignClass} ${marginAlign} ${whitetext}`}
+      className={`font-semibold text-3xl ${textAlignClass} ${marginAlign} ${greentext}`}
     >
       {children}
     </h1>

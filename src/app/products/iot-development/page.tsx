@@ -10,7 +10,7 @@ export default function SmartCity() {
   return (
     <>
       <HeroSwipe>
-        <Heading green>IoT Integration Development</Heading>
+        <Heading green>IoT Management Platform</Heading>
         <SubContent>
           IoT transforms the way we interact with the world, making our lives
           more convenient, efficient, and connected.

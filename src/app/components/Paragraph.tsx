@@ -7,6 +7,7 @@ interface ParagraphProps {
   footerText?: boolean;
   contact?: boolean;
   swiper?: boolean;
+  swiperText?: boolean;
 }
 
 export default function Paragraph({
@@ -16,6 +17,7 @@ export default function Paragraph({
   footerText,
   contact,
   swiper,
+  swiperText,
 }: ParagraphProps) {
   const words = React.Children.toArray(children).join(" ").split(" ");
   const defaultText = large
@@ -28,6 +30,8 @@ export default function Paragraph({
     ? "leading-7"
     : swiper
     ? "text-white hover:cursor-pointer py-2"
+    : swiperText
+    ? "py-4 text-white leading-loose"
     : "text-gray-700 py-4";
 
   return (
