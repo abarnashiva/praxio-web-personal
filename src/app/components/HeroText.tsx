@@ -9,7 +9,7 @@ export default function HeroText({ children, white }: HeroTextProps) {
   const whiteText = white ? "text-white" : ""
   return (
     <>
-      <text className={`text-xl font-semibold text-banner ${whiteText}`}>
+      <text className={`lg:text-xl text-lg font-semibold text-banner ${whiteText}`}>
         {children}
       </text>
     </>

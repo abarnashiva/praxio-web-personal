@@ -24,13 +24,13 @@ export default function FlexBox({
   const defaultFlex = normal
     ? "flex flex-wrap"
     : content
-    ? "flex gap-2 pt-3"
+    ? "flex gap-2 pt-3 pl-2"
     : footer
     ? "flex flex-wrap justify-start lg:flex-nowrap xl:justify-around md:gap-12 lg:gap-10 gap-14"
     : logo
     ? "my-auto flex justify-center lg:justify-start py-6 lg:pt-0 mx-auto lg:mx-0"
     : contact
-    ? "flex gap-2"
+    ? "flex gap-2 pt-3"
     : product
     ? "flex lg:flex-nowrap flex-wrap-reverse xl:gap-20 lg:gap-16 gap-10"
     : "grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 justify-center";

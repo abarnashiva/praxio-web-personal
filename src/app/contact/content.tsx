@@ -73,8 +73,7 @@ export default function Content() {
                 <Paragraph contact>
                   No. 17, IInd Floor, SANHASA SQUARE,
                 </Paragraph>
-                <Paragraph contact>Bharathi Park Rd,</Paragraph>
-                <Paragraph contact>Bharathi Pk Cross Rd 3,</Paragraph>
+                <Paragraph contact>Bharathi Park Cross Rd 3,</Paragraph>
                 <Paragraph contact>Coimbatore,</Paragraph>
                 <Paragraph contact>Tamil Nadu 641043.</Paragraph>
               </div>

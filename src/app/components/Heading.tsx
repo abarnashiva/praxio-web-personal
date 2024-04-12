@@ -21,7 +21,7 @@ export default function Heading({
 
   return (
     <h1
-      className={`font-semibold text-3xl ${textAlignClass} ${marginAlign} ${greentext}`}
+      className={`font-semibold md:text-3xl text-2xl ${textAlignClass} ${marginAlign} ${greentext}`}
     >
       {children}
     </h1>

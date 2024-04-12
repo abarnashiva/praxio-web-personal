@@ -69,43 +69,42 @@ const Hero: React.FC = () => {
   });
 
   return (
-    <div>
-      <div className="relative">
-          <Swiper
-            effect="fade"
-            fadeEffect={{ crossFade: true }}
-            spaceBetween={50}
-            slidesPerView={1}
-            autoplay={{ delay: 4000, disableOnInteraction: false }}
-            modules={[Controller, Autoplay, EffectFade]}
-            onSwiper={setFirstSwiper}
-            controller={{ control: secondSwiper }}
-          >
-            {phrases.map((phrase, index) => (
-              <SwiperSlide key={index}>
-                <div
-                  className="bg-cover bg-center md:h-full h-[75vh]"
-                  style={{
-                    backgroundImage: `url('${phrase.background}')`,
-                  }}
-                >
-                    <ContainerBox>
-                      <HeroContent>
-                        <HeroText white>{phrase.heading}</HeroText>
-                        <MainHeading>{phrase.label}</MainHeading>
-                        <div className="max-w-2xl ">
-                          <Paragraph swiperText>{phrase.description}</Paragraph>
-                        </div>
-                        <Link href={`${phrase.url}`}>
-                          <Button text={"Learn More"} />
-                        </Link>
-                      </HeroContent>
-                    </ContainerBox>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-      </div>
+    <div className="relative">
+        <Swiper
+          effect="fade"
+          fadeEffect={{ crossFade: true }}
+          spaceBetween={50}
+          slidesPerView={1}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          modules={[Controller, Autoplay, EffectFade]}
+          onSwiper={setFirstSwiper}
+          controller={{ control: secondSwiper }}
+        >
+          {phrases.map((phrase, index) => (
+            <SwiperSlide key={index}>
+              <div
+                className="bg-cover bg-center"
+                style={{
+                  backgroundImage: `url('${phrase.background}')`,
+                  height: "77vh"
+                }}
+              >
+                <ContainerBox>
+                  <HeroContent>
+                    <HeroText white>{phrase.heading}</HeroText>
+                    <MainHeading>{phrase.label}</MainHeading>
+                    <div className="max-w-2xl ">
+                      <Paragraph swiperText>{phrase.description}</Paragraph>
+                    </div>
+                    <Link href={`${phrase.url}`}>
+                      <Button text={"Learn More"} />
+                    </Link>
+                  </HeroContent>
+                </ContainerBox>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       <HeroSwipe future>
         <Swiper
           spaceBetween={50}
@@ -138,7 +137,7 @@ const Hero: React.FC = () => {
                   active === index ? "text-secondary" : "text-white"
                 }`}
               >
-                <h2 className="font-semibold text-2xl hover:cursor-pointer">
+                <h2 className="font-semibold lg:text-2xl text-xl hover:cursor-pointer">
                   {phrase.label}
                 </h2>
                 <p className="hover:cursor-pointer py-2">

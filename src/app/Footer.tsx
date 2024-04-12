@@ -158,16 +158,15 @@ export default function Footer() {
               <Paragraph footerText>
                 No. 17, IInd Floor, SANHASA SQUARE,
               </Paragraph>
-              <Paragraph footerText>Bharathi Park Rd,</Paragraph>
-              <Paragraph footerText>Bharathi Pk Cross Rd 3,</Paragraph>
+              <Paragraph footerText>Bharathi Park Cross Rd 3,</Paragraph>
               <Paragraph footerText>Coimbatore,</Paragraph>
               <Paragraph footerText>Tamil Nadu 641043.</Paragraph>
               <div>
-                <FlexBox content>
+                <FlexBox contact>
                   <MdOutlinePhone className="text-xl" />
                   096000 43335
                 </FlexBox>
-                <FlexBox content>
+                <FlexBox contact>
                   <MdOutlineEmail className="text-xl" />
                   info@praxio.in
                 </FlexBox>
