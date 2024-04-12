@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
             {phrases.map((phrase, index) => (
               <SwiperSlide key={index}>
                 <div
-                  className="bg-cover bg-center md:h-full h-screen"
+                  className="bg-cover bg-center md:h-full h-[75vh]"
                   style={{
                     backgroundImage: `url('${phrase.background}')`,
                   }}
