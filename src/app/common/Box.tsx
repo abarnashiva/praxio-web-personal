@@ -17,7 +17,7 @@ const contents = [
     BtnName: "Contact Us",
   },
   {
-    words: "Have a questions or ideas?",
+    words: "Have a question or idea?",
     BtnName: "Let's Talk",
   },
 ];
