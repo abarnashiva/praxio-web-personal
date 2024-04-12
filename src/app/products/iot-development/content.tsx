@@ -50,7 +50,9 @@ export default function Content() {
             intelligent ecosystems that drive efficiency, enhance user
             experiences, and unlock unprecedented possibilities.
           </Paragraph>
-          <StartProject />
+          <div className="flex">
+            <StartProject />
+          </div>
         </FlexContent>
         <ProductImage product source={"../images/iot small.svg"}></ProductImage>
       </FlexBox>

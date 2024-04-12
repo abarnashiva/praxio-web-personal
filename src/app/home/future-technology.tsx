@@ -20,17 +20,19 @@ export default function FutureTechnology() {
           <FutureContent>
             <div>
               <Paragraph large>
-                We&#39;re more than just technologists. We&#39;re
-                visionaries. With a team that brings together decades of
-                combined experience, we&#39;re committed to shaping a world
-                where technology amplifies potential and simplifies
-                complexities. Our expertise spans the areas of business
-                consulting, Application Development, implementation and support
-                services in cutting edge technologies.
+                We&#39;re more than just technologists. We&#39;re visionaries.
+                With a team that brings together decades of combined experience,
+                we&#39;re committed to shaping a world where technology
+                amplifies potential and simplifies complexities. Our expertise
+                spans the areas of business consulting, Application Development,
+                implementation and support services in cutting edge
+                technologies.
               </Paragraph>
-              <Link href={"/about"}>
-                <Button text={"Learn More"}></Button>
-              </Link>
+              <div className="flex">
+                <Link href={"/about"}>
+                  <Button text={"Learn More"}></Button>
+                </Link>
+              </div>
             </div>
           </FutureContent>
         </FlexFuture>

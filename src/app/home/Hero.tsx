@@ -29,7 +29,7 @@ const phrases = [
     label: "IoT Management Platform",
     heading: "Unlock the Future with seamless",
     description:
-      "Our IoT Management Platform redefine connectivity, communication, and creation. Enter a realm where devices collaborate effortlessly, data transforms into actionable insights, and innovation knows no bounds.",
+      "Our IoT Management Platform redefine connectivity, communication and creation. Enter a realm where devices collaborate effortlessly, data transforms into actionable insights and innovation knows no bounds.",
     shortDescription: "Connecting the World, One Device at a Time",
     name: "Explore our IoT Management Platform",
     url: "/products/iot-development",

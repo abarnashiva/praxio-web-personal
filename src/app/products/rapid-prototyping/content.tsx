@@ -54,9 +54,14 @@ export default function Content() {
             high-quality prototypes and products.
           </Paragraph>
 
-          <StartProject />
+          <div className="flex">
+            <StartProject />
+          </div>
         </FlexContent>
-        <ProductImage product source={"../images/rapid small.svg"}></ProductImage>
+        <ProductImage
+          product
+          source={"../images/rapid small.svg"}
+        ></ProductImage>
       </FlexBox>
 
       <ReactMarkdown

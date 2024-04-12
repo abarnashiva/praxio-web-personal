@@ -16,11 +16,11 @@ export default function Content() {
         Elevate Your Solutions: Seamless Deployment, Infinite Scalability
       </Subheading>
       <Paragraph>
-        We understand the critical importance of deployment and
-        scalability in today&#39;s dynamic business landscape. Our expert
-        services in deployment and scalability ensure that your solutions are
-        not only seamlessly implemented but also designed to grow with your
-        business demands.
+        We understand the critical importance of deployment and scalability in
+        today&#39;s dynamic business landscape. Our expert services in
+        deployment and scalability ensure that your solutions are not only
+        seamlessly implemented but also designed to grow with your business
+        demands.
       </Paragraph>
       <Paragraph>
         Deployment refers to the process of introducing a new software
@@ -40,7 +40,9 @@ export default function Content() {
         infrastructure remains robust, responsive, and capable of accommodating
         increased demands seamlessly.
       </Paragraph>
-      <StartProject />
+      <div className="flex">
+        <StartProject />
+      </div>
       <SemiHeading both>
         Why choose PRAXIO for deployment and scalability?
       </SemiHeading>

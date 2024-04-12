@@ -16,12 +16,11 @@ export default function Content() {
         Innovative Designs, Seamless Prototypes: Transforming Ideas into Reality
       </Subheading>
       <Paragraph>
-        We specialize in cutting-edge hardware design and prototyping
-        services. Our dedicated team of experienced engineers and designers is
-        committed to bringing your innovative ideas to life. From concept
-        development and schematic design to PCB layout, fabrication, and
-        assembly, we offer comprehensive solutions tailored to your specific
-        needs.
+        We specialize in cutting-edge hardware design and prototyping services.
+        Our dedicated team of experienced engineers and designers is committed
+        to bringing your innovative ideas to life. From concept development and
+        schematic design to PCB layout, fabrication, and assembly, we offer
+        comprehensive solutions tailored to your specific needs.
       </Paragraph>
       <Paragraph>
         Our state-of-the-art facilities and advanced technologies enable us to
@@ -37,7 +36,9 @@ export default function Content() {
         Partner with us and experience the journey of turning your vision into a
         tangible, functional prototype. Explore the possibilities with PRAXIO.
       </Paragraph>
-      <StartProject />
+      <div className="flex">
+        <StartProject />
+      </div>
       <SemiHeading both>
         Why choose PRAXIO for Hardware Design & Prototyping?
       </SemiHeading>

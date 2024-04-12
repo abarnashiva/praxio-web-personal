@@ -49,7 +49,9 @@ export default function Content() {
             infrastructure, and foster economic growth.
           </Paragraph>
 
-          <StartProject />
+          <div className="flex">
+            <StartProject />
+          </div>
         </FlexContent>
         <ProductImage
           product

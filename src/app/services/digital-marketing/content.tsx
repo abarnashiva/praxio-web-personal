@@ -40,7 +40,9 @@ export default function Content() {
         execution sets us apart, driving unparalleled results and ROI for your
         business in the ever-evolving digital landscape.
       </Paragraph>
-      <StartProject />
+      <div className="flex">
+        <StartProject />
+      </div>
       <SemiHeading both>Why choose PRAXIO for Digital Marketing?</SemiHeading>
       <FlexContent>
         <CardContent>

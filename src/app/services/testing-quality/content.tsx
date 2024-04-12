@@ -15,9 +15,9 @@ export default function Content() {
         Ensuring Excellence Through Rigorous Testing & Quality Assurance
       </Subheading>
       <Paragraph>
-        We take pride in our comprehensive Testing & Quality
-        Assurance (QA) services, designed to guarantee that your software
-        products meet the highest standards of quality and functionality.
+        We take pride in our comprehensive Testing & Quality Assurance (QA)
+        services, designed to guarantee that your software products meet the
+        highest standards of quality and functionality.
       </Paragraph>
       <Paragraph>
         Our skilled QA professionals conduct thorough manual testing processes,
@@ -39,7 +39,9 @@ export default function Content() {
         valuable feedback, we help optimize the user experience, ensuring high
         user satisfaction.
       </Paragraph>
-      <StartProject />
+      <div className="flex">
+        <StartProject />
+      </div>
       <SemiHeading both>
         Why choose PRAXIO for Testing & Quality Assurance?
       </SemiHeading>

@@ -56,7 +56,9 @@ export default function Content() {
             across various industries.
           </Paragraph>
 
-          <StartProject />
+          <div className="flex">
+            <StartProject />
+          </div>
         </FlexContent>
         <ProductImage
           product

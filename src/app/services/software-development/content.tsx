@@ -15,11 +15,11 @@ export default function Content() {
         Innovate, Design, Deliver: Transforming Ideas into Seamless Solutions
       </Subheading>
       <Paragraph>
-        We specialize in comprehensive software development and
-        integration services, designed to elevate your business to new heights.
-        Our expert team of developers, engineers, and integration specialists
-        collaborates with you to craft cutting-edge software solutions that
-        align perfectly with your goals.
+        We specialize in comprehensive software development and integration
+        services, designed to elevate your business to new heights. Our expert
+        team of developers, engineers, and integration specialists collaborates
+        with you to craft cutting-edge software solutions that align perfectly
+        with your goals.
       </Paragraph>
       <Paragraph>
         We excel in developing custom software applications tailored to your
@@ -38,7 +38,9 @@ export default function Content() {
         systems, we ensure a smooth and secure integration process, minimizing
         disruptions and maximizing the value of your technology investments.
       </Paragraph>
-      <StartProject />
+      <div className="flex">
+        <StartProject />
+      </div>
       <SemiHeading both>
         Why choose PRAXIO for Software Development & Integration?
       </SemiHeading>

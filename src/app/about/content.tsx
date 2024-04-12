@@ -24,13 +24,15 @@ export default function Content() {
         like AI, IoT, and Visual Intelligence. With a customer-centric ethos, we
         pride ourselves on transforming visions into tangible solutions,
         offering end-to-end services that seamlessly integrate technology into
-        urban spaces. We believe in a future where technology and
-        nature harmoniously coexist, and we&#39;re dedicated to making that
-        vision a reality.
+        urban spaces. We believe in a future where technology and nature
+        harmoniously coexist, and we&#39;re dedicated to making that vision a
+        reality.
       </Paragraph>
-      <Link href="/contact">
-        <Button text={"Contact Us"} />
-      </Link>
+      <div className="flex">
+        <Link href="/contact">
+          <Button text={"Contact Us"} />
+        </Link>
+      </div>
       <SemiHeading top>Mission</SemiHeading>
       <Paragraph>
         To integrate pioneering technologies with urban development, providing
