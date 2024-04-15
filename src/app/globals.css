@@ -84,3 +84,17 @@
   transition: ease-in-out;
   animation: progressAnimation 5s linear;
 }
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  /* transform: rotate(20deg); */
+  opacity: 0;
+  transition: 0.7s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  /* transform: rotate(0deg); */
+  opacity: 1;
+}

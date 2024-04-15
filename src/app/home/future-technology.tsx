@@ -10,7 +10,7 @@ import Link from "next/link";
 
 export default function FutureTechnology() {
   return (
-    <div>
+    <div className="reveal">
       <ContainerBox>
         <Heading center margin>
           Crafting the Future of Technology

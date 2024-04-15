@@ -26,7 +26,7 @@ const product3 = [
 
 export default function Products() {
   return (
-    <section id="products">
+    <section id="products" className="reveal">
       <CommonPadding>
         <ContainerBox>
           <Heading center margin>

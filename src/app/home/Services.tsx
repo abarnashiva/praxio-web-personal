@@ -10,7 +10,7 @@ import CommonPadding from "../components/CommonPadding";
 
 function Services() {
   return (
-    <section id="services" className="py-10">
+    <section id="services" className="py-10 reveal">
       <CommonPadding>
         <ContainerBox>
           <Heading center margin>
